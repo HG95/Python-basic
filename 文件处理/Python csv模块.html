@@ -1,0 +1,1561 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Python csv模块 · Office 三件套学习</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="HHG">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Python os模块.html" />
+    
+    
+    <link rel="prev" href="Python openpyxl模块.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../基础/">
+            
+                <a href="../基础/">
+            
+                    
+                    python 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                <a href="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                    
+                    Python Python 中的 if name == 'main'
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../基础/Python 导入模块和package.html">
+            
+                <a href="../基础/Python 导入模块和package.html">
+            
+                    
+                    Python 导入模块和package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../基础/Python args和kwargs的用法.html">
+            
+                <a href="../基础/Python args和kwargs的用法.html">
+            
+                    
+                    Python args和kwargs的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../基础/Python 常用函数.html">
+            
+                <a href="../基础/Python 常用函数.html">
+            
+                    
+                    Python 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                <a href="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                    
+                    Python set集合的并集union, 交集intersection, 差集difference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../基础/Python 列表解析式.html">
+            
+                <a href="../基础/Python 列表解析式.html">
+            
+                    
+                    Python 列表解析式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../基础/Python list中append和extend函数区别.html">
+            
+                <a href="../基础/Python list中append和extend函数区别.html">
+            
+                    
+                    Python list中append和extend函数区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../基础/Python zip函数.html">
+            
+                <a href="../基础/Python zip函数.html">
+            
+                    
+                    Python zip()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../基础/Python enumerate函数.html">
+            
+                <a href="../基础/Python enumerate函数.html">
+            
+                    
+                    Python enumerate()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../基础/Python random函数.html">
+            
+                <a href="../基础/Python random函数.html">
+            
+                    
+                    Python random函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../基础/Python sort函数、sorted函数.html">
+            
+                <a href="../基础/Python sort函数、sorted函数.html">
+            
+                    
+                    Python 字符串 sort()函数、sorted()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../基础/Python 字符串的格式化.html">
+            
+                <a href="../基础/Python 字符串的格式化.html">
+            
+                    
+                    Python 字符串的格式化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../基础/Python 字符串 String 函数.html">
+            
+                <a href="../基础/Python 字符串 String 函数.html">
+            
+                    
+                    Python 字符串 String 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../基础/Python partition函数.html">
+            
+                <a href="../基础/Python partition函数.html">
+            
+                    
+                    Python partition函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="../基础/Python 位运算符、位运算高级运用.html">
+            
+                <a href="../基础/Python 位运算符、位运算高级运用.html">
+            
+                    
+                    Python 位运算符、位运算高级运用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="../基础/Python set集合之间的区别.html">
+            
+                <a href="../基础/Python set集合之间的区别.html">
+            
+                    
+                    Python set(集合) & 与 and 、 | 与 or之间的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="../基础/Python round函数，截取小数位数.html">
+            
+                <a href="../基础/Python round函数，截取小数位数.html">
+            
+                    
+                    Python round函数，截取小数位数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="../基础/Python 断言assert.html">
+            
+                <a href="../基础/Python 断言assert.html">
+            
+                    
+                    Python 断言assert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.19" >
+            
+                <span>
+            
+                    
+                    [Python 生成器和生成器函数]基础/Python 生成器和生成器函数.md)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.20" data-path="../基础/Python chr和ord函数.html">
+            
+                <a href="../基础/Python chr和ord函数.html">
+            
+                    
+                    Python chr()和ord()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.21" data-path="../基础/Python fnmatch模块.html">
+            
+                <a href="../基础/Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.22" data-path="../基础/Python copy模块.html">
+            
+                <a href="../基础/Python copy模块.html">
+            
+                    
+                    Python copy模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.23" data-path="../基础/Python collections模块.html">
+            
+                <a href="../基础/Python collections模块.html">
+            
+                    
+                    Python collections模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.24" data-path="../基础/Python itertools 模块.html">
+            
+                <a href="../基础/Python itertools 模块.html">
+            
+                    
+                    Python itertools 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.25" data-path="../基础/Python 时间模块.html">
+            
+                <a href="../基础/Python 时间模块.html">
+            
+                    
+                    Python 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.26" data-path="../基础/Python Arrow 时间模块.html">
+            
+                <a href="../基础/Python Arrow 时间模块.html">
+            
+                    
+                    Python Arrow 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    python 文件处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="Python open函数.html">
+            
+                <a href="Python open函数.html">
+            
+                    
+                    Python open() 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="Python pandas读写csv文件.html">
+            
+                <a href="Python pandas读写csv文件.html">
+            
+                    
+                    Python pandas读写csv文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="Python pandas读写excel文件.html">
+            
+                <a href="Python pandas读写excel文件.html">
+            
+                    
+                    Python pandas读写excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="Python 读写Excel文件.html">
+            
+                <a href="Python 读写Excel文件.html">
+            
+                    
+                    Python 读/写Excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="Python openpyxl模块.html">
+            
+                <a href="Python openpyxl模块.html">
+            
+                    
+                    Python openpyxl模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.6" data-path="Python csv模块.html">
+            
+                <a href="Python csv模块.html">
+            
+                    
+                    Python csv模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="Python os模块.html">
+            
+                <a href="Python os模块.html">
+            
+                    
+                    Python os模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="Python glob模块.html">
+            
+                <a href="Python glob模块.html">
+            
+                    
+                    Python glob模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="Python fnmatch模块.html">
+            
+                <a href="Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="Python pathlib模块.html">
+            
+                <a href="Python pathlib模块.html">
+            
+                    
+                    Python pathlib模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="Python os.walk遍历目录树.html">
+            
+                <a href="Python os.walk遍历目录树.html">
+            
+                    
+                    Python os.walk遍历目录树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="Python os.scandir文件操作.html">
+            
+                <a href="Python os.scandir文件操作.html">
+            
+                    
+                    Python os.scandir文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="Python 文件过滤.html">
+            
+                <a href="Python 文件过滤.html">
+            
+                    
+                    Python 文件过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="Python JSON模块.html">
+            
+                <a href="Python JSON模块.html">
+            
+                    
+                    Python JSON模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="Python JsonPath模块.html">
+            
+                <a href="Python JsonPath模块.html">
+            
+                    
+                    Python JsonPath模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="Python shutil模块.html">
+            
+                <a href="Python shutil模块.html">
+            
+                    
+                    Python shutil模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="Python ZIP文件读取，解压.html">
+            
+                <a href="Python ZIP文件读取，解压.html">
+            
+                    
+                    Python ZIP文件读取，解压
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="Python with...as的用法.html">
+            
+                <a href="Python with...as的用法.html">
+            
+                    
+                    Python with...as的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../正则表达式/">
+            
+                <a href="../正则表达式/">
+            
+                    
+                    python 正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../正则表达式/正则表达式基础语法.html">
+            
+                <a href="../正则表达式/正则表达式基础语法.html">
+            
+                    
+                    python 正则表达式基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../正则表达式/正则表达式 常用函数.html">
+            
+                <a href="../正则表达式/正则表达式 常用函数.html">
+            
+                    
+                    python 正则表达式 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../正则表达式/正则表达式 re.sub.html">
+            
+                <a href="../正则表达式/正则表达式 re.sub.html">
+            
+                    
+                    python 正则表达式 re.sub()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../正则表达式/正则表达式 re.match与re.search.html">
+            
+                <a href="../正则表达式/正则表达式 re.match与re.search.html">
+            
+                    
+                    python 正则表达式 match()与search()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../正则表达式/正则表达式 re.findall与re.finditer.html">
+            
+                <a href="../正则表达式/正则表达式 re.findall与re.finditer.html">
+            
+                    
+                    python 正则表达式 re.findall()与re.finditer()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../正则表达式/正则表达式 re.compile.html">
+            
+                <a href="../正则表达式/正则表达式 re.compile.html">
+            
+                    
+                    python 正则表达式 re.compile()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../正则表达式/正则表达式 flags 参数.html">
+            
+                <a href="../正则表达式/正则表达式 flags 参数.html">
+            
+                    
+                    python 正则表达式 flags 参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../正则表达式/正则表达式 去优先级，选择.html">
+            
+                <a href="../正则表达式/正则表达式 去优先级，选择.html">
+            
+                    
+                    python 正则表达式 去优先级，选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../正则表达式/正则表达式 模式匹配与正则表达式一.html">
+            
+                <a href="../正则表达式/正则表达式 模式匹配与正则表达式一.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../正则表达式/正则表达式 模式匹配与正则表达式二.html">
+            
+                <a href="../正则表达式/正则表达式 模式匹配与正则表达式二.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 二
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../多进程-多线程/">
+            
+                <a href="../多进程-多线程/">
+            
+                    
+                    python 多进程-多线程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../多进程-多线程/Python 多进程multiprocessing模块.html">
+            
+                <a href="../多进程-多线程/Python 多进程multiprocessing模块.html">
+            
+                    
+                    Python 多进程multiprocessing模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../多进程-多线程/Python 异步并发concurrent.futures模块.html">
+            
+                <a href="../多进程-多线程/Python 异步并发concurrent.futures模块.html">
+            
+                    
+                    Python 异步并发concurrent.futures模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../面向对象/">
+            
+                <a href="../面向对象/">
+            
+                    
+                    python 面向对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../面向对象/类.html">
+            
+                <a href="../面向对象/类.html">
+            
+                    
+                    python 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../面向对象/面向对象编程.html">
+            
+                <a href="../面向对象/面向对象编程.html">
+            
+                    
+                    python 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../面向对象/绑定方法与非绑定方法.html">
+            
+                <a href="../面向对象/绑定方法与非绑定方法.html">
+            
+                    
+                    python 绑定方法与非绑定方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../面向对象/实例方法、类方法和静态方法.html">
+            
+                <a href="../面向对象/实例方法、类方法和静态方法.html">
+            
+                    
+                    python 实例方法、类方法和静态方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../面向对象/面向对象编程--组合.html">
+            
+                <a href="../面向对象/面向对象编程--组合.html">
+            
+                    
+                    python 面向对象编程--组合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                <a href="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                    
+                    python 子类继承父类构造函数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.7" data-path="../面向对象/面向对象描述符.html">
+            
+                <a href="../面向对象/面向对象描述符.html">
+            
+                    
+                    python 面向对象描述符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.8" data-path="../面向对象/反射机制.html">
+            
+                <a href="../面向对象/反射机制.html">
+            
+                    
+                    python 反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.9" data-path="../面向对象/slots.html">
+            
+                <a href="../面向对象/slots.html">
+            
+                    
+                    python slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.10" data-path="../面向对象/属性property.html">
+            
+                <a href="../面向对象/属性property.html">
+            
+                    
+                    python 属性property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.11" data-path="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                <a href="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                    
+                    python attrs 和 cattrs 实现面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.12" data-path="../面向对象/Dataclasses.html">
+            
+                <a href="../面向对象/Dataclasses.html">
+            
+                    
+                    python Dataclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    python MongoDB数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../Chapter5/MongoDB基础.html">
+            
+                <a href="../Chapter5/MongoDB基础.html">
+            
+                    
+                    python MongoDB基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../Chapter5/Python操作MongoDB.html">
+            
+                <a href="../Chapter5/Python操作MongoDB.html">
+            
+                    
+                    python Python操作MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Python csv模块</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#python-csv&#x6A21;&#x5757;">Python csv&#x6A21;&#x5757;</a></li><ul><li><a href="#csvreader">csv.reader()</a></li><li><a href="#csvwriter">csv.writer()</a></li><li><a href="#&#x8FFD;&#x52A0;">&#x8FFD;&#x52A0;</a></li><li><a href="#&#x6848;&#x4F8B;&#xFF1A;&#x4ECE;-csv-&#x6587;&#x4EF6;&#x4E2D;&#x5220;&#x9664;&#x8868;&#x5934;">&#x6848;&#x4F8B;&#xFF1A;&#x4ECE; CSV &#x6587;&#x4EF6;&#x4E2D;&#x5220;&#x9664;&#x8868;&#x5934;</a></li><li><a href="#csvdictreader">csv.DictReader</a></li><li><a href="#csvdictwriter">csv.DictWriter</a></li></ul></ul></div><a href="#python-csv&#x6A21;&#x5757;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="python-csv&#x6A21;&#x5757;"><a name="python-csv&#x6A21;&#x5757;" class="anchor-navigation-ex-anchor" href="#python-csv&#x6A21;&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>Python csv&#x6A21;&#x5757;</h1>
+<p>csv&#x6A21;&#x5757;&#x5305;&#x542B;&#x5728;Python&#x6807;&#x51C6;&#x5E93;&#x4E2D;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x5206;&#x6790;CSV&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x884C;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x5FEB;&#x901F;&#x63D0;&#x53D6;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x503C;&#x3002;</p>
+<p>csv&#x6A21;&#x5757; &#x4E2D;&#x7684;&#x65B9;&#x6CD5; &#x53EA;&#x80FD;&#x591F;&#x8BFB;&#x53D6; / &#x5199;&#x5165;&#x5230;&#x4E00;&#x4E2A;<code>sheet</code>&#x4E2D;</p>
+<h2 id="csvreader"><a name="csvreader" class="anchor-navigation-ex-anchor" href="#csvreader"><i class="fa fa-link" aria-hidden="true"></i></a>csv.reader()</h2>
+<pre class="language-"><code class="lang-python">csv<span class="token punctuation">.</span>reader<span class="token punctuation">(</span>csvfile<span class="token punctuation">,</span> dialect<span class="token operator">=</span><span class="token string">&apos;excel&apos;</span><span class="token punctuation">,</span> <span class="token operator">**</span>fmtparams<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li><code>csvfile</code>&#xFF0C;&#x5FC5;&#x987B;&#x662F;&#x652F;&#x6301;&#x8FED;&#x4EE3;(Iterator)&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x6587;&#x4EF6;(file)&#x5BF9;&#x8C61;&#x6216;&#x8005;&#x5217;&#x8868;(list)&#x5BF9;&#x8C61;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x6587;&#x4EF6;&#x5BF9;&#x8C61;&#xFF0C;&#x6253;&#x5F00;&#x65F6;&#x9700;&#x8981;&#x52A0;&quot;b&quot;&#x6807;&#x5FD7;&#x53C2;&#x6570;&#x3002;</li>
+<li><code>dialect</code>&#xFF0C;&#x7F16;&#x7801;&#x98CE;&#x683C;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;excel&#x7684;&#x98CE;&#x683C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x7528;&#x9017;&#x53F7;&#xFF08;,&#xFF09;&#x5206;&#x9694;&#xFF0C;dialect&#x65B9;&#x5F0F;&#x4E5F;&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;register_dialect&#x65B9;&#x6CD5;&#x6765;&#x6CE8;&#x518C;&#xFF0C;&#x3002;</li>
+<li><code>fmtparam</code>&#xFF0C;&#x683C;&#x5F0F;&#x5316;&#x53C2;&#x6570;&#xFF0C;&#x7528;&#x6765;&#x8986;&#x76D6;&#x4E4B;&#x524D;dialect&#x5BF9;&#x8C61;&#x6307;&#x5B9A;&#x7684;&#x7F16;&#x7801;&#x98CE;&#x683C;&#x3002;</li>
+</ul>
+<pre class="language-"><code class="lang-python">
+<span class="token keyword">import</span> csv
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&apos;test.csv&apos;</span><span class="token punctuation">,</span><span class="token string">&apos;rb&apos;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> myFile<span class="token punctuation">:</span>
+    lines<span class="token operator">=</span>csv<span class="token punctuation">.</span>reader<span class="token punctuation">(</span>myFile<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> line <span class="token keyword">in</span> lines<span class="token punctuation">:</span>
+        <span class="token keyword">print</span> line
+</code></pre>
+<p><code>open()</code>&#x8FD4;&#x56DE;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5BF9;&#x8C61;myFile&#xFF0C;<code>reader(myFile)</code>&#x53EA;&#x4F20;&#x5165;&#x4E86;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x53E6;&#x5916;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x91C7;&#x7528;&#x7F3A;&#x7701;&#x503C;&#xFF0C;&#x5373;&#x4EE5;excel&#x98CE;&#x683C;&#x8BFB;&#x5165;&#x3002;reader()&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; reader &#x5BF9;&#x8C61; lines, ines &#x662F;&#x4E00;&#x4E2A;list&#xFF0C;&#x5F53;&#x8C03;&#x7528;&#x5B83;&#x7684;&#x65B9;&#x6CD5;lines.next()&#x65F6;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;string&#x3002;</p>
+<h2 id="csvwriter"><a name="csvwriter" class="anchor-navigation-ex-anchor" href="#csvwriter"><i class="fa fa-link" aria-hidden="true"></i></a>csv.writer()</h2>
+<pre class="language-"><code>csv.writer(csvfile, dialect=&apos;excel&apos;, **fmtparams)
+</code></pre><pre class="language-"><code>
+with open(&apos;t.csv&apos;,&apos;wb&apos;) as myFile:    
+    myWriter=csv.writer(myFile)
+    myWriter.writerow([7,&apos;g&apos;])
+    myWriter.writerow([8,&apos;h&apos;])
+    myList=[[1,2,3],[4,5,6]]
+    myWriter.writerows(myList)
+</code></pre><p><code>csv.writer(myFile)</code>&#x8FD4;&#x56DE;writer&#x5BF9;&#x8C61;myWriter&#x3002;</p>
+<p><strong><code>writerow()&#x65B9;&#x6CD5;</code>&#x662F;&#x4E00;&#x884C;&#x4E00;&#x884C;&#x5199;&#x5165;&#xFF0C;<code>writerows</code>&#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x6B21;&#x5199;&#x5165;&#x591A;&#x884C;&#x3002;</strong></p>
+<p>&#x8865;&#x5145;&#xFF1A;&#x9664;&#x4E86;writerow&#x3001;writerows&#xFF0C;writer&#x5BF9;&#x8C61;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#xFF1A;writeheader&#x3001;dialect</p>
+<h2 id="&#x8FFD;&#x52A0;"><a name="&#x8FFD;&#x52A0;" class="anchor-navigation-ex-anchor" href="#&#x8FFD;&#x52A0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FFD;&#x52A0;</h2>
+<p>&#x9664;&#x4E86;&#x76F4;&#x63A5;&#x5199;&#x5165;&#xFF0C;&#x8FD8;&#x80FD;&#x5B9E;&#x73B0;&#x8FFD;&#x52A0;&#xFF1A;&#x8FD8;&#x662F;&#x521A;&#x624D;&#x90A3;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x6211;&#x73B0;&#x5728;&#x5C06;&#x4E00;&#x884C;&#x65B0;&#x7684;&#x6570;&#x636E;&#x6DFB;&#x52A0;&#x5230;&#x65E7;&#x7684;&#x6570;&#x636E;&#x540E;&#x9762;&#xFF0C;&#x6700;&#x540E;&#x5199;&#x5165;CSV</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> csv
+
+<span class="token comment"># &#x65B0;&#x589E;&#x7684;&#x6570;&#x636E;&#x884C;&#xFF0C;&#x4EE5;&#x5217;&#x8868;&#x7684;&#x5F62;&#x5F0F;&#x8868;&#x793A;</span>
+add_info <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;Guo&quot;</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">]</span>
+
+<span class="token comment"># &#x4EE5;&#x6DFB;&#x52A0;&#x7684;&#x5F62;&#x5F0F;&#x5199;&#x5165;csv&#xFF0C;&#x8DDF;&#x5904;&#x7406;txt&#x6587;&#x4EF6;&#x4E00;&#x6837;&#xFF0C;&#x8BBE;&#x5B9A;&#x5173;&#x952E;&#x5B57;&quot;a&quot;&#xFF0C;&#x8868;&#x8FFD;&#x52A0;</span>
+csvFile <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&quot;instance.csv&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;a&quot;</span><span class="token punctuation">)</span>
+
+<span class="token comment"># &#x65B0;&#x5EFA;&#x5BF9;&#x8C61;writer</span>
+writer <span class="token operator">=</span> csv<span class="token punctuation">.</span>writer<span class="token punctuation">(</span>csvFile<span class="token punctuation">)</span>
+
+<span class="token comment"># &#x5199;&#x5165;&#xFF0C;&#x53C2;&#x6570;&#x8FD8;&#x662F;&#x5217;&#x8868;&#x5F62;&#x5F0F;</span>
+writer<span class="token punctuation">.</span>writerow<span class="token punctuation">(</span>add_info<span class="token punctuation">)</span>
+
+csvFile<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="&#x6848;&#x4F8B;&#xFF1A;&#x4ECE;-csv-&#x6587;&#x4EF6;&#x4E2D;&#x5220;&#x9664;&#x8868;&#x5934;"><a name="&#x6848;&#x4F8B;&#xFF1A;&#x4ECE;-csv-&#x6587;&#x4EF6;&#x4E2D;&#x5220;&#x9664;&#x8868;&#x5934;" class="anchor-navigation-ex-anchor" href="#&#x6848;&#x4F8B;&#xFF1A;&#x4ECE;-csv-&#x6587;&#x4EF6;&#x4E2D;&#x5220;&#x9664;&#x8868;&#x5934;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6848;&#x4F8B;&#xFF1A;&#x4ECE; CSV &#x6587;&#x4EF6;&#x4E2D;&#x5220;&#x9664;&#x8868;&#x5934;</h2>
+<pre class="language-"><code class="lang-python"><span class="token comment">#! python3</span>
+<span class="token comment"># removeCsvHeader.py - Removes the header from all CSV files in the current</span>
+<span class="token comment"># working directory.</span>
+<span class="token keyword">import</span> csv<span class="token punctuation">,</span> os
+
+os<span class="token punctuation">.</span>makedirs<span class="token punctuation">(</span><span class="token string">&apos;headerRemoved&apos;</span><span class="token punctuation">,</span> exist_ok<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token comment"># Loop through every file in the current working directory.</span>
+<span class="token keyword">for</span> csvFilename <span class="token keyword">in</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span><span class="token string">&apos;.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> <span class="token keyword">not</span> csvFilename<span class="token punctuation">.</span>endswith<span class="token punctuation">(</span><span class="token string">&apos;.csv&apos;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">continue</span> <span class="token comment"># skip non-csv files</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Removing header from &apos;</span> <span class="token operator">+</span> csvFilename <span class="token operator">+</span> <span class="token string">&apos;...&apos;</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># Read the CSV file in (skipping first row).</span>
+    csvRows <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    csvFileObj <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span>csvFilename<span class="token punctuation">)</span>
+    readerObj <span class="token operator">=</span> csv<span class="token punctuation">.</span>reader<span class="token punctuation">(</span>csvFileObj<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> row <span class="token keyword">in</span> readerObj<span class="token punctuation">:</span>
+        <span class="token keyword">if</span> readerObj<span class="token punctuation">.</span>line_num <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>   <span class="token comment">#&#x5229;&#x7528; line_num &#x5C5E;&#x6027;&#x786E;&#x5B9A;&#x8981;&#x8DF3;&#x8FC7;&#x54EA;&#x4E00;&#x884C;</span>
+            <span class="token keyword">continue</span> <span class="token comment"># skip first row</span>
+        csvRows<span class="token punctuation">.</span>append<span class="token punctuation">(</span>row<span class="token punctuation">)</span>
+    csvFileObj<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># Write out the CSV file.</span>
+    csvFileObj <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token string">&apos;headerRemoved&apos;</span><span class="token punctuation">,</span> csvFilename<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&apos;w&apos;</span><span class="token punctuation">,</span>    newline<span class="token operator">=</span><span class="token string">&apos;&apos;</span><span class="token punctuation">)</span>
+    csvWriter <span class="token operator">=</span> csv<span class="token punctuation">.</span>writer<span class="token punctuation">(</span>csvFileObj<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> row <span class="token keyword">in</span> csvRows<span class="token punctuation">:</span>
+        csvWriter<span class="token punctuation">.</span>writerow<span class="token punctuation">(</span>row<span class="token punctuation">)</span>
+    csvFileObj<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="csvdictreader"><a name="csvdictreader" class="anchor-navigation-ex-anchor" href="#csvdictreader"><i class="fa fa-link" aria-hidden="true"></i></a>csv.DictReader</h2>
+<pre class="language-"><code class="lang-python"><span class="token keyword">class</span> <span class="token class-name">csv</span><span class="token punctuation">.</span>DictReader<span class="token punctuation">(</span>csvfile<span class="token punctuation">,</span> 
+                     fieldnames<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+                     restkey<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+                     restval<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+                     dialect<span class="token operator">=</span><span class="token string">&apos;excel&apos;</span><span class="token punctuation">,</span> 
+                     <span class="token operator">*</span>args<span class="token punctuation">,</span> <span class="token operator">**</span>kwds
+                    <span class="token punctuation">)</span>
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x64CD;&#x4F5C;&#x7C7B;&#x4F3C;&#x4E8E;&#x666E;&#x901A;&#x8BFB;&#x53D6;&#x5668;&#xFF0C;&#x4F46;&#x5C06;&#x8BFB;&#x53D6;&#x7684;&#x4FE1;&#x606F;&#x6620;&#x5C04;&#x5230;&#x4E00;&#x4E2A; dict &#x4E2D;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x952E;&#x7531;&#x53EF;&#x9009;&#x7684; fieldnames &#x53C2;&#x6570;&#x7ED9;&#x51FA;&#x3002;fieldnames &#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A; sequence&#xFF0C;&#x5176;&#x5143;&#x7D20;&#x6309;&#x987A;&#x5E8F;&#x4E0E;&#x8F93;&#x5165;&#x6570;&#x636E;&#x7684;&#x5B57;&#x6BB5;&#x76F8;&#x5173;&#x8054;&#x3002;&#x8FD9;&#x4E9B;&#x5143;&#x7D20;&#x6210;&#x4E3A;&#x7ED3;&#x679C;&#x5B57;&#x5178;&#x7684;&#x952E;&#x3002;&#x5982;&#x679C;&#x7701;&#x7565; fieldnames &#x53C2;&#x6570;&#xFF0C;&#x5219; csvfile &#x7684;&#x7B2C;&#x4E00;&#x884C;&#x4E2D;&#x7684;&#x503C;&#x5C06;&#x7528;&#x4F5C;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#xFF0C;&#x5982;&#x679C;&#x8BFB;&#x53D6;&#x7684;&#x884C;&#x5177;&#x6709;&#x6BD4;&#x5B57;&#x6BB5;&#x540D;&#x5E8F;&#x5217;&#x66F4;&#x591A;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x5219;&#x5269;&#x4F59;&#x6570;&#x636E;&#x5C06;&#x4F5C;&#x4E3A;&#x952E;&#x503C;&#x4E3A; restkey &#x7684;&#x5E8F;&#x5217;&#x6DFB;&#x52A0;&#x3002;&#x5982;&#x679C;&#x8BFB;&#x53D6;&#x7684;&#x884C;&#x5177;&#x6709;&#x6BD4;&#x5B57;&#x6BB5;&#x540D;&#x5E8F;&#x5217;&#x5C11;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x5219;&#x5269;&#x4F59;&#x7684;&#x952E;&#x4F7F;&#x7528;&#x53EF;&#x9009;&#x7684; restval &#x53C2;&#x6570;&#x7684;&#x503C;&#x3002;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x53EF;&#x9009;&#x6216;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x90FD;&#x4F20;&#x9012;&#x7ED9;&#x5E95;&#x5C42;&#x7684; reader &#x5B9E;&#x4F8B;&#x3002;</p>
+<p>DictReader&#xFF0C;&#x548C; reader &#x51FD;&#x6570;&#x7C7B;&#x4F3C;&#xFF0C;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x53EF;&#x8FED;&#x4EE3;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x80FD;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x751F;&#x6210;&#x5668;&#xFF0C;&#x4F46;&#x662F;&#x8FD4;&#x56DE;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5355;&#x5143;&#x683C;&#x90FD;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#x7684;&#x503C;&#x5185;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x5B57;&#x5178;&#x7684;&#x952E;&#x5219;&#x662F;&#x8FD9;&#x4E2A;&#x5355;&#x5143;&#x683C;&#x7684;&#x6807;&#x9898;&#xFF08;&#x5373;&#x5217;&#x5934;&#xFF09;</p>
+<p><a href="https://img-blog.csdnimg.cn/20190618134224386.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_4,color_FFFFFF,t_70" data-lightbox="4cbf97b6-446a-4d31-b647-ad6748facd4c" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;" target="_blank"><img src="https://img-blog.csdnimg.cn/20190618134224386.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_4,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&apos;names.csv&apos;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> csvfile<span class="token punctuation">:</span>
+    reader <span class="token operator">=</span> csv<span class="token punctuation">.</span>DictReader<span class="token punctuation">(</span>csvfile<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> row <span class="token keyword">in</span> reader<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>row<span class="token punctuation">[</span><span class="token string">&apos;first_name&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> row<span class="token punctuation">[</span><span class="token string">&apos;last_name&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment">#&#x8F93;&#x51FA;</span>
+Baked Beans
+Lovely Spam
+Wonderful Spam
+</code></pre>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> csv
+
+<span class="token comment">#&#x8BFB;</span>
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&quot;test.csv&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;r&quot;</span><span class="token punctuation">,</span> encoding <span class="token operator">=</span> <span class="token string">&quot;utf-8&quot;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+    reader <span class="token operator">=</span> csv<span class="token punctuation">.</span>DictReader<span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+    column <span class="token operator">=</span> <span class="token punctuation">[</span>row <span class="token keyword">for</span> row <span class="token keyword">in</span> reader<span class="token punctuation">]</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>column<span class="token punctuation">)</span>
+
+&#x8F93;&#x51FA;&#xFF1A;
+<span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token string">&apos;No.&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;1&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Age&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;18&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Score&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;99&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;mayi&apos;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token punctuation">{</span><span class="token string">&apos;No.&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;2&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Age&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;21&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Score&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;89&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;jack&apos;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token punctuation">{</span><span class="token string">&apos;No.&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;3&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Age&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;25&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Score&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;95&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;tom&apos;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token punctuation">{</span><span class="token string">&apos;No.&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;4&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Age&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;19&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Score&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;80&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;rain&apos;</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x7528; DictReader &#x8BFB;&#x53D6; csv &#x7684;&#x67D0;&#x4E00;&#x5217;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x7528;&#x5217;&#x7684;&#x6807;&#x9898;&#x67E5;&#x8BE2;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> csv
+
+<span class="token comment">#&#x8BFB;&#x53D6;Name&#x5217;&#x7684;&#x5185;&#x5BB9;</span>
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&quot;test.csv&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;r&quot;</span><span class="token punctuation">,</span> encoding <span class="token operator">=</span> <span class="token string">&quot;utf-8&quot;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+    reader <span class="token operator">=</span> csv<span class="token punctuation">.</span>DictReader<span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+    column <span class="token operator">=</span> <span class="token punctuation">[</span>row<span class="token punctuation">[</span><span class="token string">&apos;Name&apos;</span><span class="token punctuation">]</span> <span class="token keyword">for</span> row <span class="token keyword">in</span> reader<span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>column<span class="token punctuation">)</span>
+
+&#x8F93;&#x51FA;&#xFF1A;
+<span class="token punctuation">[</span><span class="token string">&apos;mayi&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;jack&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;tom&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;rain&apos;</span><span class="token punctuation">]</span>
+</code></pre>
+<h2 id="csvdictwriter"><a name="csvdictwriter" class="anchor-navigation-ex-anchor" href="#csvdictwriter"><i class="fa fa-link" aria-hidden="true"></i></a>csv.DictWriter</h2>
+<pre class="language-"><code class="lang-python"><span class="token keyword">class</span> <span class="token class-name">csv</span><span class="token punctuation">.</span>DictWriter<span class="token punctuation">(</span>csvfile<span class="token punctuation">,</span> 
+                     fieldnames<span class="token punctuation">,</span> 
+                     restval<span class="token operator">=</span><span class="token string">&apos;&apos;</span><span class="token punctuation">,</span> 
+                     extrasaction<span class="token operator">=</span><span class="token string">&apos;raise&apos;</span><span class="token punctuation">,</span> 
+                     dialect<span class="token operator">=</span><span class="token string">&apos;excel&apos;</span><span class="token punctuation">,</span> 
+                     <span class="token operator">*</span>args<span class="token punctuation">,</span> <span class="token operator">**</span>kwds
+                    <span class="token punctuation">)</span>
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x7C7B;&#x4F3C;&#x4E8E;&#x5E38;&#x89C4;writer&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x5C06;&#x5B57;&#x5178;&#x6620;&#x5C04;&#x5230;&#x8F93;&#x51FA;&#x884C;&#x3002;fieldnames&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;sequence&#xFF0C;&#x7528;&#x4E8E;&#x6807;&#x8BC6;&#x4F20;&#x9012;&#x7ED9; writerow() &#x65B9;&#x6CD5;&#x7684;&#x5B57;&#x5178;&#x4E2D;&#x7684;&#x503C;&#x88AB;&#x5199;&#x5165;csvfile&#x3002;&#x5982;&#x679C;&#x5B57;&#x5178;&#x5728;fieldnames&#x4E2D;&#x7F3A;&#x5C11;&#x952E;&#xFF0C;&#x5219;&#x53EF;&#x9009;&#x7684;restval&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x8981;&#x5199;&#x5165;&#x7684;&#x503C;&#x3002;&#x5982;&#x679C;&#x4F20;&#x9012;&#x7ED9;writerow()&#x65B9;&#x6CD5;&#x7684;&#x5B57;&#x5178;&#x5305;&#x542B;fieldnames&#x4E2D;&#x672A;&#x627E;&#x5230;&#x7684;&#x952E;&#xFF0C;&#x5219;&#x53EF;&#x9009;&#x7684;extrasaction&#x53C2;&#x6570;&#x6307;&#x793A;&#x8981;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;&#x2019;raise&#x2019;&#xFF0C;&#x5219;&#x4F1A;&#x5F15;&#x53D1;ValueError&#x3002;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;&#x2019;ignore&#x2019;&#xFF0C;&#x5219;&#x4F1A;&#x5FFD;&#x7565;&#x5B57;&#x5178;&#x4E2D;&#x7684;&#x989D;&#x5916;&#x503C;&#x3002;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x53EF;&#x9009;&#x6216;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x90FD;&#x4F20;&#x9012;&#x7ED9;&#x5E95;&#x5C42;&#x7684;writer&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x4E0E; DictReader &#x7C7B;&#x4E0D;&#x540C;&#xFF0C;DictWriter &#x7684; fieldnames &#x53C2;&#x6570;&#x4E0D;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;&#x7531;&#x4E8E;Python&#x7684; dict &#x5BF9;&#x8C61;&#x6CA1;&#x6709;&#x6392;&#x5E8F;&#xFF0C;&#x56E0;&#x6B64;&#x6CA1;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x4FE1;&#x606F;&#x6765;&#x63A8;&#x65AD;&#x5C06;&#x8BE5;&#x884C;&#x5199;&#x5165;&#x5230;csvfile&#x7684;&#x987A;&#x5E8F;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> csv
+
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&apos;names.csv&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;w&apos;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> csvfile<span class="token punctuation">:</span>
+    fieldnames <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&apos;first_name&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;last_name&apos;</span><span class="token punctuation">]</span>
+    writer <span class="token operator">=</span> csv<span class="token punctuation">.</span>DictWriter<span class="token punctuation">(</span>csvfile<span class="token punctuation">,</span> fieldnames<span class="token operator">=</span>fieldnames<span class="token punctuation">)</span>
+
+    writer<span class="token punctuation">.</span>writeheader<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    writer<span class="token punctuation">.</span>writerow<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">&apos;first_name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;Baked&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;last_name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;Beans&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    writer<span class="token punctuation">.</span>writerow<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">&apos;first_name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;Lovely&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;last_name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;Spam&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    writer<span class="token punctuation">.</span>writerow<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">&apos;first_name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;Wonderful&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;last_name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;Spam&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://img-blog.csdnimg.cn/20190618115408120.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_4,color_FFFFFF,t_70" data-lightbox="343cf34b-a6b3-426b-8e51-c17dd11583cf" data-title="img" target="_blank"><img src="https://img-blog.csdnimg.cn/20190618115408120.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_4,color_FFFFFF,t_70" alt="img"></a></p>
+<p><code>delimiter</code><strong>&#x548C;</strong> <code>lineterminator</code> <strong>&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;</strong></p>
+<p>&#x5047;&#x5B9A;&#x4F60;&#x5E0C;&#x671B;&#x7528;&#x5236;&#x8868;&#x7B26;&#x4EE3;&#x66FF;&#x9017;&#x53F7;&#x6765;&#x5206;&#x9694;&#x5355;&#x5143;&#x683C;&#xFF0C;&#x5E76;&#x5E0C;&#x671B;&#x6709;&#x4E24;&#x500D;&#x884C;&#x8DDD;&#x3002;</p>
+<pre class="language-"><code>&gt;&gt;&gt; import csv
+&gt;&gt;&gt; csvFile = open(&apos;example.tsv&apos;, &apos;w&apos;, newline=&apos;&apos;)
+&gt;&gt;&gt; csvWriter = csv.writer(csvFile, delimiter=&apos;\t&apos;, lineterminator=&apos;\n\n&apos;)
+&gt;&gt;&gt; csvWriter.writerow([&apos;apples&apos;, &apos;oranges&apos;, &apos;grapes&apos;])
+24
+&gt;&gt;&gt; csvWriter.writerow([&apos;eggs&apos;, &apos;bacon&apos;, &apos;ham&apos;])
+17
+&gt;&gt;&gt; csvWriter.writerow([&apos;spam&apos;, &apos;spam&apos;, &apos;spam&apos;, &apos;spam&apos;, &apos;spam&apos;, &apos;spam&apos;])
+32
+&gt;&gt;&gt; csvFile.close(
+</code></pre><p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C; CSV &#x6587;&#x4EF6;&#x7684;&#x5206;&#x9694;&#x7B26;&#x662F;&#x9017;&#x53F7;&#x3002;&#x884C;&#x7EC8;&#x6B62;&#x5B57;&#x7B26;&#x662F;&#x51FA;&#x73B0;&#x5728;&#x884C;&#x672B;&#x7684;&#x5B57;&#x7B26;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x884C;&#x7EC8;&#x6B62;&#x5B57;&#x7B26;&#x662F;&#x6362;&#x884C;&#x7B26;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5229;&#x7528; <code>csv.writer()</code>&#x7684; <code>delimiter</code> &#x548C; <code>lineterminator</code>&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x5C06;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x6539;&#x6210;&#x4E0D;&#x540C;&#x7684;&#x503C;&#x3002;</p>
+<p><a href="https://img-blog.csdnimg.cn/20190618141639837.png" data-lightbox="b02dcc64-77e0-4efb-985b-f3198f4c20af" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;" target="_blank"><img src="https://img-blog.csdnimg.cn/20190618141639837.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a> </p>
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-25 
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Python openpyxl模块.html" class="navigation navigation-prev " aria-label="Previous page: Python openpyxl模块">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Python os模块.html" class="navigation navigation-next " aria-label="Next page: Python os模块">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python csv模块","level":"3.1.6","depth":2,"next":{"title":"Python os模块","level":"3.1.7","depth":2,"path":"文件处理/Python os模块.md","ref":"文件处理/Python os模块.md","articles":[]},"previous":{"title":"Python openpyxl模块","level":"3.1.5","depth":2,"path":"文件处理/Python openpyxl模块.md","ref":"文件处理/Python openpyxl模块.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"mathjax":{"forceSVG":true},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Office 三件套学习","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"文件处理/Python csv模块.md","mtime":"2020-05-25T13:42:22.947Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-20T02:36:30.336Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1891 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Python 多进程multiprocessing模块 · Office 三件套学习</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="HHG">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Python 异步并发concurrent.futures模块.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../基础/">
+            
+                <a href="../基础/">
+            
+                    
+                    python 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                <a href="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                    
+                    Python Python 中的 if name == 'main'
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../基础/Python 导入模块和package.html">
+            
+                <a href="../基础/Python 导入模块和package.html">
+            
+                    
+                    Python 导入模块和package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../基础/Python args和kwargs的用法.html">
+            
+                <a href="../基础/Python args和kwargs的用法.html">
+            
+                    
+                    Python args和kwargs的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../基础/Python 常用函数.html">
+            
+                <a href="../基础/Python 常用函数.html">
+            
+                    
+                    Python 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                <a href="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                    
+                    Python set集合的并集union, 交集intersection, 差集difference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../基础/Python 列表解析式.html">
+            
+                <a href="../基础/Python 列表解析式.html">
+            
+                    
+                    Python 列表解析式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../基础/Python list中append和extend函数区别.html">
+            
+                <a href="../基础/Python list中append和extend函数区别.html">
+            
+                    
+                    Python list中append和extend函数区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../基础/Python zip函数.html">
+            
+                <a href="../基础/Python zip函数.html">
+            
+                    
+                    Python zip()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../基础/Python enumerate函数.html">
+            
+                <a href="../基础/Python enumerate函数.html">
+            
+                    
+                    Python enumerate()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../基础/Python random函数.html">
+            
+                <a href="../基础/Python random函数.html">
+            
+                    
+                    Python random函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../基础/Python sort函数、sorted函数.html">
+            
+                <a href="../基础/Python sort函数、sorted函数.html">
+            
+                    
+                    Python 字符串 sort()函数、sorted()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../基础/Python 字符串的格式化.html">
+            
+                <a href="../基础/Python 字符串的格式化.html">
+            
+                    
+                    Python 字符串的格式化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../基础/Python 字符串 String 函数.html">
+            
+                <a href="../基础/Python 字符串 String 函数.html">
+            
+                    
+                    Python 字符串 String 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../基础/Python partition函数.html">
+            
+                <a href="../基础/Python partition函数.html">
+            
+                    
+                    Python partition函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="../基础/Python 位运算符、位运算高级运用.html">
+            
+                <a href="../基础/Python 位运算符、位运算高级运用.html">
+            
+                    
+                    Python 位运算符、位运算高级运用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="../基础/Python set集合之间的区别.html">
+            
+                <a href="../基础/Python set集合之间的区别.html">
+            
+                    
+                    Python set(集合) & 与 and 、 | 与 or之间的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="../基础/Python round函数，截取小数位数.html">
+            
+                <a href="../基础/Python round函数，截取小数位数.html">
+            
+                    
+                    Python round函数，截取小数位数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="../基础/Python 断言assert.html">
+            
+                <a href="../基础/Python 断言assert.html">
+            
+                    
+                    Python 断言assert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.19" >
+            
+                <span>
+            
+                    
+                    [Python 生成器和生成器函数]基础/Python 生成器和生成器函数.md)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.20" data-path="../基础/Python chr和ord函数.html">
+            
+                <a href="../基础/Python chr和ord函数.html">
+            
+                    
+                    Python chr()和ord()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.21" data-path="../基础/Python fnmatch模块.html">
+            
+                <a href="../基础/Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.22" data-path="../基础/Python copy模块.html">
+            
+                <a href="../基础/Python copy模块.html">
+            
+                    
+                    Python copy模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.23" data-path="../基础/Python collections模块.html">
+            
+                <a href="../基础/Python collections模块.html">
+            
+                    
+                    Python collections模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.24" data-path="../基础/Python itertools 模块.html">
+            
+                <a href="../基础/Python itertools 模块.html">
+            
+                    
+                    Python itertools 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.25" data-path="../基础/Python 时间模块.html">
+            
+                <a href="../基础/Python 时间模块.html">
+            
+                    
+                    Python 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.26" data-path="../基础/Python Arrow 时间模块.html">
+            
+                <a href="../基础/Python Arrow 时间模块.html">
+            
+                    
+                    Python Arrow 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../文件处理/">
+            
+                <a href="../文件处理/">
+            
+                    
+                    python 文件处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../文件处理/Python open函数.html">
+            
+                <a href="../文件处理/Python open函数.html">
+            
+                    
+                    Python open() 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../文件处理/Python pandas读写csv文件.html">
+            
+                <a href="../文件处理/Python pandas读写csv文件.html">
+            
+                    
+                    Python pandas读写csv文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../文件处理/Python pandas读写excel文件.html">
+            
+                <a href="../文件处理/Python pandas读写excel文件.html">
+            
+                    
+                    Python pandas读写excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../文件处理/Python 读写Excel文件.html">
+            
+                <a href="../文件处理/Python 读写Excel文件.html">
+            
+                    
+                    Python 读/写Excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../文件处理/Python openpyxl模块.html">
+            
+                <a href="../文件处理/Python openpyxl模块.html">
+            
+                    
+                    Python openpyxl模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../文件处理/Python csv模块.html">
+            
+                <a href="../文件处理/Python csv模块.html">
+            
+                    
+                    Python csv模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../文件处理/Python os模块.html">
+            
+                <a href="../文件处理/Python os模块.html">
+            
+                    
+                    Python os模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../文件处理/Python glob模块.html">
+            
+                <a href="../文件处理/Python glob模块.html">
+            
+                    
+                    Python glob模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../文件处理/Python fnmatch模块.html">
+            
+                <a href="../文件处理/Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../文件处理/Python pathlib模块.html">
+            
+                <a href="../文件处理/Python pathlib模块.html">
+            
+                    
+                    Python pathlib模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../文件处理/Python os.walk遍历目录树.html">
+            
+                <a href="../文件处理/Python os.walk遍历目录树.html">
+            
+                    
+                    Python os.walk遍历目录树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../文件处理/Python os.scandir文件操作.html">
+            
+                <a href="../文件处理/Python os.scandir文件操作.html">
+            
+                    
+                    Python os.scandir文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../文件处理/Python 文件过滤.html">
+            
+                <a href="../文件处理/Python 文件过滤.html">
+            
+                    
+                    Python 文件过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../文件处理/Python JSON模块.html">
+            
+                <a href="../文件处理/Python JSON模块.html">
+            
+                    
+                    Python JSON模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../文件处理/Python JsonPath模块.html">
+            
+                <a href="../文件处理/Python JsonPath模块.html">
+            
+                    
+                    Python JsonPath模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="../文件处理/Python shutil模块.html">
+            
+                <a href="../文件处理/Python shutil模块.html">
+            
+                    
+                    Python shutil模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="../文件处理/Python ZIP文件读取，解压.html">
+            
+                <a href="../文件处理/Python ZIP文件读取，解压.html">
+            
+                    
+                    Python ZIP文件读取，解压
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="../文件处理/Python with...as的用法.html">
+            
+                <a href="../文件处理/Python with...as的用法.html">
+            
+                    
+                    Python with...as的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../正则表达式/">
+            
+                <a href="../正则表达式/">
+            
+                    
+                    python 正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../正则表达式/正则表达式基础语法.html">
+            
+                <a href="../正则表达式/正则表达式基础语法.html">
+            
+                    
+                    python 正则表达式基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../正则表达式/正则表达式 常用函数.html">
+            
+                <a href="../正则表达式/正则表达式 常用函数.html">
+            
+                    
+                    python 正则表达式 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../正则表达式/正则表达式 re.sub.html">
+            
+                <a href="../正则表达式/正则表达式 re.sub.html">
+            
+                    
+                    python 正则表达式 re.sub()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../正则表达式/正则表达式 re.match与re.search.html">
+            
+                <a href="../正则表达式/正则表达式 re.match与re.search.html">
+            
+                    
+                    python 正则表达式 match()与search()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../正则表达式/正则表达式 re.findall与re.finditer.html">
+            
+                <a href="../正则表达式/正则表达式 re.findall与re.finditer.html">
+            
+                    
+                    python 正则表达式 re.findall()与re.finditer()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../正则表达式/正则表达式 re.compile.html">
+            
+                <a href="../正则表达式/正则表达式 re.compile.html">
+            
+                    
+                    python 正则表达式 re.compile()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../正则表达式/正则表达式 flags 参数.html">
+            
+                <a href="../正则表达式/正则表达式 flags 参数.html">
+            
+                    
+                    python 正则表达式 flags 参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../正则表达式/正则表达式 去优先级，选择.html">
+            
+                <a href="../正则表达式/正则表达式 去优先级，选择.html">
+            
+                    
+                    python 正则表达式 去优先级，选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../正则表达式/正则表达式 模式匹配与正则表达式一.html">
+            
+                <a href="../正则表达式/正则表达式 模式匹配与正则表达式一.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../正则表达式/正则表达式 模式匹配与正则表达式二.html">
+            
+                <a href="../正则表达式/正则表达式 模式匹配与正则表达式二.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 二
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    python 多进程-多线程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="5.1.1" data-path="Python 多进程multiprocessing模块.html">
+            
+                <a href="Python 多进程multiprocessing模块.html">
+            
+                    
+                    Python 多进程multiprocessing模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="Python 异步并发concurrent.futures模块.html">
+            
+                <a href="Python 异步并发concurrent.futures模块.html">
+            
+                    
+                    Python 异步并发concurrent.futures模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../面向对象/">
+            
+                <a href="../面向对象/">
+            
+                    
+                    python 面向对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../面向对象/类.html">
+            
+                <a href="../面向对象/类.html">
+            
+                    
+                    python 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../面向对象/面向对象编程.html">
+            
+                <a href="../面向对象/面向对象编程.html">
+            
+                    
+                    python 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../面向对象/绑定方法与非绑定方法.html">
+            
+                <a href="../面向对象/绑定方法与非绑定方法.html">
+            
+                    
+                    python 绑定方法与非绑定方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../面向对象/实例方法、类方法和静态方法.html">
+            
+                <a href="../面向对象/实例方法、类方法和静态方法.html">
+            
+                    
+                    python 实例方法、类方法和静态方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../面向对象/面向对象编程--组合.html">
+            
+                <a href="../面向对象/面向对象编程--组合.html">
+            
+                    
+                    python 面向对象编程--组合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                <a href="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                    
+                    python 子类继承父类构造函数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.7" data-path="../面向对象/面向对象描述符.html">
+            
+                <a href="../面向对象/面向对象描述符.html">
+            
+                    
+                    python 面向对象描述符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.8" data-path="../面向对象/反射机制.html">
+            
+                <a href="../面向对象/反射机制.html">
+            
+                    
+                    python 反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.9" data-path="../面向对象/slots.html">
+            
+                <a href="../面向对象/slots.html">
+            
+                    
+                    python slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.10" data-path="../面向对象/属性property.html">
+            
+                <a href="../面向对象/属性property.html">
+            
+                    
+                    python 属性property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.11" data-path="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                <a href="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                    
+                    python attrs 和 cattrs 实现面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.12" data-path="../面向对象/Dataclasses.html">
+            
+                <a href="../面向对象/Dataclasses.html">
+            
+                    
+                    python Dataclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    python MongoDB数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../Chapter5/MongoDB基础.html">
+            
+                <a href="../Chapter5/MongoDB基础.html">
+            
+                    
+                    python MongoDB基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../Chapter5/Python操作MongoDB.html">
+            
+                <a href="../Chapter5/Python操作MongoDB.html">
+            
+                    
+                    python Python操作MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Python 多进程multiprocessing模块</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#python-&#x591A;&#x8FDB;&#x7A0B;multiprocessing&#x6A21;&#x5757;">Python &#x591A;&#x8FDB;&#x7A0B;multiprocessing&#x6A21;&#x5757;</a></li><ul><li><a href="#&#x4E00;&#x3001;process&#x7C7B;&#x7684;&#x4ECB;&#x7ECD;">&#x4E00;&#x3001;Process&#x7C7B;&#x7684;&#x4ECB;&#x7ECD;</a></li><ul><li><a href="#process&#x7C7B;&#x7684;&#x4F7F;&#x7528;">Process&#x7C7B;&#x7684;&#x4F7F;&#x7528;</a></li></ul><li><a href="#&#x4E8C;&#x3001;pool&#xFF0C;&#x8FDB;&#x7A0B;&#x6C60;">&#x4E8C;&#x3001;Pool&#xFF0C;&#x8FDB;&#x7A0B;&#x6C60;</a></li><ul><li><a href="#1&#x3001;apply">1&#x3001;apply</a></li><li><a href="#2&#x3001;applyasync">2&#x3001;apply_async</a></li><li><a href="#3&#x3001;map">3&#x3001;map</a></li><li><a href="#4&#x3001;mapasync">4&#x3001;map_async</a></li></ul><li><a href="#&#x4E09;&#x3001;queue-&#x7528;&#x4E8E;&#x8FDB;&#x7A0B;&#x901A;&#x4FE1;&#xFF0C;&#x8D44;&#x6E90;&#x5171;&#x4EAB;">&#x4E09;&#x3001;Queue &#x7528;&#x4E8E;&#x8FDB;&#x7A0B;&#x901A;&#x4FE1;&#xFF0C;&#x8D44;&#x6E90;&#x5171;&#x4EAB;</a></li><li><a href="#&#x56DB;&#x3001;pipe-&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;">&#x56DB;&#x3001;Pipe &#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;</a></li><li><a href="#&#x4E94;&#x3001;lock&#x3001;rlock&#x8FDB;&#x7A0B;&#x540C;&#x6B65;">&#x4E94;&#x3001;Lock&#x3001;Rlock&#x8FDB;&#x7A0B;&#x540C;&#x6B65;</a></li></ul></ul></div><a href="#python-&#x591A;&#x8FDB;&#x7A0B;multiprocessing&#x6A21;&#x5757;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="python-&#x591A;&#x8FDB;&#x7A0B;multiprocessing&#x6A21;&#x5757;"><a name="python-&#x591A;&#x8FDB;&#x7A0B;multiprocessing&#x6A21;&#x5757;" class="anchor-navigation-ex-anchor" href="#python-&#x591A;&#x8FDB;&#x7A0B;multiprocessing&#x6A21;&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>Python &#x591A;&#x8FDB;&#x7A0B;multiprocessing&#x6A21;&#x5757;</h1>
+<p><code>multiprocessing&#x6A21;&#x5757;&#x4ECB;&#x7ECD;</code>
+python&#x4E2D;&#x7684;&#x591A;&#x7EBF;&#x7A0B;&#x65E0;&#x6CD5;&#x5229;&#x7528;&#x591A;&#x6838;&#x4F18;&#x52BF;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5145;&#x5206;&#x5730;&#x4F7F;&#x7528;&#x591A;&#x6838;CPU&#x7684;&#x8D44;&#x6E90;&#xFF08;os.cpu_count()&#x67E5;&#x770B;&#xFF09;&#xFF0C;&#x5728;python&#x4E2D;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#x3002;Python&#x63D0;&#x4F9B;&#x4E86;<code>multiprocessing</code>&#x3002;
+    multiprocessing&#x6A21;&#x5757;&#x7528;&#x6765;&#x5F00;&#x542F;                                                                                           &#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;&#x5E76;&#x5728;&#x5B50;&#x8FDB;&#x7A0B;&#x4E2D;&#x6267;&#x884C;&#x6211;&#x4EEC;&#x5B9A;&#x5236;&#x7684;&#x4EFB;&#x52A1;&#xFF08;&#x6BD4;&#x5982;&#x51FD;&#x6570;&#xFF09;&#xFF0C;&#x8BE5;&#x6A21;&#x5757;&#x4E0E;&#x591A;&#x7EBF;&#x7A0B;&#x6A21;&#x5757;threading&#x7684;&#x7F16;&#x7A0B;&#x63A5;&#x53E3;&#x7C7B;&#x4F3C;&#x3002;</p>
+<p>&#x3000; multiprocessing&#x6A21;&#x5757;&#x7684;&#x529F;&#x80FD;&#x4F17;&#x591A;&#xFF1A;&#x652F;&#x6301;&#x5B50;&#x8FDB;&#x7A0B;&#x3001;&#x901A;&#x4FE1;&#x548C;&#x5171;&#x4EAB;&#x6570;&#x636E;&#x3001;&#x6267;&#x884C;&#x4E0D;&#x540C;&#x5F62;&#x5F0F;&#x7684;&#x540C;&#x6B65;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;Process&#x3001;Queue&#x3001;Pipe&#x3001;Lock&#x7B49;&#x7EC4;&#x4EF6;&#x3002;</p>
+<blockquote>
+<p>   &#x4E0E;&#x7EBF;&#x7A0B;&#x4E0D;&#x540C;&#xFF0C;&#x8FDB;&#x7A0B;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5171;&#x4EAB;&#x72B6;&#x6001;&#xFF0C;&#x8FDB;&#x7A0B;&#x4FEE;&#x6539;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6539;&#x52A8;&#x4EC5;&#x9650;&#x4E8E;&#x8BE5;&#x8FDB;&#x7A0B;&#x5185;&#x3002;</p>
+<h2 id="&#x4E00;&#x3001;process&#x7C7B;&#x7684;&#x4ECB;&#x7ECD;"><a name="&#x4E00;&#x3001;process&#x7C7B;&#x7684;&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;process&#x7C7B;&#x7684;&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;Process&#x7C7B;&#x7684;&#x4ECB;&#x7ECD;</h2>
+<p> &#x521B;&#x5EFA;&#x8FDB;&#x7A0B;&#x7684;&#x7C7B;&#xFF1A;</p>
+</blockquote>
+<pre class="language-"><code class="lang-python">Process<span class="token punctuation">(</span>group<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+        target<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+        name<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+        args<span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+        kwargs<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">)</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x4ECB;&#x7ECD;&#xFF1A;</strong></p>
+<ul>
+<li><code>group</code>&#x53C2;&#x6570;&#x672A;&#x4F7F;&#x7528;&#xFF0C;&#x503C;&#x59CB;&#x7EC8;&#x4E3A;None</li>
+<li><code>targe</code>t&#x8868;&#x793A;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#xFF0C;&#x5373;&#x5B50;&#x8FDB;&#x7A0B;&#x8981;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;</li>
+<li><code>args</code>&#x8868;&#x793A;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x5143;&#x7EC4;&#xFF0C;args=(1,2,&apos;egon&apos;,)</li>
+<li><code>kwargs</code>&#x8868;&#x793A;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x5B57;&#x5178;,kwargs={&apos;name&apos;:&apos;egon&apos;,&apos;age&apos;:18}</li>
+<li>name&#x4E3A;&#x5B50;&#x8FDB;&#x7A0B;&#x7684;&#x540D;&#x79F0;
+<strong>&#x5F3A;&#x8C03;&#xFF1A;</strong></li>
+<li>&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x6307;&#x5B9A;&#x53C2;&#x6570;</li>
+<li><p>args&#x6307;&#x5B9A;&#x7684;&#x4E3A;&#x4F20;&#x7ED9;target&#x51FD;&#x6570;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#x5F62;&#x5F0F;&#xFF0C;&#x5FC5;&#x987B;&#x6709;&#x9017;&#x53F7;</p>
+<p><strong>&#x65B9;&#x6CD5;&#x4ECB;&#x7ECD;&#xFF1A;</strong></p>
+</li>
+<li><code>star()</code> &#x65B9;&#x6CD5;&#x542F;&#x52A8;&#x8FDB;&#x7A0B;&#xFF0C;</li>
+<li><code>join()</code>&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x8FDB;&#x7A0B;&#x95F4;&#x7684;&#x540C;&#x6B65;&#xFF0C;&#x7B49;&#x5F85;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x9000;&#x51FA;&#x3002;</li>
+<li><code>close()</code> &#x7528;&#x6765;&#x963B;&#x6B62;&#x591A;&#x4F59;&#x7684;&#x8FDB;&#x7A0B;&#x6D8C;&#x5165;&#x8FDB;&#x7A0B;&#x6C60; Pool &#x9020;&#x6210;&#x8FDB;&#x7A0B;&#x963B;&#x585E;&#x3002;</li>
+<li><code>p.is_alive()</code> &#x5982;&#x679C;p&#x5728;&#x8FD0;&#x884C;&#xFF0C;&#x8FD4;&#x56DE;True</li>
+<li><code>p.join([timeout])</code> &#x7B49;&#x5F85;&#x8FDB;&#x7A0B;p&#x8FD0;&#x884C;&#x7ED3;&#x675F;&#x3002;timeout&#x662F;&#x53EF;&#x9009;&#x7684;&#x8D85;&#x65F6;&#x671F;&#x9650;&#x3002;&#x5982;&#x679C;timeout&#x4E3A;None&#xFF0C;&#x5219;&#x8BA4;&#x4E3A;&#x8981;&#x65E0;&#x9650;&#x671F;&#x7B49;&#x5F85;</li>
+<li><code>p.run()</code> &#x8FDB;&#x7A0B;&#x542F;&#x52A8;&#x65F6;&#x8FD0;&#x884C;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x4F20;&#x9012;&#x7ED9;Process&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x7684;target&#xFF1B;&#x5B9A;&#x4E49;&#x8FDB;&#x7A0B;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x662F;&#x7EE7;&#x627F;Process&#x5E76;&#x91CD;&#x5199;run()&#x65B9;&#x6CD5;</li>
+<li><code>p.start()</code> &#x8FD0;&#x884C;&#x8FDB;&#x7A0B;p&#xFF0C;&#x5E76;&#x8C03;&#x7528;p.run()</li>
+<li><code>p.terminate()</code> &#x5F3A;&#x5236;&#x6740;&#x6B7B;&#x8FDB;&#x7A0B;&#x3002;&#x5982;&#x679C;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x8FDB;&#x7A0B;p&#x5C06;&#x88AB;&#x7ACB;&#x5373;&#x7EC8;&#x6B62;&#xFF0C;&#x540C;&#x65F6;&#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x6E05;&#x7406;&#x52A8;&#x4F5C;&#x3002;&#x5982;&#x679C;&#x8FDB;&#x7A0B;p&#x521B;&#x5EFA;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;&#x8FD9;&#x4E9B;&#x8FDB;&#x7A0B;&#x5C06;&#x4F1A;&#x53D8;&#x6210; &#x50F5;&#x5C38;&#x8FDB;&#x7A0B;,&#x6B64;&#x65B9;&#x6CD5;&#x8981;&#x5C0F;&#x5FC3;&#x4F7F;&#x7528;</li>
+<li><code>p.authkey</code> &#x8FDB;&#x7A0B;&#x7684;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x952E;</li>
+<li><code>p.daemon</code> &#x5B88;&#x62A4;&#x8FDB;&#x7A0B;&#x6807;&#x5FD7;&#xFF0C;&#x5E03;&#x5C14;&#x53D8;&#x91CF;&#x3002;&#x6307;&#x8FDB;&#x7A0B;&#x662F;&#x5426;&#x4E3A;&#x540E;&#x53F0;&#x8FDB;&#x7A0B;&#x3002;&#x5982;&#x679C;&#x8BE5;&#x8FDB;&#x7A0B;&#x4E3A;&#x540E;&#x53F0;&#x8FDB;&#x7A0B;(daemon = True)&#xFF0C;&#x5F53;&#x521B;&#x5EFA;&#x5B83;&#x7684;Python&#x8FDB;&#x7A0B;&#x7EC8;&#x6B62;&#x65F6;&#xFF0C;&#x540E;&#x53F0;&#x8FDB;&#x7A0B;&#x5C06;&#x81EA;&#x52A8;&#x7EC8;&#x6B62;; &#x5176;&#x4E2D;p.daemon&#x7684;&#x503C;&#x8981;&#x5728;&#x4F7F;&#x7528;p.start()&#x542F;&#x52A8;&#x8FDB;&#x7A0B;&#x4E4B;&#x524D;&#x8BBE;&#x7F6E;,&#x5E76;&#x4E14;&#x7981;&#x6B62;&#x540E;&#x53F0;&#x8FDB;&#x7A0B;&#x521B;&#x5EFA;&#x5B50;&#x8FDB;&#x7A0B;<ul>
+<li><code>p.daemon = True</code> &#x4E3B;&#x8FDB;&#x7A0B;&#x7EC8;&#x6B62;,&#x5B50;&#x8FDB;&#x7A0B;&#x7EC8;&#x6B62;,</li>
+<li><code>p.daemon = False</code> &#x4E3B;&#x8FDB;&#x7A0B;&#x7EC8;&#x6B62;,&#x5B50;&#x8FDB;&#x7A0B;&#x4E0D;&#x4F1A;&#x7EC8;&#x6B62;    </li>
+</ul>
+</li>
+<li><code>p.exitcode</code>&#x8FDB;&#x7A0B;&#x7684;&#x6574;&#x6570;&#x9000;&#x51FA;&#x7801;&#x3002;&#x5982;&#x679C;&#x8FDB;&#x7A0B;&#x4ECD;&#x5728;&#x8FD0;&#x884C;&#xFF0C;&#x503C;&#x4E3A;None&#x3002;&#x5982;&#x679C;&#x503C;&#x4E3A;-N&#xFF0C;&#x8868;&#x793A;&#x8FDB;&#x7A0B;&#x7531;&#x4FE1;&#x53F7;N&#x7EC8;&#x6B62;</li>
+<li><code>p.name</code>&#x8FDB;&#x7A0B;&#x540D;</li>
+<li><code>p.pid</code> &#x8FDB;&#x7A0B;&#x53F7;</li>
+</ul>
+<p><font color="#D2691E" size="4">&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;<code>start()</code>&#xFF0C;<code>join()</code>&#xFF0C;<code>is_alive()</code>&#xFF0C; <code>terminate()</code>&#x548C;<code>exitcode</code>&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x7531;&#x521B;&#x5EFA;&#x8FDB;&#x7A0B;&#x5BF9;&#x8C61;&#x7684;&#x8FC7;&#x7A0B;&#x8C03;&#x7528;&#x3002;</font></p>
+<h3 id="process&#x7C7B;&#x7684;&#x4F7F;&#x7528;"><a name="process&#x7C7B;&#x7684;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#process&#x7C7B;&#x7684;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>Process&#x7C7B;&#x7684;&#x4F7F;&#x7528;</h3>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5728;windows&#x4E2D;Process()&#x5FC5;&#x987B;&#x653E;&#x5230;# if <strong>name</strong> == &apos;<strong>main</strong>&apos;:&#x4E0B;</p>
+</blockquote>
+<pre class="language-"><code class="lang-python"><span class="token keyword">class</span> <span class="token class-name">multiprocessing</span><span class="token punctuation">.</span>pool<span class="token punctuation">.</span>Pool<span class="token punctuation">(</span><span class="token punctuation">[</span>processes
+                                <span class="token punctuation">[</span><span class="token punctuation">,</span> initializer
+                                <span class="token punctuation">[</span><span class="token punctuation">,</span> initargs
+                                <span class="token punctuation">[</span><span class="token punctuation">,</span> maxtasksperchild
+                                <span class="token punctuation">[</span><span class="token punctuation">,</span> context<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                        <span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li><code>processes</code>&#xFF1A; &#x662F;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x6570;&#x3002;&#x5982;&#x679C;&#x8FDB;&#x7A0B;&#x662F;None&#xFF0C;&#x90A3;&#x4E48;&#x4F7F;&#x7528;&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x5B57;os.cpu_count()&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x6839;&#x636E;&#x672C;&#x5730;&#x7684;cpu&#x4E2A;&#x6570;&#x51B3;&#x5B9A;&#xFF0C;processes&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x672C;&#x5730;&#x7684;cpu&#x4E2A;&#x6570;&#xFF1B;</li>
+<li><code>initializer</code>&#xFF1A; &#x5982;&#x679C;initializer&#x662F;None&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x5728;&#x5F00;&#x59CB;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8C03;&#x7528;initializer(*initargs)&#x3002;</li>
+<li><code>maxtasksperchild</code>&#xFF1A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x9000;&#x51FA;&#x4E4B;&#x524D;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x6570;&#xFF0C;&#x5B8C;&#x6210;&#x540E;&#x7528;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x6765;&#x66FF;&#x4EE3;&#x539F;&#x8FDB;&#x7A0B;&#xFF0C;&#x6765;&#x8BA9;&#x95F2;&#x7F6E;&#x7684;&#x8D44;&#x6E90;&#x88AB;&#x91CA;&#x653E;&#x3002;</li>
+<li><code>maxtasksperchild</code>&#x9ED8;&#x8BA4;&#x662F;None&#xFF0C;&#x610F;&#x5473;&#x7740;&#x53EA;&#x8981;Pool&#x5B58;&#x5728;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x5C31;&#x4F1A;&#x4E00;&#x76F4;&#x5B58;&#x6D3B;&#x3002;</li>
+<li><code>context</code>: &#x7528;&#x5728;&#x5236;&#x5B9A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x542F;&#x52A8;&#x65F6;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x4E00;&#x822C;&#x4F7F;&#x7528; multiprocessing.Pool() &#x6216;&#x8005;&#x4E00;&#x4E2A;context&#x5BF9;&#x8C61;&#x7684;Pool()&#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6C60;&#xFF0C;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x90FD;&#x9002;&#x5F53;&#x7684;&#x8BBE;&#x7F6E;&#x4E86;context&#x3002;</li>
+</ul>
+<p><strong>&#x521B;&#x5EFA;&#x5E76;&#x5F00;&#x542F;&#x5B50;&#x8FDB;&#x7A0B;&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;</strong>
+&#x5F00;&#x8FDB;&#x7A0B;&#x7684;&#x65B9;&#x6CD5;&#x4E00;:</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> multiprocessing
+<span class="token keyword">import</span> os
+
+<span class="token keyword">def</span> <span class="token function">run_proc</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Child process {0} {1} Running &apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> os<span class="token punctuation">.</span>getpid<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&apos;__main__&apos;</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Parent process {0} is Running&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>getpid<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        p <span class="token operator">=</span> multiprocessing<span class="token punctuation">.</span>Process<span class="token punctuation">(</span>target<span class="token operator">=</span>run_proc<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;process start&apos;</span><span class="token punctuation">)</span>
+        p<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Process close&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">Parent process <span class="token number">132412</span> <span class="token keyword">is</span> Running
+process start
+process start
+process start
+process start
+process start
+Child process <span class="token number">3</span> <span class="token number">18612</span> Running 
+Child process <span class="token number">1</span> <span class="token number">8840</span> Running 
+Child process <span class="token number">2</span> <span class="token number">142376</span> Running 
+Child process <span class="token number">0</span> <span class="token number">39368</span> Running 
+Child process <span class="token number">4</span> <span class="token number">142564</span> Running 
+Process close
+</code></pre>
+<p>&#x5F00;&#x8FDB;&#x7A0B;&#x7684;&#x65B9;&#x6CD5;&#x4E8C;:</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> time
+<span class="token keyword">import</span> random
+<span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Process
+
+
+<span class="token keyword">class</span> <span class="token class-name">Piao</span><span class="token punctuation">(</span>Process<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>name<span class="token operator">=</span>name
+    <span class="token keyword">def</span> <span class="token function">run</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;%s piaoing&apos;</span> <span class="token operator">%</span>self<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+
+        time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>random<span class="token punctuation">.</span>randrange<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;%s piao end&apos;</span> <span class="token operator">%</span>self<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+
+p1<span class="token operator">=</span>Piao<span class="token punctuation">(</span><span class="token string">&apos;egon&apos;</span><span class="token punctuation">)</span>
+p2<span class="token operator">=</span>Piao<span class="token punctuation">(</span><span class="token string">&apos;alex&apos;</span><span class="token punctuation">)</span>
+p3<span class="token operator">=</span>Piao<span class="token punctuation">(</span><span class="token string">&apos;wupeiqi&apos;</span><span class="token punctuation">)</span>
+p4<span class="token operator">=</span>Piao<span class="token punctuation">(</span><span class="token string">&apos;yuanhao&apos;</span><span class="token punctuation">)</span>
+
+p1<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">#start&#x4F1A;&#x81EA;&#x52A8;&#x8C03;&#x7528;run</span>
+p2<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+p3<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+p4<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;&#x4E3B;&#x7EBF;&#x7A0B;&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Process&#x5BF9;&#x8C61;&#x7684;join&#x65B9;&#x6CD5;</strong></p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Process
+<span class="token keyword">import</span> time
+<span class="token keyword">import</span> random
+<span class="token keyword">def</span> <span class="token function">piao</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;%s is piaoing&apos;</span> <span class="token operator">%</span>name<span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;%s is piao end&apos;</span> <span class="token operator">%</span>name<span class="token punctuation">)</span>
+
+p1<span class="token operator">=</span>Process<span class="token punctuation">(</span>target<span class="token operator">=</span>piao<span class="token punctuation">,</span>args<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">&apos;egon&apos;</span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+p2<span class="token operator">=</span>Process<span class="token punctuation">(</span>target<span class="token operator">=</span>piao<span class="token punctuation">,</span>args<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">&apos;alex&apos;</span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+p3<span class="token operator">=</span>Process<span class="token punctuation">(</span>target<span class="token operator">=</span>piao<span class="token punctuation">,</span>args<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">&apos;yuanhao&apos;</span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+p4<span class="token operator">=</span>Process<span class="token punctuation">(</span>target<span class="token operator">=</span>piao<span class="token punctuation">,</span>args<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">&apos;wupeiqi&apos;</span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+p1<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+p2<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+p3<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+p4<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">#&#x6709;&#x7684;&#x540C;&#x5B66;&#x4F1A;&#x6709;&#x7591;&#x95EE;:&#x65E2;&#x7136;join&#x662F;&#x7B49;&#x5F85;&#x8FDB;&#x7A0B;&#x7ED3;&#x675F;,&#x90A3;&#x4E48;&#x6211;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x5199;,&#x8FDB;&#x7A0B;&#x4E0D;&#x5C31;&#x53C8;&#x53D8;&#x6210;&#x4E32;&#x884C;&#x7684;&#x4E86;&#x5417;?</span>
+<span class="token comment">#&#x5F53;&#x7136;&#x4E0D;&#x662F;&#x4E86;,&#x5FC5;&#x987B;&#x660E;&#x786E;&#xFF1A;p.join()&#x662F;&#x8BA9;&#x8C01;&#x7B49;&#xFF1F;</span>
+<span class="token comment">#&#x5F88;&#x660E;&#x663E;p.join()&#x662F;&#x8BA9;&#x4E3B;&#x7EBF;&#x7A0B;&#x7B49;&#x5F85;p&#x7684;&#x7ED3;&#x675F;&#xFF0C;&#x5361;&#x4F4F;&#x7684;&#x662F;&#x4E3B;&#x7EBF;&#x7A0B;&#x800C;&#x7EDD;&#x975E;&#x8FDB;&#x7A0B;p&#xFF0C;</span>
+
+<span class="token comment">#&#x8BE6;&#x7EC6;&#x89E3;&#x6790;&#x5982;&#x4E0B;&#xFF1A;</span>
+<span class="token comment">#&#x8FDB;&#x7A0B;&#x53EA;&#x8981;start&#x5C31;&#x4F1A;&#x5728;&#x5F00;&#x59CB;&#x8FD0;&#x884C;&#x4E86;,&#x6240;&#x4EE5;p1-p4.start()&#x65F6;,&#x7CFB;&#x7EDF;&#x4E2D;&#x5DF2;&#x7ECF;&#x6709;&#x56DB;&#x4E2A;&#x5E76;&#x53D1;&#x7684;&#x8FDB;&#x7A0B;&#x4E86;</span>
+<span class="token comment">#&#x800C;&#x6211;&#x4EEC;p1.join()&#x662F;&#x5728;&#x7B49;p1&#x7ED3;&#x675F;,&#x6CA1;&#x9519;p1&#x53EA;&#x8981;&#x4E0D;&#x7ED3;&#x675F;&#x4E3B;&#x7EBF;&#x7A0B;&#x5C31;&#x4F1A;&#x4E00;&#x76F4;&#x5361;&#x5728;&#x539F;&#x5730;,&#x8FD9;&#x4E5F;&#x662F;&#x95EE;&#x9898;&#x7684;&#x5173;&#x952E;</span>
+<span class="token comment">#join&#x662F;&#x8BA9;&#x4E3B;&#x7EBF;&#x7A0B;&#x7B49;,&#x800C;p1-p4&#x4ECD;&#x7136;&#x662F;&#x5E76;&#x53D1;&#x6267;&#x884C;&#x7684;,p1.join&#x7684;&#x65F6;&#x5019;,&#x5176;&#x4F59;p2,p3,p4&#x4ECD;&#x7136;&#x5728;&#x8FD0;&#x884C;,&#x7B49;#p1.join&#x7ED3;&#x675F;,&#x53EF;&#x80FD;p2,p3,p4&#x65E9;&#x5DF2;&#x7ECF;&#x7ED3;&#x675F;&#x4E86;,&#x8FD9;&#x6837;p2.join,p3.join.p4.join&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x68C0;&#x6D4B;&#xFF0C;&#x65E0;&#x9700;&#x7B49;&#x5F85;</span>
+<span class="token comment"># &#x6240;&#x4EE5;4&#x4E2A;join&#x82B1;&#x8D39;&#x7684;&#x603B;&#x65F6;&#x95F4;&#x4ECD;&#x7136;&#x662F;&#x8017;&#x8D39;&#x65F6;&#x95F4;&#x6700;&#x957F;&#x7684;&#x90A3;&#x4E2A;&#x8FDB;&#x7A0B;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x95F4;</span>
+p1<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+p2<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+p3<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+p4<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;&#x4E3B;&#x7EBF;&#x7A0B;&apos;</span><span class="token punctuation">)</span>
+<span class="token comment">#&#x4E0A;&#x8FF0;&#x542F;&#x52A8;&#x8FDB;&#x7A0B;&#x4E0E;join&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x4E3A;</span>
+<span class="token comment"># p_l=[p1,p2,p3,p4]</span>
+<span class="token comment"># </span>
+<span class="token comment"># for p in p_l:</span>
+<span class="token comment">#     p.start()</span>
+<span class="token comment"># </span>
+<span class="token comment"># for p in p_l:</span>
+<span class="token comment">#     p.join()</span>
+</code></pre>
+<h2 id="&#x4E8C;&#x3001;pool&#xFF0C;&#x8FDB;&#x7A0B;&#x6C60;"><a name="&#x4E8C;&#x3001;pool&#xFF0C;&#x8FDB;&#x7A0B;&#x6C60;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;pool&#xFF0C;&#x8FDB;&#x7A0B;&#x6C60;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;Pool&#xFF0C;&#x8FDB;&#x7A0B;&#x6C60;</h2>
+<p>Pool &#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x6307;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x8FDB;&#x7A0B;&#x4F9B;&#x7528;&#x6237;&#x4F7F;&#x7528;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; CPU &#x6838;&#x6570;&#x3002;&#x5F53;&#x6709;&#x65B0;&#x7684;&#x8BF7;&#x6C42;&#x63D0;&#x4EA4;&#x5230; Poll &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x6C60;&#x5B50;&#x6CA1;&#x6709;&#x6EE1;&#xFF0C;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x6765;&#x6267;&#x884C;&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x4F1A;&#x8BA9;&#x8BE5;&#x8BF7;&#x6C42;&#x7B49;&#x5F85;&#x3002;</p>
+<ul>
+<li><code>apply</code>(func[, args[, kwds]])</li>
+<li><code>apply_async</code>(func[, args[, kwds[, callback]]])</li>
+<li><code>map</code>(func, iterable[, chunksize])</li>
+<li><code>map_async</code>(func, iterable[, chunksize[, callback]])</li>
+<li><code>imap</code>(func, iterable[, chunksize])</li>
+<li><code>imap_unordered</code>(func, iterable[, chunksize])</li>
+</ul>
+<ul>
+<li><code>Pool</code>&#x5BF9;&#x8C61;&#x8C03;&#x7528;<code>join</code> &#x65B9;&#x6CD5;&#x4F1A;&#x7B49;&#x5F85;&#x6240;&#x6709;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#x6267;&#x884C;&#x5B8C;&#x6BD5;</li>
+<li>&#x8C03;&#x7528;<code>join</code>&#x65B9;&#x6CD5;&#x4E4B;&#x524D;&#xFF0C;&#x5FC5;&#x987B;&#x8C03;&#x7528; <code>close</code></li>
+<li>&#x8C03;&#x7528; <code>close</code>&#x4E4B;&#x540E;&#x5C31;&#x4E0D;&#x80FD;&#x7EE7;&#x7EED;&#x6DFB;&#x52A0;&#x65B0;&#x7684; Process </li>
+</ul>
+<p>&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</p>
+<h3 id="1&#x3001;apply"><a name="1&#x3001;apply" class="anchor-navigation-ex-anchor" href="#1&#x3001;apply"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;apply</h3>
+<pre class="language-"><code class="lang-python"><span class="token builtin">apply</span>&#xFF08;func <span class="token punctuation">[</span>&#xFF0C;args <span class="token punctuation">[</span>&#xFF0C;kwds <span class="token punctuation">]</span> <span class="token punctuation">]</span> &#xFF09;
+&#x4F7F;&#x7528;&#x53C2;&#x6570;args&#x548C;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;kwds&#x8C03;&#x7528;func&#x3002;&#x5B83;&#x4F1A;&#x963B;&#x585E;&#xFF0C;&#x76F4;&#x5230;&#x7ED3;&#x679C;&#x51C6;&#x5907;&#x5C31;&#x7EEA;&#x3002;&#x9274;&#x4E8E;&#x6B64;&#x5757;&#xFF0C;&#x66F4;&#x9002;&#x5408;&#x5E76;&#x884C;&#x6267;&#x884C;&#x5DE5;&#x4F5C;&#x3002;&#x6B64;&#x5916;&#xFF0C;func &#x4EC5;&#x5728;&#x6C60;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x7A0B;&#x5E8F;&#x4E2D;&#x6267;&#x884C;&#x3002;
+</code></pre>
+<pre class="language-"><code class="lang-python"><span class="token builtin">apply</span><span class="token punctuation">(</span>func<span class="token punctuation">[</span><span class="token punctuation">,</span> args<span class="token punctuation">[</span><span class="token punctuation">,</span> kwds<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x5141;&#x8BB8;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x8FDB;&#x5165;&#x6C60;&#x5B50;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x7ED3;&#x675F;&#x4E4B;&#x540E;&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x624D;&#x53EF;&#x4EE5;&#x8FDB;&#x5165;&#x6C60;&#x5B50;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Pool
+<span class="token keyword">import</span> time
+<span class="token keyword">def</span> <span class="token function">test</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       <span class="token keyword">print</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span>
+       <span class="token comment"># time.sleep(3)</span>
+<span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    pool <span class="token operator">=</span> Pool<span class="token punctuation">(</span>processes<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i  <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&apos;&apos;&apos;
+        (&apos;\n&apos;
+         &apos;    &#xFF08;1&#xFF09;&#x904D;&#x5386;500&#x4E2A;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#xFF0C;&#x5F80;&#x8FDB;&#x7A0B;&#x6C60;&#x653E;&#x4E00;&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;\n&apos;
+         &apos;    &#xFF08;2&#xFF09;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;&#x7B49;&#x5B50;&#x8FDB;&#x7A0B;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#xFF0C;&#x518D;&#x5F80;&#x8FDB;&#x7A0B;&#x6C60;&#x653E;&#x4E00;&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;&#x518D;&#x6267;&#x884C;&#x3002;&#xFF08;&#x540C;&#x65F6;&#x53EA;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#xFF09;\n&apos;
+         &apos;     for&#x5FAA;&#x73AF;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#xFF0C;&#x518D;&#x6267;&#x884C;print&#x51FD;&#x6570;&#x3002;\n&apos;
+         &apos;    &apos;)
+        &apos;&apos;&apos;</span>
+        pool<span class="token punctuation">.</span><span class="token builtin">apply</span><span class="token punctuation">(</span>test<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment">#&#x7EF4;&#x6301;&#x6267;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&#x603B;&#x6570;&#x4E3A;10&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x6267;&#x884C;&#x5B8C;&#x540E;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x65B0;&#x8FDB;&#x7A0B;.</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;test&apos;</span><span class="token punctuation">)</span>
+    pool<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    pool<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>   for&#x5FAA;&#x73AF;&#x5185;&#x6267;&#x884C;&#x7684;&#x6B65;&#x9AA4;&#x987A;&#x5E8F;&#xFF0C;&#x5F80;&#x8FDB;&#x7A0B;&#x6C60;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;&#x6267;&#x884C;&#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;&#x7B49;&#x5F85;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x518D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#x2026;&#x2026;&#x7B49;500&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#x90FD;&#x6267;&#x884C;&#x5B8C;&#x4E86;&#xFF0C;&#x518D;&#x6267;&#x884C;print&#x3002;&#xFF08;&#x4ECE;&#x7ED3;&#x679C;&#x6765;&#x770B;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x591A;&#x8FDB;&#x7A0B;&#x5E76;&#x53D1;&#xFF09;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> multiprocessing
+<span class="token keyword">import</span> os
+<span class="token keyword">import</span> time
+
+<span class="token keyword">def</span> <span class="token function">run_task</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># print(&apos;Task {0} pid {1} is running, parent id is {2}&apos;.format(name, os.getpid(), os.getppid()))</span>
+    <span class="token comment"># time.sleep(1)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Task {0} end.&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&apos;__main__&apos;</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;current process {0}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>getpid<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    p <span class="token operator">=</span> multiprocessing<span class="token punctuation">.</span>Pool<span class="token punctuation">(</span>processes<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">100000</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        p<span class="token punctuation">.</span><span class="token builtin">apply</span><span class="token punctuation">(</span>run_task<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Waiting for all subprocesses done...&apos;</span><span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;All processes done!&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="2&#x3001;applyasync"><a name="2&#x3001;applyasync" class="anchor-navigation-ex-anchor" href="#2&#x3001;applyasync"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;apply_async</h3>
+<pre class="language-"><code class="lang-python">apply_async<span class="token punctuation">(</span>func <span class="token punctuation">[</span>&#xFF0C;args <span class="token punctuation">[</span>&#xFF0C;kwds <span class="token punctuation">[</span>&#xFF0C;callback <span class="token punctuation">[</span>&#xFF0C;error_callback <span class="token punctuation">]</span> <span class="token punctuation">]</span> <span class="token punctuation">]</span> <span class="token punctuation">]</span> <span class="token punctuation">)</span>
+</code></pre>
+<p><code>apply_async &#x65B9;&#x6CD5;</code>&#x7528;&#x6765;&#x540C;&#x6B65;&#x6267;&#x884C;&#x8FDB;&#x7A0B;&#xFF0C;&#x5141;&#x8BB8;&#x591A;&#x4E2A;&#x8FDB;&#x7A0B;&#x540C;&#x65F6;&#x8FDB;&#x5165;&#x6C60;&#x5B50;&#x3002;</p>
+<p> &#x5F02;&#x6B65;&#x8FDB;&#x7A0B;&#x6C60;&#xFF08;&#x975E;&#x963B;&#x585E;&#xFF09;,&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x53D8;&#x4F53;&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;&#x56DE;&#x8C03;&#xFF0C;&#x5219;&#x5B83;&#x5E94;&#x8BE5;&#x662F;&#x53EF;&#x8C03;&#x7528;&#x7684;&#xFF0C;&#x5B83;&#x63A5;&#x53D7;&#x5355;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x5F53;&#x7ED3;&#x679C;&#x53D8;&#x4E3A;&#x5C31;&#x7EEA;&#x65F6;&#xFF0C;&#x5C06;&#x5BF9;&#x5176;&#x5E94;&#x7528;&#x56DE;&#x8C03;&#xFF0C;&#x5373;&#x9664;&#x975E;&#x8C03;&#x7528;&#x5931;&#x8D25;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x5C06;&#x5E94;&#x7528;error_callback&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;error_callback&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5E94;&#x8BE5;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x8C03;&#x7528;&#x7684;&#xFF0C;&#x5B83;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x5982;&#x679C;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x5931;&#x8D25;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x5F02;&#x5E38;&#x5B9E;&#x4F8B;&#x8C03;&#x7528;error_callback&#x3002;&#x56DE;&#x8C03;&#x5E94;&#x7ACB;&#x5373;&#x5B8C;&#x6210;&#xFF0C;&#x5426;&#x5219;&#x5904;&#x7406;&#x7ED3;&#x679C;&#x7684;&#x7EBF;&#x7A0B;&#x5C06;&#x88AB;&#x963B;&#x6B62;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Pool
+<span class="token keyword">import</span> time
+<span class="token keyword">def</span> <span class="token function">test</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       <span class="token keyword">print</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span>
+       time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    pool <span class="token operator">=</span> Pool<span class="token punctuation">(</span>processes<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i  <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&apos;&apos;&apos;
+         &#xFF08;1&#xFF09;&#x5FAA;&#x73AF;&#x904D;&#x5386;&#xFF0C;&#x5C06;500&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#x6DFB;&#x52A0;&#x5230;&#x8FDB;&#x7A0B;&#x6C60;&#xFF08;&#x76F8;&#x5BF9;&#x7236;&#x8FDB;&#x7A0B;&#x4F1A;&#x963B;&#x585E;&#xFF09;\n&apos;
+         &#xFF08;2&#xFF09;&#x6BCF;&#x6B21;&#x6267;&#x884C;2&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;&#x7B49;&#x4E00;&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#x6267;&#x884C;&#x5B8C;&#x540E;&#xFF0C;&#x7ACB;&#x9A6C;&#x542F;&#x52A8;&#x65B0;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#x3002;&#xFF08;&#x76F8;&#x5BF9;&#x7236;&#x8FDB;&#x7A0B;&#x4E0D;&#x963B;&#x585E;&#xFF09;\n&apos;
+        &apos;&apos;&apos;</span>
+        pool<span class="token punctuation">.</span>apply_async<span class="token punctuation">(</span>test<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment">#&#x7EF4;&#x6301;&#x6267;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&#x603B;&#x6570;&#x4E3A;10&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x6267;&#x884C;&#x5B8C;&#x540E;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x65B0;&#x8FDB;&#x7A0B;.</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;test&apos;</span><span class="token punctuation">)</span>
+    pool<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    pool<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> multiprocessing
+<span class="token keyword">import</span> os
+<span class="token keyword">import</span> time
+
+<span class="token keyword">def</span> <span class="token function">run_task</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># print(&apos;Task {0} pid {1} is running, parent id is {2}&apos;.format(name, os.getpid(), os.getppid()))</span>
+    <span class="token comment"># time.sleep(1)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Task {0} end.&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&apos;__main__&apos;</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;current process {0}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>getpid<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    p <span class="token operator">=</span> multiprocessing<span class="token punctuation">.</span>Pool<span class="token punctuation">(</span>processes<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        p<span class="token punctuation">.</span>apply_async<span class="token punctuation">(</span>run_task<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Waiting for all subprocesses done...&apos;</span><span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment"># &#x4E0D;&#x80FD;&#x7EE7;&#x7EED;&#x5F80;p&#x91CC;&#x9762;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x8FDB;&#x7A0B;</span>
+    p<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment"># jion &#x4E4B;&#x540E;&#xFF0C;&#x4E3B;&#x7EBF;(&#x4E3B;&#x51FD;&#x6570;)&#x7A0B;&#x7B49;&#x5F85; p &#x7ED3;&#x675F;&#x4E4B;&#x540E;&#xFF0C;&#x4E3B;&#x7EBF;&#x7A0B;&#x624D;&#x80FD;&#x7ED3;&#x675F;</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;All processes done!&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8C03;&#x7528;<code>join</code>&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x8C03;&#x7528;<code>close</code>&#x6216;&#x8005;<code>terminate</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x51FA;&#x9519;&#x3002;&#x6267;&#x884C;&#x5B8C;<code>close</code>&#x540E;&#x4E0D;&#x4F1A;&#x6709;&#x65B0;&#x7684;&#x8FDB;&#x7A0B;&#x52A0;&#x5165;&#x5230;pool,<code>join</code>&#x51FD;&#x6570;&#x7B49;&#x5F85;&#x6240;&#x6709;&#x5B50;&#x8FDB;&#x7A0B;&#x7ED3;&#x675F;&#x3002;</p>
+<h3 id="3&#x3001;map"><a name="3&#x3001;map" class="anchor-navigation-ex-anchor" href="#3&#x3001;map"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;map</h3>
+<pre class="language-"><code class="lang-python"><span class="token builtin">map</span><span class="token punctuation">(</span>func<span class="token punctuation">,</span>iterable <span class="token punctuation">[</span><span class="token punctuation">,</span>chunksize <span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p><code>map()</code>&#x5185;&#x7F6E;&#x51FD;&#x6570;&#x7684;&#x5E76;&#x884C;&#x7B49;&#x4EF7;&#x7269;&#xFF08;&#x5C3D;&#x7BA1;&#x5B83;&#x53EA;&#x652F;&#x6301;&#x4E00;&#x4E2A;&#x53EF;&#x8FED;&#x4EE3;&#x7684;&#x53C2;&#x6570;&#xFF09;&#x3002;&#x5B83;&#x4F1A;&#x963B;&#x585E;&#xFF0C;&#x76F4;&#x5230;&#x7ED3;&#x679C;&#x51C6;&#x5907;&#x5C31;&#x7EEA;&#x3002;&#x6B64;&#x65B9;&#x6CD5;&#x5C06;<code>iterable</code>&#x5185;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x5355;&#x72EC;&#x7684;&#x4EFB;&#x52A1;&#x63D0;&#x4EA4;&#x7ED9;&#x8FDB;&#x7A0B;&#x6C60;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5C06;chunksize&#x8BBE;&#x7F6E;&#x4E3A;&#x6B63;&#x6574;&#x6570;&#x6765;&#x6307;&#x5B9A;&#x8FD9;&#x4E9B;&#x5757;&#x7684;&#xFF08;&#x8FD1;&#x4F3C;&#xFF09;&#x5927;&#x5C0F;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Pool
+<span class="token keyword">import</span> time
+
+<span class="token keyword">def</span> <span class="token function">test</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span>  __name__ <span class="token operator">==</span> <span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    lists <span class="token operator">=</span> <span class="token punctuation">[</span>x <span class="token keyword">for</span> x <span class="token keyword">in</span>  <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+    pool <span class="token operator">=</span> Pool<span class="token punctuation">(</span>processes<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>       <span class="token comment">#&#x5B9A;&#x4E49;&#x6700;&#x5927;&#x7684;&#x8FDB;&#x7A0B;&#x6570;</span>
+    pool<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>test<span class="token punctuation">,</span> lists<span class="token punctuation">)</span>          <span class="token comment">#lists&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x8FED;&#x4EE3;&#x53D8;&#x91CF;&#x3002;</span>
+    pool<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    pool<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="4&#x3001;mapasync"><a name="4&#x3001;mapasync" class="anchor-navigation-ex-anchor" href="#4&#x3001;mapasync"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001;map_async</h3>
+<pre class="language-"><code class="lang-python">map_async<span class="token punctuation">(</span>func<span class="token punctuation">,</span>iterable <span class="token punctuation">[</span><span class="token punctuation">,</span>chunksize <span class="token punctuation">[</span><span class="token punctuation">,</span>callback <span class="token punctuation">[</span><span class="token punctuation">,</span>error_callback<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p>map()&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x53D8;&#x4F53;&#x3002;&#x9700;&#x8981;&#x4F20;&#x5165;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;iterable</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> time
+<span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Pool
+
+
+<span class="token keyword">def</span> <span class="token function">test</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    pool <span class="token operator">=</span> Pool<span class="token punctuation">(</span>processes<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token comment"># for i  in range(500):</span>
+    <span class="token comment">#     &apos;&apos;&apos;</span>
+    <span class="token comment">#      &#xFF08;1&#xFF09;&#x5FAA;&#x73AF;&#x904D;&#x5386;&#xFF0C;&#x5C06;500&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#x6DFB;&#x52A0;&#x5230;&#x8FDB;&#x7A0B;&#x6C60;&#xFF08;&#x76F8;&#x5BF9;&#x7236;&#x8FDB;&#x7A0B;&#x4F1A;&#x963B;&#x585E;&#xFF09;\n&apos;</span>
+    <span class="token comment">#      &#xFF08;2&#xFF09;&#x6BCF;&#x6B21;&#x6267;&#x884C;2&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;&#x7B49;&#x4E00;&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#x6267;&#x884C;&#x5B8C;&#x540E;&#xFF0C;&#x7ACB;&#x9A6C;&#x542F;&#x52A8;&#x65B0;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#x3002;&#xFF08;&#x76F8;&#x5BF9;&#x7236;&#x8FDB;&#x7A0B;&#x4E0D;&#x963B;&#x585E;&#xFF09;\n&apos;</span>
+    <span class="token comment">#     &apos;&apos;&apos;</span>
+    <span class="token comment">#     pool.apply_async(test, args=(i,))   #&#x7EF4;&#x6301;&#x6267;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&#x603B;&#x6570;&#x4E3A;10&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x6267;&#x884C;&#x5B8C;&#x540E;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x65B0;&#x8FDB;&#x7A0B;.</span>
+    pool<span class="token punctuation">.</span>map_async<span class="token punctuation">(</span>test<span class="token punctuation">,</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;test&apos;</span><span class="token punctuation">)</span>
+    pool<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    pool<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="&#x4E09;&#x3001;queue-&#x7528;&#x4E8E;&#x8FDB;&#x7A0B;&#x901A;&#x4FE1;&#xFF0C;&#x8D44;&#x6E90;&#x5171;&#x4EAB;"><a name="&#x4E09;&#x3001;queue-&#x7528;&#x4E8E;&#x8FDB;&#x7A0B;&#x901A;&#x4FE1;&#xFF0C;&#x8D44;&#x6E90;&#x5171;&#x4EAB;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;queue-&#x7528;&#x4E8E;&#x8FDB;&#x7A0B;&#x901A;&#x4FE1;&#xFF0C;&#x8D44;&#x6E90;&#x5171;&#x4EAB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;Queue &#x7528;&#x4E8E;&#x8FDB;&#x7A0B;&#x901A;&#x4FE1;&#xFF0C;&#x8D44;&#x6E90;&#x5171;&#x4EAB;</h2>
+<p>&#x5141;&#x8BB8;&#x591A;&#x4E2A;&#x8FDB;&#x7A0B;&#x4E4B;&#x95F4;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">class</span> <span class="token class-name">multiprocessing</span><span class="token punctuation">.</span>Queue&#xFF08;<span class="token punctuation">[</span> maxsize <span class="token punctuation">]</span> &#xFF09;
+</code></pre>
+<p><code>Queue</code> &#x7528;&#x6765;&#x5728;&#x591A;&#x4E2A;&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;&#x3002;<code>Queue</code>&#x6709;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;<code>get</code>&#x548C;<code>put</code>&#x3002;</p>
+<ul>
+<li><code>put</code> &#x65B9;&#x6CD5;
+&#x653E;&#x6570;&#x636E;&#xFF0C;<code>Queue.put( )</code>&#x9ED8;&#x8BA4;&#x6709;<code>block=True</code>&#x548C;<code>timeout</code>&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x5F53;<code>block=True</code>&#x65F6;&#xFF0C;&#x5199;&#x5165;&#x662F;&#x963B;&#x585E;&#x5F0F;&#x7684;&#xFF0C;&#x963B;&#x585E;&#x65F6;&#x95F4;&#x7531;timeout&#x786E;&#x5B9A;&#x3002;&#x5F53;&#x961F;&#x5217;q&#x88AB;&#xFF08;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#xFF09;&#x5199;&#x6EE1;&#x540E;&#xFF0C;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x5C31;&#x4F1A;&#x963B;&#x585E;&#xFF0C;&#x76F4;&#x81F3;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x53D6;&#x8D70;&#x6570;&#x636E;&#x3002;<code>Queue.put&#xFF08;&#xFF09;&#x65B9;&#x6CD5;</code>&#x52A0;&#x4E0A; block=False &#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5373;&#x53EF;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x9690;&#x853D;&#x7684;&#x95EE;&#x9898;&#x3002;&#x4F46;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x975E;&#x963B;&#x585E;&#x65B9;&#x5F0F;&#x5199;&#x961F;&#x5217;&#xFF0C;&#x5F53;&#x961F;&#x5217;&#x6EE1;&#x65F6;&#x4F1A;&#x629B;&#x51FA; exception Queue.Full &#x7684;&#x5F02;&#x5E38;</li>
+</ul>
+<ul>
+<li><code>get</code>&#x65B9;&#x6CD5;
+<code>get</code> &#x65B9;&#x6CD5;&#x7528;&#x6765;&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x8BFB;&#x53D6;&#x5E76;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;&#x6709;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x53EF;&#x9009;&#xFF0C;<code>blocked</code> &#x548C; <code>timeout</code></li>
+<li>blocked = False &#xFF08;&#x9ED8;&#x8BA4;&#xFF09;&#xFF0C;timeout &#x6B63;&#x503C;<blockquote>
+<p>&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x5185;&#xFF0C;&#x6CA1;&#x6709;&#x53D6;&#x5230;&#x4EFB;&#x4F55;&#x5143;&#x7D20;&#xFF0C;&#x4F1A;&#x629B;&#x51FA; Queue.Empty &#x5F02;&#x5E38;&#x3002;
+Queue &#x6709;&#x4E00;&#x4E2A;&#x503C;&#x53EF;&#x7528;&#xFF0C;&#x7ACB;&#x523B;&#x8FD4;&#x56DE;&#x6539;&#x503C;&#xFF1B;Queue &#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5143;&#x7D20;&#xFF0C;</p>
+</blockquote>
+</li>
+</ul>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> os
+<span class="token keyword">import</span> random
+<span class="token keyword">import</span> time
+<span class="token comment"># &#x8FDB;&#x7A0B;&#x95F4;&#x7684;&#x901A;&#x4FE1;</span>
+<span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Process<span class="token punctuation">,</span> Queue
+
+
+<span class="token comment"># &#x5199;&#x6570;&#x636E;&#x8FDB;&#x7A0B;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;:</span>
+<span class="token keyword">def</span> <span class="token function">proc_write</span><span class="token punctuation">(</span>q<span class="token punctuation">,</span> urls<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Process(%s) is writing...&apos;</span> <span class="token operator">%</span> os<span class="token punctuation">.</span>getpid<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> url <span class="token keyword">in</span> urls<span class="token punctuation">:</span>
+        q<span class="token punctuation">.</span>put<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Put %s to queue...&apos;</span> <span class="token operator">%</span> url<span class="token punctuation">)</span>
+        time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>random<span class="token punctuation">.</span>random<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+<span class="token comment"># &#x8BFB;&#x6570;&#x636E;&#x8FDB;&#x7A0B;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;:</span>
+<span class="token keyword">def</span> <span class="token function">proc_read</span><span class="token punctuation">(</span>q<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Process(%s) is reading...&apos;</span> <span class="token operator">%</span> os<span class="token punctuation">.</span>getpid<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+        url <span class="token operator">=</span> q<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Get %s from queue.&apos;</span> <span class="token operator">%</span> url<span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&apos;__main__&apos;</span><span class="token punctuation">:</span>
+    <span class="token comment"># &#x7236;&#x8FDB;&#x7A0B;&#x521B;&#x5EFA;Queue&#xFF0C;&#x5E76;&#x4F20;&#x7ED9;&#x5404;&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#xFF1A;</span>
+    q <span class="token operator">=</span> Queue<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    proc_writer1 <span class="token operator">=</span> Process<span class="token punctuation">(</span>target<span class="token operator">=</span>proc_write<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>q<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">&apos;url_1&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;url_2&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;url_3&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    proc_writer2 <span class="token operator">=</span> Process<span class="token punctuation">(</span>target<span class="token operator">=</span>proc_write<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>q<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">&apos;url_4&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;url_5&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;url_6&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    proc_reader <span class="token operator">=</span> Process<span class="token punctuation">(</span>target<span class="token operator">=</span>proc_read<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>q<span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># &#x542F;&#x52A8;&#x5B50;&#x8FDB;&#x7A0B;proc_writer&#xFF0C;&#x5199;&#x5165;:</span>
+    proc_writer1<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    proc_writer2<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># &#x542F;&#x52A8;&#x5B50;&#x8FDB;&#x7A0B;proc_reader&#xFF0C;&#x8BFB;&#x53D6;:</span>
+    proc_reader<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># &#x7B49;&#x5F85;proc_writer&#x7ED3;&#x675F;:</span>
+    proc_writer1<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    proc_writer2<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># proc_reader&#x8FDB;&#x7A0B;&#x91CC;&#x662F;&#x6B7B;&#x5FAA;&#x73AF;&#xFF0C;&#x65E0;&#x6CD5;&#x7B49;&#x5F85;&#x5176;&#x7ED3;&#x675F;&#xFF0C;&#x53EA;&#x80FD;&#x5F3A;&#x884C;&#x7EC8;&#x6B62;:</span>
+    proc_reader<span class="token punctuation">.</span>terminate<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="&#x56DB;&#x3001;pipe-&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;"><a name="&#x56DB;&#x3001;pipe-&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;pipe-&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x3001;Pipe &#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;</h2>
+<p>(&#x7528;&#x4E8E;&#x7BA1;&#x9053;&#x901A;&#x4FE1;&#xFF0C;&#x7528;&#x4E8E;&#x4E24;&#x4E2A;&#x8FDB;&#x7A0B;&#x4E4B;&#x95F4;&#x7684;&#x8FDE;&#x63A5;&#xFF09;</p>
+<p>&#x5E38;&#x7528;&#x6765;&#x5728;&#x4E24;&#x4E2A;&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;&#xFF0C;&#x4E24;&#x4E2A;&#x8FDB;&#x7A0B;&#x5206;&#x522B;&#x4F4D;&#x4E8E;&#x7BA1;&#x9053;&#x7684;&#x4E24;&#x7AEF;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x662F;&#x5168;&#x53CC;&#x5DE5;&#x7684;(&#x6784;&#x9020;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x4E3A;True)&#xFF0C;&#x5219;&#x53CC;&#x7AEF;&#x53E3;&#x90FD;&#x53EF;&#x63A5;&#x6536;&#x53D1;&#x9001;&#xFF0C;&#x5426;&#x5219;&#x524D;&#x9762;&#x7684;&#x7AEF;&#x53E3;&#x7528;&#x4E8E;&#x63A5;&#x6536;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x7AEF;&#x53E3;&#x7528;&#x4E8E;&#x53D1;&#x9001;&#x3002;</p>
+<pre class="language-"><code class="lang-python">multiprocessing<span class="token punctuation">.</span>Pipe<span class="token punctuation">(</span><span class="token punctuation">[</span>duplex<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x793A;&#x4F8B; 1 </p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Process<span class="token punctuation">,</span> Pipe
+
+<span class="token keyword">def</span> <span class="token function">send</span><span class="token punctuation">(</span>pipe<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    pipe<span class="token punctuation">.</span>send<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;spam&apos;</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token punctuation">[</span><span class="token number">42</span><span class="token punctuation">,</span> <span class="token string">&apos;egg&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>   <span class="token comment"># send &#x4F20;&#x8F93;&#x4E00;&#x4E2A;&#x5217;&#x8868;</span>
+    pipe<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&apos;__main__&apos;</span><span class="token punctuation">:</span>
+    <span class="token punctuation">(</span>con1<span class="token punctuation">,</span> con2<span class="token punctuation">)</span> <span class="token operator">=</span> Pipe<span class="token punctuation">(</span><span class="token punctuation">)</span>                            <span class="token comment"># &#x521B;&#x5EFA;&#x4E24;&#x4E2A; Pipe &#x5B9E;&#x4F8B;</span>
+
+     <span class="token comment"># &#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#xFF0C;args &#x4E00;&#x5B9A;&#x662F;&#x5B9E;&#x4F8B;&#x5316;&#x4E4B;&#x540E;&#x7684; Pip &#x53D8;&#x91CF;&#xFF0C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x5199; args=(Pip(),)</span>
+    sender <span class="token operator">=</span> Process<span class="token punctuation">(</span>target<span class="token operator">=</span>send<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>con1<span class="token punctuation">,</span> <span class="token punctuation">)</span><span class="token punctuation">)</span>     
+
+    sender<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>                                   <span class="token comment"># Process &#x7C7B;&#x542F;&#x52A8;&#x8FDB;&#x7A0B;</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;con2 got: %s&quot;</span> <span class="token operator">%</span> con2<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>              <span class="token comment"># &#x7BA1;&#x9053;&#x7684;&#x53E6;&#x4E00;&#x7AEF; con2 &#x4ECE;send&#x6536;&#x5230;&#x6D88;&#x606F;</span>
+    con2<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>                                     <span class="token comment"># &#x5173;&#x95ED;&#x7BA1;&#x9053;</span>
+
+    <span class="token comment"># &#x8F93;&#x51FA;&#xFF1A;con2 got: [&apos;spam&apos;, 42, &apos;egg&apos;]</span>
+</code></pre>
+<p>con1&#x7BA1;&#x9053;&#x7684;&#x4E00;&#x7AEF;&#xFF0C;&#x8D1F;&#x8D23;&#x5B58;&#x50A8;,&#x4E5F;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x53D1;&#x9001;&#x4FE1;&#x606F;
+con2&#x7BA1;&#x9053;&#x7684;&#x53E6;&#x4E00;&#x7AEF;&#xFF0C;&#x8D1F;&#x8D23;&#x8BFB;&#x53D6;,&#x4E5F;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x63A5;&#x53D7;&#x4FE1;&#x606F;</p>
+<p>&#x793A;&#x4F8B; 2
+&#x7BA1;&#x9053;&#x662F;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x53D1;&#x9001;&#x548C;&#x63A5;&#x53D7;&#x6D88;&#x606F;&#x7684;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Process<span class="token punctuation">,</span> Pipe
+
+<span class="token keyword">def</span> <span class="token function">talk</span><span class="token punctuation">(</span>pipe<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    pipe<span class="token punctuation">.</span>send<span class="token punctuation">(</span><span class="token builtin">dict</span><span class="token punctuation">(</span>name<span class="token operator">=</span><span class="token string">&apos;Bob&apos;</span><span class="token punctuation">,</span> spam<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">)</span>            <span class="token comment"># &#x4F20;&#x8F93;&#x4E00;&#x4E2A;&#x5B57;&#x5178;</span>
+    reply <span class="token operator">=</span> pipe<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token punctuation">)</span>                             <span class="token comment"># &#x63A5;&#x6536;&#x4F20;&#x8F93;&#x7684;&#x6570;&#x636E;</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;talker got:&apos;</span><span class="token punctuation">,</span> reply<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&apos;__main__&apos;</span><span class="token punctuation">:</span>
+    <span class="token punctuation">(</span>parentEnd<span class="token punctuation">,</span> childEnd<span class="token punctuation">)</span> <span class="token operator">=</span> Pipe<span class="token punctuation">(</span><span class="token punctuation">)</span>                  <span class="token comment"># &#x521B;&#x5EFA;&#x4E24;&#x4E2A; Pipe() &#x5B9E;&#x4F8B;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6539;&#x6210; conf1&#xFF0C; conf2</span>
+
+    child <span class="token operator">=</span> Process<span class="token punctuation">(</span>target<span class="token operator">=</span>talk<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>childEnd<span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A; Process &#x8FDB;&#x7A0B;&#xFF0C;&#x540D;&#x79F0;&#x4E3A; child</span>
+    child<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>                                   <span class="token comment"># &#x542F;&#x52A8;&#x8FDB;&#x7A0B;</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;parent got:&apos;</span><span class="token punctuation">,</span> parentEnd<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>          <span class="token comment"># parentEnd &#x662F;&#x4E00;&#x4E2A; Pip() &#x7BA1;&#x9053;&#xFF0C;&#x53EF;&#x4EE5;&#x63A5;&#x6536; child Process &#x8FDB;&#x7A0B;&#x4F20;&#x8F93;&#x7684;&#x6570;&#x636E;</span>
+
+    parentEnd<span class="token punctuation">.</span>send<span class="token punctuation">(</span><span class="token punctuation">{</span>x <span class="token operator">*</span> <span class="token number">2</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token string">&apos;spam&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span>         <span class="token comment"># parentEnd &#x662F;&#x4E00;&#x4E2A; Pip() &#x7BA1;&#x9053;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; send &#x65B9;&#x6CD5;&#x6765;&#x4F20;&#x8F93;&#x6570;&#x636E;</span>
+                                                    <span class="token comment"># &#x4F20;&#x8F93;&#x7684;&#x6570;&#x636E;&#x88AB; talk &#x51FD;&#x6570;&#x5185;&#x7684; pip &#x7BA1;&#x9053;&#x63A5;&#x6536;&#xFF0C;&#x5E76;&#x8D4B;&#x503C;&#x7ED9; reply</span>
+    child<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;parent exit&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="&#x4E94;&#x3001;lock&#x3001;rlock&#x8FDB;&#x7A0B;&#x540C;&#x6B65;"><a name="&#x4E94;&#x3001;lock&#x3001;rlock&#x8FDB;&#x7A0B;&#x540C;&#x6B65;" class="anchor-navigation-ex-anchor" href="#&#x4E94;&#x3001;lock&#x3001;rlock&#x8FDB;&#x7A0B;&#x540C;&#x6B65;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E94;&#x3001;Lock&#x3001;Rlock&#x8FDB;&#x7A0B;&#x540C;&#x6B65;</h2>
+<p><code>Value</code>&#xFF0C;<code>Array</code>&#xFF08;&#x7528;&#x4E8E;&#x8FDB;&#x7A0B;&#x901A;&#x4FE1;&#xFF0C;&#x8D44;&#x6E90;&#x5171;&#x4EAB;&#xFF09;&#xFF08;&#x8FD8;&#x4E0D;&#x592A;&#x660E;&#x767D;&#xFF09;</p>
+<p><font color="#D2691E" size="4">&#x4E0D;&#x4F7F;&#x7528;&#x9501;&#x8FDB;&#x884C;&#x540C;&#x6B65;</font></p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> multiprocessing
+<span class="token keyword">import</span> time
+
+
+<span class="token keyword">def</span> <span class="token function">job</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">0.1</span><span class="token punctuation">)</span>  <span class="token comment"># &#x6682;&#x505C;0.1&#x79D2;&#xFF0C;&#x8BA9;&#x8F93;&#x51FA;&#x6548;&#x679C;&#x66F4;&#x660E;&#x663E;</span>
+        v<span class="token punctuation">.</span>value <span class="token operator">+=</span> num   <span class="token comment"># v.value&#x83B7;&#x53D6;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x503C;</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>value<span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">&quot;,&quot;</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">def</span> <span class="token function">multicore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    v <span class="token operator">=</span> multiprocessing<span class="token punctuation">.</span>Value<span class="token punctuation">(</span><span class="token string">&apos;i&apos;</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>  <span class="token comment"># &#x5B9A;&#x4E49;&#x5171;&#x4EAB;&#x53D8;&#x91CF;</span>
+    p1 <span class="token operator">=</span> multiprocessing<span class="token punctuation">.</span>Process<span class="token punctuation">(</span>target<span class="token operator">=</span>job<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    p2 <span class="token operator">=</span> multiprocessing<span class="token punctuation">.</span>Process<span class="token punctuation">(</span>target<span class="token operator">=</span>job<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># &#x8BBE;&#x5B9A;&#x4E0D;&#x540C;&#x7684;number&#x770B;&#x5982;&#x4F55;&#x62A2;&#x593A;&#x5185;&#x5B58;</span>
+    p1<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    p2<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    p1<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    p2<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&apos;__main__&apos;</span><span class="token punctuation">:</span>
+    multicore<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+# &#x8FDB;&#x7A0B;1&#x548C;&#x8FDB;&#x7A0B;2&#x5728;&#x76F8;&#x4E92;&#x62A2;&#x7740;&#x4F7F;&#x7528;&#x5171;&#x4EAB;&#x5185;&#x5B58;v
+1,5,9,13,17,4,8,12,16,20,
+&apos;&apos;&apos;</span>
+</code></pre>
+<p><font color="#D2691E" size="4">&#x4F7F;&#x7528;&#x9501;&#x8FDB;&#x884C;&#x540C;&#x6B65;</font></p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> multiprocessing
+<span class="token keyword">import</span> time
+<span class="token comment"># lock = multiprocessing.Lock()</span>
+lock <span class="token operator">=</span> multiprocessing<span class="token punctuation">.</span>RLock<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">job</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> num<span class="token punctuation">,</span>lock<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    lock<span class="token punctuation">.</span>acquire<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">0.1</span><span class="token punctuation">)</span>  <span class="token comment"># &#x6682;&#x505C;0.1&#x79D2;&#xFF0C;&#x8BA9;&#x8F93;&#x51FA;&#x6548;&#x679C;&#x66F4;&#x660E;&#x663E;</span>
+        v<span class="token punctuation">.</span>value <span class="token operator">+=</span> num  <span class="token comment"># v.value&#x83B7;&#x53D6;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x503C;</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>value<span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">&quot;,&quot;</span><span class="token punctuation">)</span>
+    lock<span class="token punctuation">.</span>release<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">multicore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    v <span class="token operator">=</span> multiprocessing<span class="token punctuation">.</span>Value<span class="token punctuation">(</span><span class="token string">&apos;i&apos;</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>  <span class="token comment"># &#x5B9A;&#x4E49;&#x5171;&#x4EAB;&#x53D8;&#x91CF;</span>
+    p1 <span class="token operator">=</span> multiprocessing<span class="token punctuation">.</span>Process<span class="token punctuation">(</span>target<span class="token operator">=</span>job<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> lock<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    p2 <span class="token operator">=</span> multiprocessing<span class="token punctuation">.</span>Process<span class="token punctuation">(</span>target<span class="token operator">=</span>job<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> lock<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># &#x8BBE;&#x5B9A;&#x4E0D;&#x540C;&#x7684;number&#x770B;&#x5982;&#x4F55;&#x62A2;&#x593A;&#x5185;&#x5B58;</span>
+    p1<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    p2<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    p1<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    p2<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+# &#x663E;&#x7136;&#xFF0C;&#x8FDB;&#x7A0B;&#x9501;&#x4FDD;&#x8BC1;&#x4E86;&#x8FDB;&#x7A0B;p1&#x7684;&#x5B8C;&#x6574;&#x8FD0;&#x884C;&#xFF0C;&#x7136;&#x540E;&#x624D;&#x8FDB;&#x884C;&#x4E86;&#x8FDB;&#x7A0B;p2&#x7684;&#x8FD0;&#x884C;
+1,2,3,4,5,8,11,14,17,20,
+&apos;&apos;&apos;</span>
+</code></pre>
+<p>&#x53C2;&#x8003;&#xFF1A;</p>
+<p><a href="https://blog.csdn.net/CityzenOldwang/article/details/78584175" target="_blank">https://blog.csdn.net/CityzenOldwang/article/details/78584175</a>
+<a href="https://blog.csdn.net/brucewong0516/article/details/85776194" target="_blank">https://blog.csdn.net/brucewong0516/article/details/85776194</a> </p>
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-25 
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: python 多进程-多线程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Python 异步并发concurrent.futures模块.html" class="navigation navigation-next " aria-label="Next page: Python 异步并发concurrent.futures模块">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python 多进程multiprocessing模块","level":"5.1.1","depth":2,"next":{"title":"Python 异步并发concurrent.futures模块","level":"5.1.2","depth":2,"path":"多进程-多线程/Python 异步并发concurrent.futures模块.md","ref":"多进程-多线程/Python 异步并发concurrent.futures模块.md","articles":[]},"previous":{"title":"python 多进程-多线程","level":"5.1","depth":1,"path":"多进程-多线程/README.md","ref":"多进程-多线程/README.md","articles":[{"title":"Python 多进程multiprocessing模块","level":"5.1.1","depth":2,"path":"多进程-多线程/Python 多进程multiprocessing模块.md","ref":"多进程-多线程/Python 多进程multiprocessing模块.md","articles":[]},{"title":"Python 异步并发concurrent.futures模块","level":"5.1.2","depth":2,"path":"多进程-多线程/Python 异步并发concurrent.futures模块.md","ref":"多进程-多线程/Python 异步并发concurrent.futures模块.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"mathjax":{"forceSVG":true},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Office 三件套学习","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"多进程-多线程/Python 多进程multiprocessing模块.md","mtime":"2020-05-25T13:42:22.973Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-20T02:36:30.336Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

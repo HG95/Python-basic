@@ -1,0 +1,1618 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>python Python操作MongoDB · Office 三件套学习</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="HHG">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="MongoDB基础.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../基础/">
+            
+                <a href="../基础/">
+            
+                    
+                    python 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                <a href="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                    
+                    Python Python 中的 if name == 'main'
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../基础/Python 导入模块和package.html">
+            
+                <a href="../基础/Python 导入模块和package.html">
+            
+                    
+                    Python 导入模块和package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../基础/Python args和kwargs的用法.html">
+            
+                <a href="../基础/Python args和kwargs的用法.html">
+            
+                    
+                    Python args和kwargs的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../基础/Python 常用函数.html">
+            
+                <a href="../基础/Python 常用函数.html">
+            
+                    
+                    Python 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                <a href="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                    
+                    Python set集合的并集union, 交集intersection, 差集difference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../基础/Python 列表解析式.html">
+            
+                <a href="../基础/Python 列表解析式.html">
+            
+                    
+                    Python 列表解析式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../基础/Python list中append和extend函数区别.html">
+            
+                <a href="../基础/Python list中append和extend函数区别.html">
+            
+                    
+                    Python list中append和extend函数区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../基础/Python zip函数.html">
+            
+                <a href="../基础/Python zip函数.html">
+            
+                    
+                    Python zip()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../基础/Python enumerate函数.html">
+            
+                <a href="../基础/Python enumerate函数.html">
+            
+                    
+                    Python enumerate()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../基础/Python random函数.html">
+            
+                <a href="../基础/Python random函数.html">
+            
+                    
+                    Python random函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../基础/Python sort函数、sorted函数.html">
+            
+                <a href="../基础/Python sort函数、sorted函数.html">
+            
+                    
+                    Python 字符串 sort()函数、sorted()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../基础/Python 字符串的格式化.html">
+            
+                <a href="../基础/Python 字符串的格式化.html">
+            
+                    
+                    Python 字符串的格式化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../基础/Python 字符串 String 函数.html">
+            
+                <a href="../基础/Python 字符串 String 函数.html">
+            
+                    
+                    Python 字符串 String 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../基础/Python partition函数.html">
+            
+                <a href="../基础/Python partition函数.html">
+            
+                    
+                    Python partition函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="../基础/Python 位运算符、位运算高级运用.html">
+            
+                <a href="../基础/Python 位运算符、位运算高级运用.html">
+            
+                    
+                    Python 位运算符、位运算高级运用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="../基础/Python set集合之间的区别.html">
+            
+                <a href="../基础/Python set集合之间的区别.html">
+            
+                    
+                    Python set(集合) & 与 and 、 | 与 or之间的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="../基础/Python round函数，截取小数位数.html">
+            
+                <a href="../基础/Python round函数，截取小数位数.html">
+            
+                    
+                    Python round函数，截取小数位数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="../基础/Python 断言assert.html">
+            
+                <a href="../基础/Python 断言assert.html">
+            
+                    
+                    Python 断言assert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.19" >
+            
+                <span>
+            
+                    
+                    [Python 生成器和生成器函数]基础/Python 生成器和生成器函数.md)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.20" data-path="../基础/Python chr和ord函数.html">
+            
+                <a href="../基础/Python chr和ord函数.html">
+            
+                    
+                    Python chr()和ord()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.21" data-path="../基础/Python fnmatch模块.html">
+            
+                <a href="../基础/Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.22" data-path="../基础/Python copy模块.html">
+            
+                <a href="../基础/Python copy模块.html">
+            
+                    
+                    Python copy模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.23" data-path="../基础/Python collections模块.html">
+            
+                <a href="../基础/Python collections模块.html">
+            
+                    
+                    Python collections模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.24" data-path="../基础/Python itertools 模块.html">
+            
+                <a href="../基础/Python itertools 模块.html">
+            
+                    
+                    Python itertools 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.25" data-path="../基础/Python 时间模块.html">
+            
+                <a href="../基础/Python 时间模块.html">
+            
+                    
+                    Python 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.26" data-path="../基础/Python Arrow 时间模块.html">
+            
+                <a href="../基础/Python Arrow 时间模块.html">
+            
+                    
+                    Python Arrow 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../文件处理/">
+            
+                <a href="../文件处理/">
+            
+                    
+                    python 文件处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../文件处理/Python open函数.html">
+            
+                <a href="../文件处理/Python open函数.html">
+            
+                    
+                    Python open() 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../文件处理/Python pandas读写csv文件.html">
+            
+                <a href="../文件处理/Python pandas读写csv文件.html">
+            
+                    
+                    Python pandas读写csv文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../文件处理/Python pandas读写excel文件.html">
+            
+                <a href="../文件处理/Python pandas读写excel文件.html">
+            
+                    
+                    Python pandas读写excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../文件处理/Python 读写Excel文件.html">
+            
+                <a href="../文件处理/Python 读写Excel文件.html">
+            
+                    
+                    Python 读/写Excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../文件处理/Python openpyxl模块.html">
+            
+                <a href="../文件处理/Python openpyxl模块.html">
+            
+                    
+                    Python openpyxl模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../文件处理/Python csv模块.html">
+            
+                <a href="../文件处理/Python csv模块.html">
+            
+                    
+                    Python csv模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../文件处理/Python os模块.html">
+            
+                <a href="../文件处理/Python os模块.html">
+            
+                    
+                    Python os模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../文件处理/Python glob模块.html">
+            
+                <a href="../文件处理/Python glob模块.html">
+            
+                    
+                    Python glob模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../文件处理/Python fnmatch模块.html">
+            
+                <a href="../文件处理/Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../文件处理/Python pathlib模块.html">
+            
+                <a href="../文件处理/Python pathlib模块.html">
+            
+                    
+                    Python pathlib模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../文件处理/Python os.walk遍历目录树.html">
+            
+                <a href="../文件处理/Python os.walk遍历目录树.html">
+            
+                    
+                    Python os.walk遍历目录树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../文件处理/Python os.scandir文件操作.html">
+            
+                <a href="../文件处理/Python os.scandir文件操作.html">
+            
+                    
+                    Python os.scandir文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../文件处理/Python 文件过滤.html">
+            
+                <a href="../文件处理/Python 文件过滤.html">
+            
+                    
+                    Python 文件过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../文件处理/Python JSON模块.html">
+            
+                <a href="../文件处理/Python JSON模块.html">
+            
+                    
+                    Python JSON模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../文件处理/Python JsonPath模块.html">
+            
+                <a href="../文件处理/Python JsonPath模块.html">
+            
+                    
+                    Python JsonPath模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="../文件处理/Python shutil模块.html">
+            
+                <a href="../文件处理/Python shutil模块.html">
+            
+                    
+                    Python shutil模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="../文件处理/Python ZIP文件读取，解压.html">
+            
+                <a href="../文件处理/Python ZIP文件读取，解压.html">
+            
+                    
+                    Python ZIP文件读取，解压
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="../文件处理/Python with...as的用法.html">
+            
+                <a href="../文件处理/Python with...as的用法.html">
+            
+                    
+                    Python with...as的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../正则表达式/">
+            
+                <a href="../正则表达式/">
+            
+                    
+                    python 正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../正则表达式/正则表达式基础语法.html">
+            
+                <a href="../正则表达式/正则表达式基础语法.html">
+            
+                    
+                    python 正则表达式基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../正则表达式/正则表达式 常用函数.html">
+            
+                <a href="../正则表达式/正则表达式 常用函数.html">
+            
+                    
+                    python 正则表达式 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../正则表达式/正则表达式 re.sub.html">
+            
+                <a href="../正则表达式/正则表达式 re.sub.html">
+            
+                    
+                    python 正则表达式 re.sub()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../正则表达式/正则表达式 re.match与re.search.html">
+            
+                <a href="../正则表达式/正则表达式 re.match与re.search.html">
+            
+                    
+                    python 正则表达式 match()与search()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../正则表达式/正则表达式 re.findall与re.finditer.html">
+            
+                <a href="../正则表达式/正则表达式 re.findall与re.finditer.html">
+            
+                    
+                    python 正则表达式 re.findall()与re.finditer()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../正则表达式/正则表达式 re.compile.html">
+            
+                <a href="../正则表达式/正则表达式 re.compile.html">
+            
+                    
+                    python 正则表达式 re.compile()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../正则表达式/正则表达式 flags 参数.html">
+            
+                <a href="../正则表达式/正则表达式 flags 参数.html">
+            
+                    
+                    python 正则表达式 flags 参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../正则表达式/正则表达式 去优先级，选择.html">
+            
+                <a href="../正则表达式/正则表达式 去优先级，选择.html">
+            
+                    
+                    python 正则表达式 去优先级，选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../正则表达式/正则表达式 模式匹配与正则表达式一.html">
+            
+                <a href="../正则表达式/正则表达式 模式匹配与正则表达式一.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../正则表达式/正则表达式 模式匹配与正则表达式二.html">
+            
+                <a href="../正则表达式/正则表达式 模式匹配与正则表达式二.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 二
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../多进程-多线程/">
+            
+                <a href="../多进程-多线程/">
+            
+                    
+                    python 多进程-多线程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../多进程-多线程/Python 多进程multiprocessing模块.html">
+            
+                <a href="../多进程-多线程/Python 多进程multiprocessing模块.html">
+            
+                    
+                    Python 多进程multiprocessing模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../多进程-多线程/Python 异步并发concurrent.futures模块.html">
+            
+                <a href="../多进程-多线程/Python 异步并发concurrent.futures模块.html">
+            
+                    
+                    Python 异步并发concurrent.futures模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../面向对象/">
+            
+                <a href="../面向对象/">
+            
+                    
+                    python 面向对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../面向对象/类.html">
+            
+                <a href="../面向对象/类.html">
+            
+                    
+                    python 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../面向对象/面向对象编程.html">
+            
+                <a href="../面向对象/面向对象编程.html">
+            
+                    
+                    python 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../面向对象/绑定方法与非绑定方法.html">
+            
+                <a href="../面向对象/绑定方法与非绑定方法.html">
+            
+                    
+                    python 绑定方法与非绑定方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../面向对象/实例方法、类方法和静态方法.html">
+            
+                <a href="../面向对象/实例方法、类方法和静态方法.html">
+            
+                    
+                    python 实例方法、类方法和静态方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../面向对象/面向对象编程--组合.html">
+            
+                <a href="../面向对象/面向对象编程--组合.html">
+            
+                    
+                    python 面向对象编程--组合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                <a href="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                    
+                    python 子类继承父类构造函数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.7" data-path="../面向对象/面向对象描述符.html">
+            
+                <a href="../面向对象/面向对象描述符.html">
+            
+                    
+                    python 面向对象描述符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.8" data-path="../面向对象/反射机制.html">
+            
+                <a href="../面向对象/反射机制.html">
+            
+                    
+                    python 反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.9" data-path="../面向对象/slots.html">
+            
+                <a href="../面向对象/slots.html">
+            
+                    
+                    python slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.10" data-path="../面向对象/属性property.html">
+            
+                <a href="../面向对象/属性property.html">
+            
+                    
+                    python 属性property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.11" data-path="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                <a href="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                    
+                    python attrs 和 cattrs 实现面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.12" data-path="../面向对象/Dataclasses.html">
+            
+                <a href="../面向对象/Dataclasses.html">
+            
+                    
+                    python Dataclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    python MongoDB数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="MongoDB基础.html">
+            
+                <a href="MongoDB基础.html">
+            
+                    
+                    python MongoDB基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.1.2" data-path="Python操作MongoDB.html">
+            
+                <a href="Python操作MongoDB.html">
+            
+                    
+                    python Python操作MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >python Python操作MongoDB</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#python-python&#x64CD;&#x4F5C;mongodb">python Python&#x64CD;&#x4F5C;MongoDB</a></li><ul><li><a href="#2-&#x8FDE;&#x63A5;mongodb">2. &#x8FDE;&#x63A5;MongoDB</a></li><li><a href="#3-&#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;">3. &#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;</a></li><li><a href="#4-&#x6307;&#x5B9A;&#x96C6;&#x5408;">4. &#x6307;&#x5B9A;&#x96C6;&#x5408;</a></li><li><a href="#5-&#x63D2;&#x5165;&#x6570;&#x636E;">5. &#x63D2;&#x5165;&#x6570;&#x636E;</a></li><li><a href="#python&#x4F7F;&#x7528;pymongo&#x8BBF;&#x95EE;mongodb&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x53CA;csv&#x6587;&#x4EF6;&#x5BFC;&#x51FA;">python&#x4F7F;&#x7528;pymongo&#x8BBF;&#x95EE;MongoDB&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x53CA;CSV&#x6587;&#x4EF6;&#x5BFC;&#x51FA;</a></li></ul></ul></div><a href="#python-python&#x64CD;&#x4F5C;mongodb" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="python-python&#x64CD;&#x4F5C;mongodb"><a name="python-python&#x64CD;&#x4F5C;mongodb" class="anchor-navigation-ex-anchor" href="#python-python&#x64CD;&#x4F5C;mongodb"><i class="fa fa-link" aria-hidden="true"></i></a>python Python&#x64CD;&#x4F5C;MongoDB</h1>
+<p>&#xFEFF;Python 3&#x4E0B;MongoDB&#x7684;&#x5B58;&#x50A8;&#x64CD;&#x4F5C;&#x3002;
+&#x5728;&#x5F00;&#x59CB;&#x4E4B;&#x524D;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x597D;&#x4E86;MongoDB&#x5E76;&#x542F;&#x52A8;&#x4E86;&#x5176;&#x670D;&#x52A1;&#xFF0C;&#x5E76;&#x4E14;&#x5B89;&#x88C5;&#x597D;&#x4E86;Python&#x7684;PyMongo&#x5E93;&#x3002;</p>
+<h2 id="2-&#x8FDE;&#x63A5;mongodb"><a name="2-&#x8FDE;&#x63A5;mongodb" class="anchor-navigation-ex-anchor" href="#2-&#x8FDE;&#x63A5;mongodb"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x8FDE;&#x63A5;MongoDB</h2>
+<p>&#x8FDE;&#x63A5;MongoDB&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;PyMongo&#x5E93;&#x91CC;&#x9762;<code>MongoClient</code>&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x4F20;&#x5165;MongoDB&#x7684;<code>IP</code>&#x53CA;&#x7AEF;&#x53E3;&#x5373;&#x53EF;&#xFF0C;&#x5176;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x5730;&#x5740;host&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x7AEF;&#x53E3;port&#xFF08;&#x5982;&#x679C;&#x4E0D;&#x7ED9;&#x5B83;&#x4F20;&#x9012;&#x53C2;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;27017&#xFF09;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> pymongo
+client <span class="token operator">=</span> pymongo<span class="token punctuation">.</span>MongoClient<span class="token punctuation">(</span>host<span class="token operator">=</span><span class="token string">&apos;localhost&apos;</span><span class="token punctuation">,</span> port<span class="token operator">=</span><span class="token number">27017</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;MongoDB&#x7684;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;&#x4E86;&#x3002;</p>
+<h2 id="3-&#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;"><a name="3-&#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#3-&#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;</h2>
+<p>MongoDB&#x4E2D;&#x53EF;&#x4EE5;&#x5EFA;&#x7ACB;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x64CD;&#x4F5C;&#x54EA;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x4EE5;test&#x6570;&#x636E;&#x5E93;&#x4E3A;&#x4F8B;&#x6765;&#x8BF4;&#x660E;&#xFF0C;&#x4E0B;&#x4E00;&#x6B65;&#x9700;&#x8981;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x6307;&#x5B9A;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">db <span class="token operator">=</span> client<span class="token punctuation">.</span>test
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x8C03;&#x7528;client&#x7684;test&#x5C5E;&#x6027;&#x5373;&#x53EF;&#x8FD4;&#x56DE;test&#x6570;&#x636E;&#x5E93;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x6307;&#x5B9A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">db <span class="token operator">=</span> client<span class="token punctuation">[</span><span class="token string">&apos;test&apos;</span><span class="token punctuation">]</span>
+</code></pre>
+<h2 id="4-&#x6307;&#x5B9A;&#x96C6;&#x5408;"><a name="4-&#x6307;&#x5B9A;&#x96C6;&#x5408;" class="anchor-navigation-ex-anchor" href="#4-&#x6307;&#x5B9A;&#x96C6;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x6307;&#x5B9A;&#x96C6;&#x5408;</h2>
+<p>MongoDB&#x7684;&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x53C8;&#x5305;&#x542B;&#x8BB8;&#x591A;&#x96C6;&#x5408;&#xFF08;collection&#xFF09;&#xFF0C;&#x5B83;&#x4EEC;&#x7C7B;&#x4F3C;&#x4E8E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x8868;&#x3002;</p>
+<p>&#x4E0B;&#x4E00;&#x6B65;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x8FD9;&#x91CC;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x540D;&#x79F0;&#x4E3A;students&#x3002;&#x4E0E;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x7C7B;&#x4F3C;&#xFF0C;&#x6307;&#x5B9A;&#x96C6;&#x5408;&#x4E5F;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">collection <span class="token operator">=</span> db<span class="token punctuation">.</span>students
+</code></pre>
+<pre class="language-"><code class="lang-python">collection <span class="token operator">=</span> db<span class="token punctuation">[</span><span class="token string">&apos;students&apos;</span><span class="token punctuation">]</span>
+</code></pre>
+<h2 id="5-&#x63D2;&#x5165;&#x6570;&#x636E;"><a name="5-&#x63D2;&#x5165;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#5-&#x63D2;&#x5165;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x63D2;&#x5165;&#x6570;&#x636E;</h2>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x4FBF;&#x53EF;&#x4EE5;&#x63D2;&#x5165;&#x6570;&#x636E;&#x4E86;&#x3002;&#x5BF9;&#x4E8E;students&#x8FD9;&#x4E2A;&#x96C6;&#x5408;&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x6761;&#x5B66;&#x751F;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x6761;&#x6570;&#x636E;&#x4EE5;&#x5B57;&#x5178;&#x5F62;&#x5F0F;&#x8868;&#x793A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">student <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">&apos;id&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;20170101&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;Jordan&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;age&apos;</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;gender&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;male&apos;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x6307;&#x5B9A;&#x4E86;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x3001;&#x59D3;&#x540D;&#x3001;&#x5E74;&#x9F84;&#x548C;&#x6027;&#x522B;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x76F4;&#x63A5;&#x8C03;&#x7528;collection&#x7684;<code>insert()</code>&#x65B9;&#x6CD5;&#x5373;&#x53EF;&#x63D2;&#x5165;&#x6570;&#x636E;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">result <span class="token operator">=</span> collection<span class="token punctuation">.</span>insert<span class="token punctuation">(</span>student<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x5728;MongoDB&#x4E2D;&#xFF0C;&#x6BCF;&#x6761;&#x6570;&#x636E;&#x5176;&#x5B9E;&#x90FD;&#x6709;&#x4E00;&#x4E2A;<code>_id</code>&#x5C5E;&#x6027;&#x6765;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x6307;&#x660E;&#x8BE5;&#x5C5E;&#x6027;&#xFF0C;MongoDB&#x4F1A;&#x81EA;&#x52A8;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;<code>ObjectId</code>&#x7C7B;&#x578B;&#x7684;<code>_id</code>&#x5C5E;&#x6027;&#x3002;<code>insert()</code>&#x65B9;&#x6CD5;&#x4F1A;&#x5728;&#x6267;&#x884C;&#x540E;&#x8FD4;&#x56DE;<code>_id</code>&#x503C;&#x3002;</p>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x63D2;&#x5165;&#x591A;&#x6761;&#x6570;&#x636E;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x4EE5;&#x5217;&#x8868;&#x5F62;&#x5F0F;&#x4F20;&#x9012;&#x5373;&#x53EF;&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">student1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">&apos;id&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;20170101&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;Jordan&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;age&apos;</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;gender&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;male&apos;</span>
+<span class="token punctuation">}</span>
+
+student2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">&apos;id&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;20170202&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;Mike&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;age&apos;</span><span class="token punctuation">:</span> <span class="token number">21</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;gender&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;male&apos;</span>
+<span class="token punctuation">}</span>
+
+result <span class="token operator">=</span> collection<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token punctuation">[</span>student1<span class="token punctuation">,</span> student2<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;&#x5BF9;&#x5E94;&#x7684;<code>_id</code>&#x7684;&#x96C6;&#x5408;&#xFF1A;</p>
+<p>&#x5728;PyMongo 3.x&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x5B98;&#x65B9;&#x5DF2;&#x7ECF;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;<code>insert()</code>&#x65B9;&#x6CD5;&#x4E86;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;&#x4E5F;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#x3002;&#x5B98;&#x65B9;&#x63A8;&#x8350;&#x4F7F;&#x7528;<code>insert_one()</code>&#x548C;<code>insert_many()</code>&#x65B9;&#x6CD5;&#x6765;&#x5206;&#x522B;&#x63D2;&#x5165;&#x5355;&#x6761;&#x8BB0;&#x5F55;&#x548C;&#x591A;&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">student <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">&apos;id&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;20170101&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;Jordan&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;age&apos;</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;gender&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;male&apos;</span>
+<span class="token punctuation">}</span>
+
+result <span class="token operator">=</span> collection<span class="token punctuation">.</span>insert_one<span class="token punctuation">(</span>student<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>inserted_id<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8C03;&#x7528;&#x5176;<code>inserted_id</code>&#x5C5E;&#x6027;&#x83B7;&#x53D6;<code>_id</code>&#x3002;
+&#x5BF9;&#x4E8E;<code>insert_many()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x6570;&#x636E;&#x4EE5;&#x5217;&#x8868;&#x5F62;&#x5F0F;&#x4F20;&#x9012;&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">student1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">&apos;id&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;20170101&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;Jordan&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;age&apos;</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;gender&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;male&apos;</span>
+<span class="token punctuation">}</span>
+
+student2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">&apos;id&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;20170202&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;name&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;Mike&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;age&apos;</span><span class="token punctuation">:</span> <span class="token number">21</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;gender&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;male&apos;</span>
+<span class="token punctuation">}</span>
+
+result <span class="token operator">=</span> collection<span class="token punctuation">.</span>insert_many<span class="token punctuation">(</span><span class="token punctuation">[</span>student1<span class="token punctuation">,</span> student2<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>inserted_ids<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8C03;&#x7528;<code>inserted_ids</code>&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x63D2;&#x5165;&#x6570;&#x636E;&#x7684;<code>_id</code>&#x5217;&#x8868;&#x3002;
+<br></p>
+<h2 id="python&#x4F7F;&#x7528;pymongo&#x8BBF;&#x95EE;mongodb&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x53CA;csv&#x6587;&#x4EF6;&#x5BFC;&#x51FA;"><a name="python&#x4F7F;&#x7528;pymongo&#x8BBF;&#x95EE;mongodb&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x53CA;csv&#x6587;&#x4EF6;&#x5BFC;&#x51FA;" class="anchor-navigation-ex-anchor" href="#python&#x4F7F;&#x7528;pymongo&#x8BBF;&#x95EE;mongodb&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x53CA;csv&#x6587;&#x4EF6;&#x5BFC;&#x51FA;"><i class="fa fa-link" aria-hidden="true"></i></a>python&#x4F7F;&#x7528;pymongo&#x8BBF;&#x95EE;MongoDB&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x53CA;CSV&#x6587;&#x4EF6;&#x5BFC;&#x51FA;</h2>
+<p><br></p>
+<pre class="language-"><code class="lang-python"><span class="token comment"># coding:utf-8</span>
+<span class="token keyword">import</span> pymongo
+
+
+<span class="token keyword">class</span> <span class="token class-name">MongoDB</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>db<span class="token punctuation">,</span>collections<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        &#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x5E93;
+        :param db:&#x6570;&#x636E;&#x5E93;&#x540D;&#x79F0; 
+        :param collections: &#x6570;&#x636E;&#x5E93;&#x7684;&#x96C6;&#x5408;&#x7684;&#x540D;&#x79F0;
+        &quot;&quot;&quot;</span>
+        self<span class="token punctuation">.</span>client <span class="token operator">=</span> pymongo<span class="token punctuation">.</span>MongoClient<span class="token punctuation">(</span><span class="token string">&apos;localhost&apos;</span><span class="token punctuation">,</span> <span class="token number">27017</span><span class="token punctuation">)</span>    <span class="token comment">#&#x83B7;&#x53D6;&#x7684;&#x8FDE;&#x63A5;</span>
+        self<span class="token punctuation">.</span>db <span class="token operator">=</span> self<span class="token punctuation">.</span>client<span class="token punctuation">[</span>db<span class="token punctuation">]</span>        <span class="token comment">#&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;db</span>
+        self<span class="token punctuation">.</span>post <span class="token operator">=</span> self<span class="token punctuation">.</span>db<span class="token punctuation">[</span>collections<span class="token punctuation">]</span>    <span class="token comment">#&#x521B;&#x5EFA;&#x6216;&#x8005;&#x9009;&#x62E9;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x96C6;&#x5408;</span>
+
+
+    <span class="token keyword">def</span> <span class="token function">update</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> data<span class="token punctuation">,</span>upsert<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        &#x66F4;&#x65B0;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C;upsert&#x4E3A;Ture&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x65F6;&#x5C31;&#x76F4;&#x63A5;&#x63D2;&#x5165;&#xFF0C;&#x53CD;&#x4E4B;&#x4E0D;&#x6267;&#x884C;&#x63D2;&#x5165;
+        :param data: &#x8981;&#x63D2;&#x5165;&#x7684;&#x6570;&#x636E;
+        :param upsert: &#x5224;&#x65AD;&#x662F;&#x63D2;&#x5165;&#x8FD8;&#x662F;&#x4E0D;&#x63D2;&#x5165;
+        :return: 
+        &quot;&quot;&quot;</span>
+        self<span class="token punctuation">.</span>post<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">&quot;ip&quot;</span><span class="token punctuation">:</span> data<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">&apos;$set&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">&apos;ip&apos;</span><span class="token punctuation">:</span> data<span class="token punctuation">}</span><span class="token punctuation">}</span> <span class="token punctuation">,</span> upsert<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">find</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>select<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        &#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x67E5;&#x627E;&#x6307;&#x5B9A;&#x7684;&#x503C;&#xFF0C;&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x7684;select&#x662F;&#x5B57;&#x5178;
+        :param select: &#x6307;&#x5B9A;&#x7684;&#x67E5;&#x627E;&#x6761;&#x4EF6;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x662F;&#x5B57;&#x5178;&#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x6BD4;&#x5982;{&quot;name&quot;:&quot;chenjiabing&quot;,&quot;age&quot;:22}
+        :return: &#x8FD4;&#x56DE;&#x7684;&#x662F;&#x67E5;&#x8BE2;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x540C;&#x6837;&#x662F;&#x5B57;&#x5178;&#x7C7B;&#x578B;&#x7684;
+        &quot;&quot;&quot;</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>post<span class="token punctuation">.</span>find<span class="token punctuation">(</span>select<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">insert</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>data<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        &#x5411;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x63D2;&#x5165;&#x6307;&#x5B9A;&#x7684;&#x6570;&#x636E;
+        :param data: &#x8981;&#x63D2;&#x5165;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x662F;&#x5B57;&#x5178;&#x7684;&#x7C7B;&#x578B;&#x6BD4;&#x5982;&#xFF1A;{&quot;name&quot;:&quot;chenjiabing&quot;,&quot;age&quot;:22}
+        :return: &#x63D2;&#x5165;&#x6210;&#x529F;&#x8FD4;&#x56DE;True,&#x53CD;&#x4E4B;&#x8FD4;&#x56DE;false
+        &quot;&quot;&quot;</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>post<span class="token punctuation">.</span>insert<span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token boolean">True</span>
+        <span class="token keyword">except</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">False</span>
+
+    <span class="token keyword">def</span> <span class="token function">remove</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>select<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        &#x5220;&#x9664;&#x6307;&#x5B9A;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;
+        :param select: &#x6307;&#x5B9A;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;&#x5B57;&#x5178;&#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x6BD4;&#x5982;{&quot;age&quot;:22} &#x8868;&#x793A;&#x5220;&#x9664;age=22&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;
+        :return: &#x5982;&#x679C;&#x5220;&#x9664;&#x6210;&#x529F;&#x8FD4;&#x56DE;True&#xFF0C;else&#x8FD4;&#x56DE;False
+        &quot;&quot;&quot;</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>post<span class="token punctuation">.</span>remove<span class="token punctuation">(</span>select<span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token boolean">True</span>
+        <span class="token keyword">except</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">False</span>
+</code></pre>
+<pre class="language-"><code class="lang-python"><span class="token comment"># coding:utf-8</span>
+<span class="token keyword">import</span> requests
+<span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+<span class="token keyword">import</span> time
+<span class="token keyword">from</span> Queue <span class="token keyword">import</span> Queue
+<span class="token keyword">import</span> threading
+<span class="token keyword">from</span> Mongo <span class="token keyword">import</span> MongoDB   <span class="token comment">#&#x5BFC;&#x5165;&#x6587;&#x4EF6;</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">XICI</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> page<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        self.header:&#x8BF7;&#x6C42;&#x5934;
+        self.q:&#x5B58;&#x50A8;ip&#x7684;&#x961F;&#x5217;
+        slef.urls:&#x9875;&#x9762;&#x7684;url
+        :param page:&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x8868;&#x793A;&#x83B7;&#x53D6;&#x591A;&#x5C11;&#x9875;&#x7684;ip
+        &quot;&quot;&quot;</span>
+        self<span class="token punctuation">.</span>header <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;User-Agent&quot;</span><span class="token punctuation">:</span> <span class="token string">&apos;Mozilla/5.0 (Windows NT 6.3; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0&apos;</span><span class="token punctuation">}</span>
+        self<span class="token punctuation">.</span>q <span class="token operator">=</span> Queue<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> page <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>urls<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">&quot;http://www.xicidaili.com/nn/&quot;</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>mongo <span class="token operator">=</span> MongoDB<span class="token punctuation">(</span><span class="token string">&apos;python&apos;</span><span class="token punctuation">,</span><span class="token string">&apos;ip&apos;</span><span class="token punctuation">)</span>  <span class="token comment"># &#x521B;&#x5EFA;MogoDB&#x5BF9;&#x8C61;</span>
+
+    <span class="token keyword">def</span> <span class="token function">get_ips</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> url<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        &#x6839;&#x636E;&#x4E00;&#x9875;&#x7684;&#x8BF7;&#x6C42;&#x722C;&#x53D6;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x7684;ip
+        :param url:&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x8868;&#x793A;&#x6BCF;&#x4E00;&#x9875;&#x7684;&#x94FE;&#x63A5;
+        :return: None
+        &quot;&quot;&quot;</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            res <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">,</span> headers<span class="token operator">=</span>self<span class="token punctuation">.</span>header<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> res<span class="token punctuation">.</span>status_code <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">:</span>
+                soup <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>res<span class="token punctuation">.</span>text<span class="token punctuation">,</span> <span class="token string">&apos;lxml&apos;</span><span class="token punctuation">)</span>
+                ips <span class="token operator">=</span> soup<span class="token punctuation">.</span>find_all<span class="token punctuation">(</span><span class="token string">&apos;tr&apos;</span><span class="token punctuation">)</span>
+                <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>ips<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                    ip <span class="token operator">=</span> ips<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+                    tds <span class="token operator">=</span> ip<span class="token punctuation">.</span>find_all<span class="token punctuation">(</span><span class="token string">&quot;td&quot;</span><span class="token punctuation">)</span>
+                    ip_temp <span class="token operator">=</span> <span class="token string">&quot;http://&quot;</span> <span class="token operator">+</span> tds<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>contents<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">&quot;:&quot;</span> <span class="token operator">+</span> tds<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>contents<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+                    <span class="token keyword">print</span> ip_temp
+                    self<span class="token punctuation">.</span>q<span class="token punctuation">.</span>put<span class="token punctuation">(</span>ip_temp<span class="token punctuation">)</span>  <span class="token comment"># ip&#x8FDB;&#x5165;&#x961F;&#x5217;</span>
+
+        <span class="token keyword">except</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span> <span class="token string">&quot;-------------------------------------------&#x8BF7;&#x6C42;&#x51FA;&#x73B0;&#x5F02;&#x5E38;------------------------------------------------&quot;</span>
+
+    <span class="token keyword">def</span> <span class="token function">insert</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> url<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        &#x9A8C;&#x8BC1;&#x51FA;&#x8FC7;&#x6765;&#x7684;ip&#xFF0C;&#x5982;&#x679C;&#x6210;&#x529F;&#x5C31;&#x76F4;&#x63A5;&#x5B58;&#x5165;&#x6570;&#x636E;&#x5E93;
+        :param url: &#x9A8C;&#x8BC1;ip&#x5730;&#x5740;&#x7684;url
+        :return: &#x65E0;&#x8FD4;&#x56DE;&#x503C;
+        &quot;&quot;&quot;</span>
+        <span class="token keyword">while</span> <span class="token keyword">not</span> self<span class="token punctuation">.</span>q<span class="token punctuation">.</span>empty<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            ip <span class="token operator">=</span> self<span class="token punctuation">.</span>q<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            proxy <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;http&quot;</span><span class="token punctuation">:</span> ip<span class="token punctuation">}</span>
+            <span class="token keyword">print</span> proxy
+            <span class="token keyword">try</span><span class="token punctuation">:</span>
+                res <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">,</span> headers<span class="token operator">=</span>self<span class="token punctuation">.</span>header<span class="token punctuation">,</span> proxies<span class="token operator">=</span>proxy<span class="token punctuation">,</span> timeout<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">)</span>
+                <span class="token keyword">if</span> res<span class="token punctuation">.</span>status_code <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">:</span>
+                    self<span class="token punctuation">.</span>mongo<span class="token punctuation">.</span>update<span class="token punctuation">(</span>ip<span class="token punctuation">,</span><span class="token boolean">True</span><span class="token punctuation">)</span>  <span class="token comment"># &#x5982;&#x679C;&#x6210;&#x529F;&#x9A8C;&#x8BC1;&#x76F4;&#x63A5;&#x8FDB;&#x5165;&#x6570;&#x636E;&#x5E93;</span>
+                    <span class="token keyword">print</span> <span class="token string">&quot;**************************&#x6210;&#x529F;&#x5B58;&#x5165;&#x6570;&#x636E;&#x5E93;********************************************&quot;</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    <span class="token keyword">print</span> <span class="token string">&quot;&#x8FD9;&#x4E2A;ip&#x5730;&#x5740;&#x4E0D;&#x80FD;&#x7528;&quot;</span>
+
+            <span class="token keyword">except</span><span class="token punctuation">:</span>
+                <span class="token keyword">print</span> <span class="token string">&quot;--------------------------&#x8BF7;&#x6C42;&#x5931;&#x8D25;---------------------------------------------&quot;</span>
+
+    <span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> url <span class="token keyword">in</span> self<span class="token punctuation">.</span>urls<span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>get_ips<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+        threads <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            t<span class="token operator">=</span>threading<span class="token punctuation">.</span>Thread<span class="token punctuation">(</span>target<span class="token operator">=</span>self<span class="token punctuation">.</span>insert<span class="token punctuation">,</span>args<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&quot;http://blog.csdn.net/qq_34162294/article/details/72353389&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+            threads<span class="token punctuation">.</span>append<span class="token punctuation">(</span>t<span class="token punctuation">)</span>
+        <span class="token keyword">for</span> t <span class="token keyword">in</span> threads<span class="token punctuation">:</span>
+            t<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&apos;__main__&apos;</span><span class="token punctuation">:</span>
+    p <span class="token operator">=</span> XICI<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-25 
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="MongoDB基础.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: python MongoDB基础">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"python Python操作MongoDB","level":"7.1.2","depth":2,"previous":{"title":"python MongoDB基础","level":"7.1.1","depth":2,"path":"Chapter5/MongoDB基础.md","ref":"Chapter5/MongoDB基础.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"mathjax":{"forceSVG":true},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Office 三件套学习","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"Chapter5/Python操作MongoDB.md","mtime":"2020-05-25T13:42:22.976Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-20T02:36:30.336Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

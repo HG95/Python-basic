@@ -1,0 +1,1807 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Python 异步并发concurrent.futures模块 · Office 三件套学习</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="HHG">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../面向对象/" />
+    
+    
+    <link rel="prev" href="Python 多进程multiprocessing模块.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../基础/">
+            
+                <a href="../基础/">
+            
+                    
+                    python 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                <a href="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                    
+                    Python Python 中的 if name == 'main'
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../基础/Python 导入模块和package.html">
+            
+                <a href="../基础/Python 导入模块和package.html">
+            
+                    
+                    Python 导入模块和package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../基础/Python args和kwargs的用法.html">
+            
+                <a href="../基础/Python args和kwargs的用法.html">
+            
+                    
+                    Python args和kwargs的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../基础/Python 常用函数.html">
+            
+                <a href="../基础/Python 常用函数.html">
+            
+                    
+                    Python 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                <a href="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                    
+                    Python set集合的并集union, 交集intersection, 差集difference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../基础/Python 列表解析式.html">
+            
+                <a href="../基础/Python 列表解析式.html">
+            
+                    
+                    Python 列表解析式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../基础/Python list中append和extend函数区别.html">
+            
+                <a href="../基础/Python list中append和extend函数区别.html">
+            
+                    
+                    Python list中append和extend函数区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../基础/Python zip函数.html">
+            
+                <a href="../基础/Python zip函数.html">
+            
+                    
+                    Python zip()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../基础/Python enumerate函数.html">
+            
+                <a href="../基础/Python enumerate函数.html">
+            
+                    
+                    Python enumerate()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../基础/Python random函数.html">
+            
+                <a href="../基础/Python random函数.html">
+            
+                    
+                    Python random函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../基础/Python sort函数、sorted函数.html">
+            
+                <a href="../基础/Python sort函数、sorted函数.html">
+            
+                    
+                    Python 字符串 sort()函数、sorted()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../基础/Python 字符串的格式化.html">
+            
+                <a href="../基础/Python 字符串的格式化.html">
+            
+                    
+                    Python 字符串的格式化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../基础/Python 字符串 String 函数.html">
+            
+                <a href="../基础/Python 字符串 String 函数.html">
+            
+                    
+                    Python 字符串 String 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../基础/Python partition函数.html">
+            
+                <a href="../基础/Python partition函数.html">
+            
+                    
+                    Python partition函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="../基础/Python 位运算符、位运算高级运用.html">
+            
+                <a href="../基础/Python 位运算符、位运算高级运用.html">
+            
+                    
+                    Python 位运算符、位运算高级运用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="../基础/Python set集合之间的区别.html">
+            
+                <a href="../基础/Python set集合之间的区别.html">
+            
+                    
+                    Python set(集合) & 与 and 、 | 与 or之间的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="../基础/Python round函数，截取小数位数.html">
+            
+                <a href="../基础/Python round函数，截取小数位数.html">
+            
+                    
+                    Python round函数，截取小数位数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="../基础/Python 断言assert.html">
+            
+                <a href="../基础/Python 断言assert.html">
+            
+                    
+                    Python 断言assert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.19" >
+            
+                <span>
+            
+                    
+                    [Python 生成器和生成器函数]基础/Python 生成器和生成器函数.md)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.20" data-path="../基础/Python chr和ord函数.html">
+            
+                <a href="../基础/Python chr和ord函数.html">
+            
+                    
+                    Python chr()和ord()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.21" data-path="../基础/Python fnmatch模块.html">
+            
+                <a href="../基础/Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.22" data-path="../基础/Python copy模块.html">
+            
+                <a href="../基础/Python copy模块.html">
+            
+                    
+                    Python copy模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.23" data-path="../基础/Python collections模块.html">
+            
+                <a href="../基础/Python collections模块.html">
+            
+                    
+                    Python collections模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.24" data-path="../基础/Python itertools 模块.html">
+            
+                <a href="../基础/Python itertools 模块.html">
+            
+                    
+                    Python itertools 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.25" data-path="../基础/Python 时间模块.html">
+            
+                <a href="../基础/Python 时间模块.html">
+            
+                    
+                    Python 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.26" data-path="../基础/Python Arrow 时间模块.html">
+            
+                <a href="../基础/Python Arrow 时间模块.html">
+            
+                    
+                    Python Arrow 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../文件处理/">
+            
+                <a href="../文件处理/">
+            
+                    
+                    python 文件处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../文件处理/Python open函数.html">
+            
+                <a href="../文件处理/Python open函数.html">
+            
+                    
+                    Python open() 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../文件处理/Python pandas读写csv文件.html">
+            
+                <a href="../文件处理/Python pandas读写csv文件.html">
+            
+                    
+                    Python pandas读写csv文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../文件处理/Python pandas读写excel文件.html">
+            
+                <a href="../文件处理/Python pandas读写excel文件.html">
+            
+                    
+                    Python pandas读写excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../文件处理/Python 读写Excel文件.html">
+            
+                <a href="../文件处理/Python 读写Excel文件.html">
+            
+                    
+                    Python 读/写Excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../文件处理/Python openpyxl模块.html">
+            
+                <a href="../文件处理/Python openpyxl模块.html">
+            
+                    
+                    Python openpyxl模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../文件处理/Python csv模块.html">
+            
+                <a href="../文件处理/Python csv模块.html">
+            
+                    
+                    Python csv模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../文件处理/Python os模块.html">
+            
+                <a href="../文件处理/Python os模块.html">
+            
+                    
+                    Python os模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../文件处理/Python glob模块.html">
+            
+                <a href="../文件处理/Python glob模块.html">
+            
+                    
+                    Python glob模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../文件处理/Python fnmatch模块.html">
+            
+                <a href="../文件处理/Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../文件处理/Python pathlib模块.html">
+            
+                <a href="../文件处理/Python pathlib模块.html">
+            
+                    
+                    Python pathlib模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../文件处理/Python os.walk遍历目录树.html">
+            
+                <a href="../文件处理/Python os.walk遍历目录树.html">
+            
+                    
+                    Python os.walk遍历目录树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../文件处理/Python os.scandir文件操作.html">
+            
+                <a href="../文件处理/Python os.scandir文件操作.html">
+            
+                    
+                    Python os.scandir文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../文件处理/Python 文件过滤.html">
+            
+                <a href="../文件处理/Python 文件过滤.html">
+            
+                    
+                    Python 文件过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../文件处理/Python JSON模块.html">
+            
+                <a href="../文件处理/Python JSON模块.html">
+            
+                    
+                    Python JSON模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../文件处理/Python JsonPath模块.html">
+            
+                <a href="../文件处理/Python JsonPath模块.html">
+            
+                    
+                    Python JsonPath模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="../文件处理/Python shutil模块.html">
+            
+                <a href="../文件处理/Python shutil模块.html">
+            
+                    
+                    Python shutil模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="../文件处理/Python ZIP文件读取，解压.html">
+            
+                <a href="../文件处理/Python ZIP文件读取，解压.html">
+            
+                    
+                    Python ZIP文件读取，解压
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="../文件处理/Python with...as的用法.html">
+            
+                <a href="../文件处理/Python with...as的用法.html">
+            
+                    
+                    Python with...as的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../正则表达式/">
+            
+                <a href="../正则表达式/">
+            
+                    
+                    python 正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../正则表达式/正则表达式基础语法.html">
+            
+                <a href="../正则表达式/正则表达式基础语法.html">
+            
+                    
+                    python 正则表达式基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../正则表达式/正则表达式 常用函数.html">
+            
+                <a href="../正则表达式/正则表达式 常用函数.html">
+            
+                    
+                    python 正则表达式 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../正则表达式/正则表达式 re.sub.html">
+            
+                <a href="../正则表达式/正则表达式 re.sub.html">
+            
+                    
+                    python 正则表达式 re.sub()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../正则表达式/正则表达式 re.match与re.search.html">
+            
+                <a href="../正则表达式/正则表达式 re.match与re.search.html">
+            
+                    
+                    python 正则表达式 match()与search()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../正则表达式/正则表达式 re.findall与re.finditer.html">
+            
+                <a href="../正则表达式/正则表达式 re.findall与re.finditer.html">
+            
+                    
+                    python 正则表达式 re.findall()与re.finditer()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../正则表达式/正则表达式 re.compile.html">
+            
+                <a href="../正则表达式/正则表达式 re.compile.html">
+            
+                    
+                    python 正则表达式 re.compile()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../正则表达式/正则表达式 flags 参数.html">
+            
+                <a href="../正则表达式/正则表达式 flags 参数.html">
+            
+                    
+                    python 正则表达式 flags 参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../正则表达式/正则表达式 去优先级，选择.html">
+            
+                <a href="../正则表达式/正则表达式 去优先级，选择.html">
+            
+                    
+                    python 正则表达式 去优先级，选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../正则表达式/正则表达式 模式匹配与正则表达式一.html">
+            
+                <a href="../正则表达式/正则表达式 模式匹配与正则表达式一.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../正则表达式/正则表达式 模式匹配与正则表达式二.html">
+            
+                <a href="../正则表达式/正则表达式 模式匹配与正则表达式二.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 二
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    python 多进程-多线程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="Python 多进程multiprocessing模块.html">
+            
+                <a href="Python 多进程multiprocessing模块.html">
+            
+                    
+                    Python 多进程multiprocessing模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.1.2" data-path="Python 异步并发concurrent.futures模块.html">
+            
+                <a href="Python 异步并发concurrent.futures模块.html">
+            
+                    
+                    Python 异步并发concurrent.futures模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../面向对象/">
+            
+                <a href="../面向对象/">
+            
+                    
+                    python 面向对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../面向对象/类.html">
+            
+                <a href="../面向对象/类.html">
+            
+                    
+                    python 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../面向对象/面向对象编程.html">
+            
+                <a href="../面向对象/面向对象编程.html">
+            
+                    
+                    python 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../面向对象/绑定方法与非绑定方法.html">
+            
+                <a href="../面向对象/绑定方法与非绑定方法.html">
+            
+                    
+                    python 绑定方法与非绑定方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../面向对象/实例方法、类方法和静态方法.html">
+            
+                <a href="../面向对象/实例方法、类方法和静态方法.html">
+            
+                    
+                    python 实例方法、类方法和静态方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../面向对象/面向对象编程--组合.html">
+            
+                <a href="../面向对象/面向对象编程--组合.html">
+            
+                    
+                    python 面向对象编程--组合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                <a href="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                    
+                    python 子类继承父类构造函数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.7" data-path="../面向对象/面向对象描述符.html">
+            
+                <a href="../面向对象/面向对象描述符.html">
+            
+                    
+                    python 面向对象描述符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.8" data-path="../面向对象/反射机制.html">
+            
+                <a href="../面向对象/反射机制.html">
+            
+                    
+                    python 反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.9" data-path="../面向对象/slots.html">
+            
+                <a href="../面向对象/slots.html">
+            
+                    
+                    python slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.10" data-path="../面向对象/属性property.html">
+            
+                <a href="../面向对象/属性property.html">
+            
+                    
+                    python 属性property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.11" data-path="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                <a href="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                    
+                    python attrs 和 cattrs 实现面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.12" data-path="../面向对象/Dataclasses.html">
+            
+                <a href="../面向对象/Dataclasses.html">
+            
+                    
+                    python Dataclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    python MongoDB数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../Chapter5/MongoDB基础.html">
+            
+                <a href="../Chapter5/MongoDB基础.html">
+            
+                    
+                    python MongoDB基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../Chapter5/Python操作MongoDB.html">
+            
+                <a href="../Chapter5/Python操作MongoDB.html">
+            
+                    
+                    python Python操作MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Python 异步并发concurrent.futures模块</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#python-&#x5F02;&#x6B65;&#x5E76;&#x53D1;concurrentfutures&#x6A21;&#x5757;">Python &#x5F02;&#x6B65;&#x5E76;&#x53D1;concurrent.futures&#x6A21;&#x5757;</a></li><ul><li><a href="#executor&#x5BF9;&#x8C61;">Executor&#x5BF9;&#x8C61;</a></li><li><a href="#threadpoolexecutor&#x5BF9;&#x8C61;">ThreadPoolExecutor&#x5BF9;&#x8C61;</a></li><li><a href="#&#x7EBF;&#x7A0B;&#x6C60;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;">&#x7EBF;&#x7A0B;&#x6C60;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;</a></li><ul><li><a href="#&#x4E3B;&#x8981;&#x65B9;&#x6CD5;">&#x4E3B;&#x8981;&#x65B9;&#x6CD5;</a></li><li><a href="#processpoolexecutor&#x5BF9;&#x8C61;">ProcessPoolExecutor&#x5BF9;&#x8C61;</a></li></ul></ul></ul></div><a href="#python-&#x5F02;&#x6B65;&#x5E76;&#x53D1;concurrentfutures&#x6A21;&#x5757;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="python-&#x5F02;&#x6B65;&#x5E76;&#x53D1;concurrentfutures&#x6A21;&#x5757;"><a name="python-&#x5F02;&#x6B65;&#x5E76;&#x53D1;concurrentfutures&#x6A21;&#x5757;" class="anchor-navigation-ex-anchor" href="#python-&#x5F02;&#x6B65;&#x5E76;&#x53D1;concurrentfutures&#x6A21;&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>Python &#x5F02;&#x6B65;&#x5E76;&#x53D1;concurrent.futures&#x6A21;&#x5757;</h1>
+<p>&#xFEFF;python&#x5F02;&#x6B65;&#x5E76;&#x53D1;&#x6A21;&#x5757;concurrent.futures&#x3002;&#x5B83;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x6613;&#x7528;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x591A;&#x7EBF;&#x7A0B;&#x548C;&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x5F02;&#x6B65;&#x5E76;&#x53D1;&#x3002;</p>
+<h2 id="executor&#x5BF9;&#x8C61;"><a name="executor&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#executor&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>Executor&#x5BF9;&#x8C61;</h2>
+<pre class="language-"><code class="lang-python"><span class="token keyword">class</span> <span class="token class-name">concurrent</span><span class="token punctuation">.</span>futures<span class="token punctuation">.</span>Executor
+</code></pre>
+<p>Executor&#x662F;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7C7B;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x5F02;&#x6B65;&#x6267;&#x884C;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5B83;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B83;&#x7684;&#x4E24;&#x4E2A;&#x5B50;&#x7C7B;<code>ThreadPoolExecutor</code>&#x6216;&#x8005;<code>ProcessPoolExecutor</code>&#x8FDB;&#x884C;&#x8C03;&#x7528;&#x3002;</p>
+<pre class="language-"><code class="lang-python">Executor<span class="token punctuation">.</span>submit<span class="token punctuation">(</span>fn<span class="token punctuation">,</span> <span class="token operator">*</span>args<span class="token punctuation">,</span> <span class="token operator">**</span>kwargs<span class="token punctuation">)</span>
+
+fn&#xFF1A;&#x9700;&#x8981;&#x5F02;&#x6B65;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;
+
+<span class="token operator">*</span>args<span class="token punctuation">,</span> <span class="token operator">**</span>kwargs&#xFF1A;fn&#x53C2;&#x6570;
+</code></pre>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> concurrent <span class="token keyword">import</span> futures
+
+
+<span class="token keyword">def</span> <span class="token function">test</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">import</span> time
+    <span class="token keyword">return</span> time<span class="token punctuation">.</span>ctime<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> num
+
+
+<span class="token keyword">with</span> futures<span class="token punctuation">.</span>ThreadPoolExecutor<span class="token punctuation">(</span>max_workers<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">as</span> executor<span class="token punctuation">:</span>
+    future <span class="token operator">=</span> executor<span class="token punctuation">.</span>submit<span class="token punctuation">(</span>test<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>future<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>      
+
+    <span class="token comment">#(&apos;Tue Oct 29 21:47:45 2019&apos;, 1)</span>
+</code></pre>
+<pre class="language-"><code class="lang-python">Executor<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>func<span class="token punctuation">,</span> <span class="token operator">*</span>iterables<span class="token punctuation">,</span> timeout<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span>
+
+&#x76F8;&#x5F53;&#x4E8E;<span class="token builtin">map</span><span class="token punctuation">(</span>func<span class="token punctuation">,</span> <span class="token operator">*</span>iterables<span class="token punctuation">)</span>&#xFF0C;&#x4F46;&#x662F;func&#x662F;&#x5F02;&#x6B65;&#x6267;&#x884C;&#x3002;timeout&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x662F;<span class="token builtin">int</span>&#x6216;<span class="token builtin">float</span>&#xFF0C;&#x5982;&#x679C;&#x64CD;&#x4F5C;&#x8D85;&#x65F6;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;raisesTimeoutError&#xFF1B;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;timeout&#x53C2;&#x6570;&#xFF0C;&#x5219;&#x4E0D;&#x8BBE;&#x7F6E;&#x8D85;&#x65F6;&#x95F4;&#x3002;
+
+func&#xFF1A;&#x9700;&#x8981;&#x5F02;&#x6B65;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;
+
+<span class="token operator">*</span>iterables&#xFF1A;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#xFF0C;&#x5982;&#x5217;&#x8868;&#x7B49;&#x3002;&#x6BCF;&#x4E00;&#x6B21;func&#x6267;&#x884C;&#xFF0C;&#x90FD;&#x4F1A;&#x4ECE;iterables&#x4E2D;&#x53D6;&#x53C2;&#x6570;&#x3002;
+
+timeout&#xFF1A;&#x8BBE;&#x7F6E;&#x6BCF;&#x6B21;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x95F4;
+</code></pre>
+<pre class="language-"><code class="lang-python">data <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
+<span class="token keyword">with</span> futures<span class="token punctuation">.</span>ThreadPoolExecutor<span class="token punctuation">(</span>max_workers<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">as</span> executor<span class="token punctuation">:</span>
+    <span class="token keyword">for</span> future <span class="token keyword">in</span> executor<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>test<span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>future<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+(&apos;Tue Oct 29 21:52:01 2019&apos;, 1)
+(&apos;Tue Oct 29 21:52:01 2019&apos;, 2)
+(&apos;Tue Oct 29 21:52:01 2019&apos;, 3)
+&apos;&apos;&apos;</span>
+</code></pre>
+<p>&#x5173;&#x95ED;&#x7EBF;&#x7A0B;</p>
+<pre class="language-"><code class="lang-python">Executor<span class="token punctuation">.</span>shutdown<span class="token punctuation">(</span>wait<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+&#x91CA;&#x653E;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;<span class="token punctuation">,</span>&#x5728;Executor<span class="token punctuation">.</span>submit<span class="token punctuation">(</span><span class="token punctuation">)</span>&#x6216; Executor<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>&#x7B49;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x540E;&#x8C03;&#x7528;&#x3002;
+&#x4F7F;&#x7528;<span class="token keyword">with</span>&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x663E;&#x5F0F;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x3002;
+</code></pre>
+<h2 id="threadpoolexecutor&#x5BF9;&#x8C61;"><a name="threadpoolexecutor&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#threadpoolexecutor&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>ThreadPoolExecutor&#x5BF9;&#x8C61;</h2>
+<pre class="language-"><code class="lang-python">ThreadPoolExecutor&#x7C7B;&#x662F;Executor&#x5B50;&#x7C7B;&#xFF0C;&#x4F7F;&#x7528;&#x7EBF;&#x7A0B;&#x6C60;&#x6267;&#x884C;&#x5F02;&#x6B65;&#x8C03;&#x7528;<span class="token punctuation">.</span>
+
+<span class="token keyword">class</span> <span class="token class-name">concurrent</span><span class="token punctuation">.</span>futures<span class="token punctuation">.</span>ThreadPoolExecutor<span class="token punctuation">(</span>max_workers<span class="token punctuation">)</span>
+
+&#x4F7F;&#x7528;max_workers&#x6570;&#x76EE;&#x7684;&#x7EBF;&#x7A0B;&#x6C60;&#x6267;&#x884C;&#x5F02;&#x6B65;&#x8C03;&#x7528;
+</code></pre>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">from</span>  datetime <span class="token keyword">import</span> date
+<span class="token keyword">from</span> time <span class="token keyword">import</span> time
+
+<span class="token keyword">from</span>  concurrent<span class="token punctuation">.</span>futures <span class="token keyword">import</span> ThreadPoolExecutor<span class="token punctuation">,</span>ProcessPoolExecutor
+<span class="token keyword">def</span> <span class="token function">parse</span> <span class="token punctuation">(</span>date_str<span class="token punctuation">,</span> point<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>date_str<span class="token punctuation">,</span><span class="token string">&apos;-------&gt;&apos;</span><span class="token punctuation">,</span>point<span class="token punctuation">)</span>
+
+<span class="token comment">#&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x5BF9;&#x8C61;&#xFF0C;&#x548C;&#x7EBF;&#x7A0B;&#x4E2A;&#x6570;</span>
+
+threadPool <span class="token operator">=</span> ThreadPoolExecutor<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
+
+date_list <span class="token operator">=</span> pd<span class="token punctuation">.</span>date_range<span class="token punctuation">(</span><span class="token string">&quot;19000101&quot;</span><span class="token punctuation">,</span> <span class="token builtin">str</span><span class="token punctuation">(</span>date<span class="token punctuation">.</span>today<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x65F6;&#x95F4;&#x70B9;</span>
+time_point <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">14</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span>
+
+<span class="token keyword">for</span> each_date <span class="token keyword">in</span> date_list<span class="token punctuation">:</span>
+    date_str <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>each_date<span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">&quot; &quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> each_point <span class="token keyword">in</span> time_point<span class="token punctuation">:</span>
+        <span class="token comment"># &#x591A;&#x7EBF;&#x7A0B;</span>
+        threadPool<span class="token punctuation">.</span>submit<span class="token punctuation">(</span>
+            parse<span class="token punctuation">,</span>
+            date_str<span class="token operator">=</span>date_str<span class="token punctuation">,</span>
+            point<span class="token operator">=</span>each_point
+        <span class="token punctuation">)</span>
+
+<span class="token comment"># &#x5173;&#x95ED;&#x7EBF;&#x7A0B;&#x6C60;</span>
+threadPool<span class="token punctuation">.</span>shutdown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="&#x7EBF;&#x7A0B;&#x6C60;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;"><a name="&#x7EBF;&#x7A0B;&#x6C60;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x7EBF;&#x7A0B;&#x6C60;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EBF;&#x7A0B;&#x6C60;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
+<pre class="language-"><code class="lang-python"><span class="token comment"># coding: utf-8</span>
+<span class="token keyword">from</span> concurrent<span class="token punctuation">.</span>futures <span class="token keyword">import</span> ThreadPoolExecutor
+<span class="token keyword">import</span> time
+
+
+<span class="token keyword">def</span> <span class="token function">spider</span><span class="token punctuation">(</span>page<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>page<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;crawl task</span><span class="token interpolation"><span class="token punctuation">{</span>page<span class="token punctuation">}</span></span><span class="token string"> finished&quot;</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> page
+
+<span class="token keyword">with</span> ThreadPoolExecutor<span class="token punctuation">(</span>max_workers<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token keyword">as</span> t<span class="token punctuation">:</span>  <span class="token comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6700;&#x5927;&#x5BB9;&#x7EB3;&#x6570;&#x91CF;&#x4E3A;5&#x7684;&#x7EBF;&#x7A0B;&#x6C60;</span>
+    task1 <span class="token operator">=</span> t<span class="token punctuation">.</span>submit<span class="token punctuation">(</span>spider<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    task2 <span class="token operator">=</span> t<span class="token punctuation">.</span>submit<span class="token punctuation">(</span>spider<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>  <span class="token comment"># &#x901A;&#x8FC7;submit&#x63D0;&#x4EA4;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;&#x5230;&#x7EBF;&#x7A0B;&#x6C60;&#x4E2D;</span>
+    task3 <span class="token operator">=</span> t<span class="token punctuation">.</span>submit<span class="token punctuation">(</span>spider<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;task1: </span><span class="token interpolation"><span class="token punctuation">{</span>task1<span class="token punctuation">.</span>done<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>  <span class="token comment"># &#x901A;&#x8FC7;done&#x6765;&#x5224;&#x65AD;&#x7EBF;&#x7A0B;&#x662F;&#x5426;&#x5B8C;&#x6210;</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;task2: </span><span class="token interpolation"><span class="token punctuation">{</span>task2<span class="token punctuation">.</span>done<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;task3: </span><span class="token interpolation"><span class="token punctuation">{</span>task3<span class="token punctuation">.</span>done<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>
+
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2.5</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;task1: </span><span class="token interpolation"><span class="token punctuation">{</span>task1<span class="token punctuation">.</span>done<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;task2: </span><span class="token interpolation"><span class="token punctuation">{</span>task2<span class="token punctuation">.</span>done<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;task3: </span><span class="token interpolation"><span class="token punctuation">{</span>task3<span class="token punctuation">.</span>done<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>task1<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># &#x901A;&#x8FC7;result&#x6765;&#x83B7;&#x53D6;&#x8FD4;&#x56DE;&#x503C;</span>
+</code></pre>
+<p>&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;:</p>
+<pre class="language-"><code class="lang-python">task1<span class="token punctuation">:</span> <span class="token boolean">False</span>
+task2<span class="token punctuation">:</span> <span class="token boolean">False</span>
+task3<span class="token punctuation">:</span> <span class="token boolean">False</span>
+crawl task1 finished
+crawl task2 finished
+task1<span class="token punctuation">:</span> <span class="token boolean">True</span>
+task2<span class="token punctuation">:</span> <span class="token boolean">True</span>
+task3<span class="token punctuation">:</span> <span class="token boolean">False</span>
+<span class="token number">1</span>
+crawl task3 finished
+</code></pre>
+<ol>
+<li>&#x4F7F;&#x7528;<code>with</code> &#x8BED;&#x53E5; &#xFF0C;&#x901A;&#x8FC7; <code>ThreadPoolExecutor</code>&#x6784;&#x9020;&#x5B9E;&#x4F8B;&#xFF0C;&#x540C;&#x65F6;&#x4F20;&#x5165; <code>max_workers</code> &#x53C2;&#x6570;&#x6765;&#x8BBE;&#x7F6E;&#x7EBF;&#x7A0B;&#x6C60;&#x4E2D;&#x6700;&#x591A;&#x80FD;&#x540C;&#x65F6;&#x8FD0;&#x884C;&#x7684;&#x7EBF;&#x7A0B;&#x6570;&#x76EE;&#x3002;</li>
+<li>&#x4F7F;&#x7528;<code>submit &#x51FD;&#x6570;</code>&#x6765;&#x63D0;&#x4EA4;&#x7EBF;&#x7A0B;&#x9700;&#x8981;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x5230;&#x7EBF;&#x7A0B;&#x6C60;&#x4E2D;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x8BE5;&#x4EFB;&#x52A1;&#x7684;&#x53E5;&#x67C4;&#xFF08;&#x7C7B;&#x4F3C;&#x4E8E;&#x6587;&#x4EF6;&#x3001;&#x753B;&#x56FE;&#xFF09;&#xFF0C;&#x6CE8;&#x610F; submit() &#x4E0D;&#x662F;&#x963B;&#x585E;&#x7684;&#xFF0C;&#x800C;&#x662F;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>&#x901A;&#x8FC7;&#x4F7F;&#x7528; <code>done() &#x65B9;&#x6CD5;</code>&#x5224;&#x65AD;&#x8BE5;&#x4EFB;&#x52A1;&#x662F;&#x5426;&#x7ED3;&#x675F;&#x3002;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x63D0;&#x4EA4;&#x4EFB;&#x52A1;&#x540E;&#x7ACB;&#x5373;&#x5224;&#x65AD;&#x4EFB;&#x52A1;&#x72B6;&#x6001;&#xFF0C;&#x663E;&#x793A;&#x56DB;&#x4E2A;&#x4EFB;&#x52A1;&#x90FD;&#x672A;&#x5B8C;&#x6210;&#x3002;&#x5728;&#x5EF6;&#x65F6;2.5&#x540E;&#xFF0C;task1 &#x548C; task2 &#x6267;&#x884C;&#x5B8C;&#x6BD5;&#xFF0C;task3 &#x4ECD;&#x5728;&#x6267;&#x884C;&#x4E2D;&#x3002;</li>
+<li>&#x4F7F;&#x7528;<code>result() &#x65B9;&#x6CD5;</code>&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x4EFB;&#x52A1;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x3002;</li>
+</ol>
+<h3 id="&#x4E3B;&#x8981;&#x65B9;&#x6CD5;"><a name="&#x4E3B;&#x8981;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x4E3B;&#x8981;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3B;&#x8981;&#x65B9;&#x6CD5;</h3>
+<h4 id="wait"><a name="wait" class="anchor-navigation-ex-anchor" href="#wait"><i class="fa fa-link" aria-hidden="true"></i></a>wait</h4>
+<pre class="language-"><code class="lang-python"> wait<span class="token punctuation">(</span>fs<span class="token punctuation">,</span> timeout<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> return_when<span class="token operator">=</span>ALL_COMPLETED<span class="token punctuation">)</span>
+</code></pre>
+<p><code>wait</code>&#x63A5;&#x53D7;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF1A; <code>fs</code>: &#x8868;&#x793A;&#x9700;&#x8981;&#x6267;&#x884C;&#x7684;&#x5E8F;&#x5217; timeout: &#x7B49;&#x5F85;&#x7684;&#x6700;&#x5927;&#x65F6;&#x95F4;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x8FC7;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x5373;&#x4F7F;&#x7EBF;&#x7A0B;&#x672A;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x4E5F;&#x5C06;&#x8FD4;&#x56DE; ,<code>return_when</code>&#xFF1A;&#x8868;&#x793A;wait&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>ALL_COMPLETED</code> &#x5168;&#x90E8;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x518D;&#x8FD4;&#x56DE;.</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> concurrent<span class="token punctuation">.</span>futures <span class="token keyword">import</span> ThreadPoolExecutor<span class="token punctuation">,</span> wait<span class="token punctuation">,</span> FIRST_COMPLETED<span class="token punctuation">,</span> ALL_COMPLETED
+<span class="token keyword">import</span> time
+
+<span class="token keyword">def</span> <span class="token function">spider</span><span class="token punctuation">(</span>page<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>page<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;crawl task</span><span class="token interpolation"><span class="token punctuation">{</span>page<span class="token punctuation">}</span></span><span class="token string"> finished&quot;</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> page
+
+<span class="token keyword">with</span> ThreadPoolExecutor<span class="token punctuation">(</span>max_workers<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token keyword">as</span> t<span class="token punctuation">:</span> 
+    all_task <span class="token operator">=</span> <span class="token punctuation">[</span>t<span class="token punctuation">.</span>submit<span class="token punctuation">(</span>spider<span class="token punctuation">,</span> page<span class="token punctuation">)</span> <span class="token keyword">for</span> page <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+    wait<span class="token punctuation">(</span>all_task<span class="token punctuation">,</span> return_when<span class="token operator">=</span>FIRST_COMPLETED<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;finished&apos;</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>wait<span class="token punctuation">(</span>all_task<span class="token punctuation">,</span> timeout<span class="token operator">=</span><span class="token number">2.5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># &#x8FD0;&#x884C;&#x7ED3;&#x679C;</span>
+crawl task1 finished
+finished
+crawl task2 finished
+crawl task3 finished
+DoneAndNotDoneFutures<span class="token punctuation">(</span>done<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">&lt;</span>Future at <span class="token number">0x28c8710</span> state<span class="token operator">=</span>finished returned <span class="token builtin">int</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> <span class="token operator">&lt;</span>Future at <span class="token number">0x2c2bfd0</span> state<span class="token operator">=</span>finished returned <span class="token builtin">int</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> <span class="token operator">&lt;</span>Future at <span class="token number">0x2c1b7f0</span> state<span class="token operator">=</span>finished returned <span class="token builtin">int</span><span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token punctuation">,</span> not_done<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">&lt;</span>Future at <span class="token number">0x2c3a240</span> state<span class="token operator">=</span>running<span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+crawl task4 finished
+</code></pre>
+<h4 id="ascompleted"><a name="ascompleted" class="anchor-navigation-ex-anchor" href="#ascompleted"><i class="fa fa-link" aria-hidden="true"></i></a>as_completed</h4>
+<p>&#x4E0A;&#x9762;&#x867D;&#x7136;&#x63D0;&#x4F9B;&#x4E86;&#x5224;&#x65AD;&#x4EFB;&#x52A1;&#x662F;&#x5426;&#x7ED3;&#x675F;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x4E00;&#x76F4;&#x5224;&#x65AD;&#x554A;&#x3002;&#x6700;&#x597D;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x5F53;&#x67D0;&#x4E2A;&#x4EFB;&#x52A1;&#x7ED3;&#x675F;&#x4E86;&#xFF0C;&#x5C31;&#x7ED9;&#x4E3B;&#x7EBF;&#x7A0B;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x76F4;&#x5224;&#x65AD;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x662F;&#x5426;&#x7ED3;&#x675F;&#x3002;
+<code>ThreadPoolExecutor</code> &#x4E2D; &#x7684; <code>as_completed()</code> &#x5C31;&#x662F;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5F53;&#x5B50;&#x7EBF;&#x7A0B;&#x4E2D;&#x7684;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x5B8C;&#x540E;&#xFF0C;&#x76F4;&#x63A5;&#x7528; <code>result()</code>&#x83B7;&#x53D6;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;</p>
+<pre class="language-"><code class="lang-python"><span class="token comment"># coding: utf-8</span>
+<span class="token keyword">from</span> concurrent<span class="token punctuation">.</span>futures <span class="token keyword">import</span> ThreadPoolExecutor<span class="token punctuation">,</span> as_completed
+<span class="token keyword">import</span> time
+
+
+<span class="token keyword">def</span> <span class="token function">spider</span><span class="token punctuation">(</span>page<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>page<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;crawl task</span><span class="token interpolation"><span class="token punctuation">{</span>page<span class="token punctuation">}</span></span><span class="token string"> finished&quot;</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> page
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">with</span> ThreadPoolExecutor<span class="token punctuation">(</span>max_workers<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token keyword">as</span> t<span class="token punctuation">:</span>
+        obj_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> page <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            obj <span class="token operator">=</span> t<span class="token punctuation">.</span>submit<span class="token punctuation">(</span>spider<span class="token punctuation">,</span> page<span class="token punctuation">)</span>
+            obj_list<span class="token punctuation">.</span>append<span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+
+        <span class="token keyword">for</span> future <span class="token keyword">in</span> as_completed<span class="token punctuation">(</span>obj_list<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            data <span class="token operator">=</span> future<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;main: </span><span class="token interpolation"><span class="token punctuation">{</span>data<span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>
+
+<span class="token comment"># &#x6267;&#x884C;&#x7ED3;&#x679C;</span>
+crawl task1 finished
+main<span class="token punctuation">:</span> <span class="token number">1</span>
+crawl task2 finished
+main<span class="token punctuation">:</span> <span class="token number">2</span>
+crawl task3 finished
+main<span class="token punctuation">:</span> <span class="token number">3</span>
+crawl task4 finished
+main<span class="token punctuation">:</span> <span class="token number">4</span>
+</code></pre>
+<p><code>as_completed()</code> &#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x4E2A;&#x751F;&#x6210;&#x5668;&#xFF0C;&#x5728;&#x6CA1;&#x6709;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x4E00;&#x76F4;&#x963B;&#x585E;&#xFF0C;&#x9664;&#x975E;&#x8BBE;&#x7F6E;&#x4E86; timeout&#x3002;
+&#x5F53;&#x6709;&#x67D0;&#x4E2A;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A; yield &#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#xFF0C;&#x5C31;&#x80FD;&#x6267;&#x884C; for &#x5FAA;&#x73AF;&#x4E0B;&#x9762;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x7136;&#x540E;&#x7EE7;&#x7EED;&#x963B;&#x585E;&#x4F4F;&#xFF0C;&#x5FAA;&#x73AF;&#x5230;&#x6240;&#x6709;&#x7684;&#x4EFB;&#x52A1;&#x7ED3;&#x675F;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x5148;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x4F1A;&#x5148;&#x8FD4;&#x56DE;&#x7ED9;&#x4E3B;&#x7EBF;&#x7A0B;&#x3002;</p>
+<h4 id="map"><a name="map" class="anchor-navigation-ex-anchor" href="#map"><i class="fa fa-link" aria-hidden="true"></i></a>map</h4>
+<pre class="language-"><code class="lang-python"><span class="token builtin">map</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> <span class="token operator">*</span>iterables<span class="token punctuation">,</span> timeout<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span>
+</code></pre>
+<p><code>fn</code>&#xFF1A; &#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570; fn &#x662F;&#x9700;&#x8981;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;&#xFF1B;
+<code>iterables</code>&#xFF1A;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#xFF1B;
+<code>timeout</code>&#xFF1A; &#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570; timeout &#x8DDF; wait() &#x7684; timeout &#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x7531;&#x4E8E; map &#x662F;&#x8FD4;&#x56DE;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x679C; timeout&#x5C0F;&#x4E8E;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x4F1A;&#x629B;&#x5F02;&#x5E38; TimeoutError&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> time
+<span class="token keyword">from</span> concurrent<span class="token punctuation">.</span>futures <span class="token keyword">import</span> ThreadPoolExecutor
+
+<span class="token keyword">def</span> <span class="token function">spider</span><span class="token punctuation">(</span>page<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>page<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> page
+
+start <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+executor <span class="token operator">=</span> ThreadPoolExecutor<span class="token punctuation">(</span>max_workers<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">)</span>
+
+i <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token keyword">for</span> result <span class="token keyword">in</span> executor<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>spider<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;task{}:{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    i <span class="token operator">+=</span> <span class="token number">1</span>
+
+<span class="token comment">#  &#x8FD0;&#x884C;&#x7ED3;&#x679C;</span>
+task1<span class="token punctuation">:</span><span class="token number">2</span>
+task2<span class="token punctuation">:</span><span class="token number">3</span>
+task3<span class="token punctuation">:</span><span class="token number">1</span>
+task4<span class="token punctuation">:</span><span class="token number">4</span>
+</code></pre>
+<p>&#x4F7F;&#x7528; <code>map &#x65B9;&#x6CD5;</code>&#xFF0C;&#x65E0;&#x9700;&#x63D0;&#x524D;&#x4F7F;&#x7528; <code>submit &#x65B9;&#x6CD5;</code>&#xFF0C;map &#x65B9;&#x6CD5;&#x4E0E; python &#x9AD8;&#x9636;&#x51FD;&#x6570; map &#x7684;&#x542B;&#x4E49;&#x76F8;&#x540C;&#xFF0C;&#x90FD;&#x662F;&#x5C06;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x6267;&#x884C;&#x540C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5BF9;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x6267;&#x884C; spider() &#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x5206;&#x914D;&#x5404;&#x7EBF;&#x7A0B;&#x6C60;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token comment"># coding: utf-8</span>
+<span class="token keyword">import</span> requests
+<span class="token keyword">from</span> concurrent<span class="token punctuation">.</span>futures <span class="token keyword">import</span> ThreadPoolExecutor<span class="token punctuation">,</span> as_completed
+<span class="token keyword">import</span> time
+<span class="token keyword">import</span> json
+<span class="token keyword">from</span> requests <span class="token keyword">import</span> adapters
+
+<span class="token keyword">from</span> proxy <span class="token keyword">import</span> get_proxies
+
+headers <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;Host&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;splcgk.court.gov.cn&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;Origin&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;https://splcgk.court.gov.cn&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;User-Agent&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;Referer&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;https://splcgk.court.gov.cn/gzfwww/ktgg&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+url <span class="token operator">=</span> <span class="token string">&quot;https://splcgk.court.gov.cn/gzfwww/ktgglist?pageNo=1&quot;</span>
+
+<span class="token keyword">def</span> <span class="token function">spider</span><span class="token punctuation">(</span>page<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    data <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;bt&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;fydw&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;pageNum&quot;</span><span class="token punctuation">:</span> page<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            response <span class="token operator">=</span> requests<span class="token punctuation">.</span>post<span class="token punctuation">(</span>url<span class="token punctuation">,</span> headers<span class="token operator">=</span>headers<span class="token punctuation">,</span> data<span class="token operator">=</span>data<span class="token punctuation">,</span> proxies<span class="token operator">=</span>get_proxies<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            json_data <span class="token operator">=</span> response<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">except</span> <span class="token punctuation">(</span>json<span class="token punctuation">.</span>JSONDecodeError<span class="token punctuation">,</span> adapters<span class="token punctuation">.</span>SSLError<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">continue</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">break</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> json_data
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">with</span> ThreadPoolExecutor<span class="token punctuation">(</span>max_workers<span class="token operator">=</span><span class="token number">8</span><span class="token punctuation">)</span> <span class="token keyword">as</span> t<span class="token punctuation">:</span>
+        obj_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        begin <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> page <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            obj <span class="token operator">=</span> t<span class="token punctuation">.</span>submit<span class="token punctuation">(</span>spider<span class="token punctuation">,</span> page<span class="token punctuation">)</span>
+            obj_list<span class="token punctuation">.</span>append<span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+
+        <span class="token keyword">for</span> future <span class="token keyword">in</span> as_completed<span class="token punctuation">(</span>obj_list<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            data <span class="token operator">=</span> future<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;*&apos;</span> <span class="token operator">*</span> <span class="token number">50</span><span class="token punctuation">)</span>
+        times <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> begin
+        <span class="token keyword">print</span><span class="token punctuation">(</span>times<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="processpoolexecutor&#x5BF9;&#x8C61;"><a name="processpoolexecutor&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#processpoolexecutor&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>ProcessPoolExecutor&#x5BF9;&#x8C61;</h3>
+<pre class="language-"><code class="lang-python">ThreadPoolExecutor&#x7C7B;&#x662F;Executor&#x5B50;&#x7C7B;&#xFF0C;&#x4F7F;&#x7528;&#x8FDB;&#x7A0B;&#x6C60;&#x6267;&#x884C;&#x5F02;&#x6B65;&#x8C03;&#x7528;<span class="token punctuation">.</span>
+
+<span class="token keyword">class</span> <span class="token class-name">concurrent</span><span class="token punctuation">.</span>futures<span class="token punctuation">.</span>ProcessPoolExecutor<span class="token punctuation">(</span>max_workers<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span>
+
+&#x4F7F;&#x7528;max_workers&#x6570;&#x76EE;&#x7684;&#x8FDB;&#x7A0B;&#x6C60;&#x6267;&#x884C;&#x5F02;&#x6B65;&#x8C03;&#x7528;&#xFF0C;&#x5982;&#x679C;max_workers&#x4E3A;<span class="token boolean">None</span>
+&#x5219;&#x4F7F;&#x7528;&#x673A;&#x5668;&#x7684;&#x5904;&#x7406;&#x5668;&#x6570;&#x76EE;&#xFF08;&#x5982;<span class="token number">4</span>&#x6838;&#x673A;&#x5668;max_worker&#x914D;&#x7F6E;&#x4E3A;<span class="token boolean">None</span>&#x65F6;&#xFF0C;&#x5219;&#x4F7F;&#x7528;<span class="token number">4</span>&#x4E2A;&#x8FDB;&#x7A0B;&#x8FDB;&#x884C;&#x5F02;&#x6B65;&#x5E76;&#x53D1;&#xFF09;&#x3002;
+</code></pre>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> concurrent <span class="token keyword">import</span> futures
+
+
+<span class="token keyword">def</span> <span class="token function">test</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">import</span> time
+    <span class="token keyword">return</span> time<span class="token punctuation">.</span>ctime<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> num
+
+
+<span class="token keyword">def</span> <span class="token function">muti_exec</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># m &#x5E76;&#x53D1;&#x6B21;&#x6570;</span>
+    <span class="token comment"># n &#x8FD0;&#x884C;&#x6B21;&#x6570;</span>
+
+    <span class="token keyword">with</span> futures<span class="token punctuation">.</span>ProcessPoolExecutor<span class="token punctuation">(</span>max_workers<span class="token operator">=</span>m<span class="token punctuation">)</span> <span class="token keyword">as</span> executor<span class="token punctuation">:</span>  <span class="token comment"># &#x591A;&#x8FDB;&#x7A0B;</span>
+        <span class="token comment"># with futures.ThreadPoolExecutor(max_workers=m) as executor: #&#x591A;&#x7EBF;&#x7A0B;</span>
+        executor_dict <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token punctuation">(</span>executor<span class="token punctuation">.</span>submit<span class="token punctuation">(</span>test<span class="token punctuation">,</span> times<span class="token punctuation">)</span><span class="token punctuation">,</span> times<span class="token punctuation">)</span> <span class="token keyword">for</span> times <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>m <span class="token operator">*</span> n<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">for</span> future <span class="token keyword">in</span> futures<span class="token punctuation">.</span>as_completed<span class="token punctuation">(</span>executor_dict<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        times <span class="token operator">=</span> executor_dict<span class="token punctuation">[</span>future<span class="token punctuation">]</span>
+        <span class="token keyword">if</span> future<span class="token punctuation">.</span>exception<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;%r generated an exception: %s&apos;</span> <span class="token operator">%</span> <span class="token punctuation">(</span>times<span class="token punctuation">,</span> future<span class="token punctuation">.</span>exception<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;RunTimes:%d,Res:%s&apos;</span> <span class="token operator">%</span> <span class="token punctuation">(</span>times<span class="token punctuation">,</span> future<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&apos;__main__&apos;</span><span class="token punctuation">:</span>
+    muti_exec<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+RunTimes:4,Res:(&apos;Tue Oct 29 21:56:12 2019&apos;, 4)
+RunTimes:2,Res:(&apos;Tue Oct 29 21:56:12 2019&apos;, 2)
+RunTimes:0,Res:(&apos;Tue Oct 29 21:56:12 2019&apos;, 0)
+RunTimes:1,Res:(&apos;Tue Oct 29 21:56:12 2019&apos;, 1)
+RunTimes:3,Res:(&apos;Tue Oct 29 21:56:12 2019&apos;, 3)
+&apos;&apos;&apos;</span>
+</code></pre>
+<p>&#x7EBF;&#x7A0B;&#x6C60;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> concurrent<span class="token punctuation">.</span>futures <span class="token keyword">import</span> ProcessPoolExecutor<span class="token punctuation">,</span>ThreadPoolExecutor
+<span class="token keyword">import</span> threading
+<span class="token keyword">import</span> os<span class="token punctuation">,</span>time<span class="token punctuation">,</span>random
+<span class="token keyword">def</span> <span class="token function">task</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;%s:%s is running&apos;</span> <span class="token operator">%</span><span class="token punctuation">(</span>threading<span class="token punctuation">.</span>currentThread<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>getName<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>os<span class="token punctuation">.</span>getpid<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> n<span class="token operator">**</span><span class="token number">2</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&apos;__main__&apos;</span><span class="token punctuation">:</span>
+    p<span class="token operator">=</span>ThreadPoolExecutor<span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">#&#x4E0D;&#x586B;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;cpu&#x7684;&#x4E2A;&#x6570;*5</span>
+    l<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+    start<span class="token operator">=</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        obj<span class="token operator">=</span>p<span class="token punctuation">.</span>submit<span class="token punctuation">(</span>task<span class="token punctuation">,</span>i<span class="token punctuation">)</span>
+        l<span class="token punctuation">.</span>append<span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>shutdown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;=&apos;</span><span class="token operator">*</span><span class="token number">30</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">[</span>obj<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">for</span> obj <span class="token keyword">in</span> l<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span>start<span class="token punctuation">)</span>
+
+<span class="token comment">#&#x4E0A;&#x9762;&#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x5199;&#x6210;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;</span>
+    <span class="token comment"># start = time.time()</span>
+    <span class="token comment"># with ThreadPoolExecutor() as p:   #&#x7C7B;&#x4F3C;&#x6253;&#x5F00;&#x6587;&#x4EF6;,&#x53EF;&#x7701;&#x53BB;.shutdown()</span>
+    <span class="token comment">#     future_tasks = [p.submit(task, i) for i in range(10)]</span>
+    <span class="token comment"># print(&apos;=&apos; * 30)</span>
+    <span class="token comment"># print([obj.result() for obj in future_tasks])</span>
+    <span class="token comment"># print(time.time() - start)</span>
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+ ThreadPoolExecutor-0_0:1204 is running
+ThreadPoolExecutor-0_1:1204 is running
+ThreadPoolExecutor-0_2:1204 is running
+ThreadPoolExecutor-0_3:1204 is running
+ThreadPoolExecutor-0_4:1204 is running
+ThreadPoolExecutor-0_5:1204 is running
+ThreadPoolExecutor-0_6:1204 is running
+ThreadPoolExecutor-0_7:1204 is running
+ThreadPoolExecutor-0_8:1204 is running
+ThreadPoolExecutor-0_9:1204 is running
+==============================
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+2.0051467418670654
+&apos;&apos;&apos;</span>
+</code></pre>
+<p>&#x8FDB;&#x7A0B;&#x6C60;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> concurrent<span class="token punctuation">.</span>futures <span class="token keyword">import</span> ProcessPoolExecutor
+<span class="token keyword">import</span> os<span class="token punctuation">,</span>time<span class="token punctuation">,</span>random
+<span class="token keyword">def</span> <span class="token function">task</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;%s is running&apos;</span> <span class="token operator">%</span>os<span class="token punctuation">.</span>getpid<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> n<span class="token operator">**</span><span class="token number">2</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&apos;__main__&apos;</span><span class="token punctuation">:</span>
+    p<span class="token operator">=</span>ProcessPoolExecutor<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">#&#x4E0D;&#x586B;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;cpu&#x7684;&#x4E2A;&#x6570;</span>
+    l<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+    start<span class="token operator">=</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        obj<span class="token operator">=</span>p<span class="token punctuation">.</span>submit<span class="token punctuation">(</span>task<span class="token punctuation">,</span>i<span class="token punctuation">)</span>   <span class="token comment">#submit()&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;future&#x5B9E;&#x4F8B;&#xFF0C;&#x8981;&#x5F97;&#x5230;&#x7ED3;&#x679C;&#x9700;&#x8981;&#x7528;obj.result()</span>
+        l<span class="token punctuation">.</span>append<span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+
+    p<span class="token punctuation">.</span>shutdown<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">#&#x7C7B;&#x4F3C;&#x7528;from multiprocessing import Pool&#x5B9E;&#x73B0;&#x8FDB;&#x7A0B;&#x6C60;&#x4E2D;&#x7684;close&#x53CA;join&#x4E00;&#x8D77;&#x7684;&#x4F5C;&#x7528;</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;=&apos;</span><span class="token operator">*</span><span class="token number">30</span><span class="token punctuation">)</span>
+    <span class="token comment"># print([obj for obj in l])</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">[</span>obj<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">for</span> obj <span class="token keyword">in</span> l<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span>start<span class="token punctuation">)</span>
+
+    <span class="token comment">#&#x4E0A;&#x9762;&#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x5199;&#x6210;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;</span>
+    <span class="token comment"># start = time.time()</span>
+    <span class="token comment"># with ProcessPoolExecutor() as p:   #&#x7C7B;&#x4F3C;&#x6253;&#x5F00;&#x6587;&#x4EF6;,&#x53EF;&#x7701;&#x53BB;.shutdown()</span>
+    <span class="token comment">#     future_tasks = [p.submit(task, i) for i in range(10)]</span>
+    <span class="token comment"># print(&apos;=&apos; * 30)</span>
+    <span class="token comment"># print([obj.result() for obj in future_tasks])</span>
+    <span class="token comment"># print(time.time() - start)</span>
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+32088 is running
+30512 is running
+23388 is running
+25216 is running
+32088 is running
+30512 is running
+23388 is running
+25216 is running
+32088 is running
+30512 is running
+==============================
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+6.5124876499176025
+&apos;&apos;&apos;</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-25 
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Python 多进程multiprocessing模块.html" class="navigation navigation-prev " aria-label="Previous page: Python 多进程multiprocessing模块">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../面向对象/" class="navigation navigation-next " aria-label="Next page: python 面向对象">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python 异步并发concurrent.futures模块","level":"5.1.2","depth":2,"next":{"title":"python 面向对象","level":"6.1","depth":1,"path":"面向对象/README.md","ref":"面向对象/README.md","articles":[{"title":"python 类","level":"6.1.1","depth":2,"path":"面向对象/类.md","ref":"面向对象/类.md","articles":[]},{"title":"python 面向对象编程","level":"6.1.2","depth":2,"path":"面向对象/面向对象编程.md","ref":"面向对象/面向对象编程.md","articles":[]},{"title":"python 绑定方法与非绑定方法","level":"6.1.3","depth":2,"path":"面向对象/绑定方法与非绑定方法.md","ref":"面向对象/绑定方法与非绑定方法.md","articles":[]},{"title":"python 实例方法、类方法和静态方法","level":"6.1.4","depth":2,"path":"面向对象/实例方法、类方法和静态方法.md","ref":"面向对象/实例方法、类方法和静态方法.md","articles":[]},{"title":"python 面向对象编程--组合","level":"6.1.5","depth":2,"path":"面向对象/面向对象编程--组合.md","ref":"面向对象/面向对象编程--组合.md","articles":[]},{"title":"python 子类继承父类构造函数说明","level":"6.1.6","depth":2,"path":"面向对象/ 子类继承父类构造函数说明.md","ref":"面向对象/ 子类继承父类构造函数说明.md","articles":[]},{"title":"python 面向对象描述符","level":"6.1.7","depth":2,"path":"面向对象/面向对象描述符.md","ref":"面向对象/面向对象描述符.md","articles":[]},{"title":"python 反射机制","level":"6.1.8","depth":2,"path":"面向对象/反射机制.md","ref":"面向对象/反射机制.md","articles":[]},{"title":"python slots","level":"6.1.9","depth":2,"path":"面向对象/slots.md","ref":"面向对象/slots.md","articles":[]},{"title":"python 属性property","level":"6.1.10","depth":2,"path":"面向对象/属性property.md","ref":"面向对象/属性property.md","articles":[]},{"title":"python attrs 和 cattrs 实现面向对象编程","level":"6.1.11","depth":2,"path":"面向对象/attrs 和 cattrs 实现面向对象编程.md","ref":"面向对象/attrs 和 cattrs 实现面向对象编程.md","articles":[]},{"title":"python Dataclasses","level":"6.1.12","depth":2,"path":"面向对象/Dataclasses.md","ref":"面向对象/Dataclasses.md","articles":[]}]},"previous":{"title":"Python 多进程multiprocessing模块","level":"5.1.1","depth":2,"path":"多进程-多线程/Python 多进程multiprocessing模块.md","ref":"多进程-多线程/Python 多进程multiprocessing模块.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"mathjax":{"forceSVG":true},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Office 三件套学习","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"多进程-多线程/Python 异步并发concurrent.futures模块.md","mtime":"2020-05-25T13:42:22.974Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-20T02:36:30.336Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

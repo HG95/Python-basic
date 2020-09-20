@@ -1,0 +1,1551 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>python 正则表达式 模式匹配与正则表达式 二 · Office 三件套学习</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="HHG">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../多进程-多线程/" />
+    
+    
+    <link rel="prev" href="正则表达式 模式匹配与正则表达式一.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../基础/">
+            
+                <a href="../基础/">
+            
+                    
+                    python 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                <a href="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                    
+                    Python Python 中的 if name == 'main'
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../基础/Python 导入模块和package.html">
+            
+                <a href="../基础/Python 导入模块和package.html">
+            
+                    
+                    Python 导入模块和package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../基础/Python args和kwargs的用法.html">
+            
+                <a href="../基础/Python args和kwargs的用法.html">
+            
+                    
+                    Python args和kwargs的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../基础/Python 常用函数.html">
+            
+                <a href="../基础/Python 常用函数.html">
+            
+                    
+                    Python 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                <a href="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                    
+                    Python set集合的并集union, 交集intersection, 差集difference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../基础/Python 列表解析式.html">
+            
+                <a href="../基础/Python 列表解析式.html">
+            
+                    
+                    Python 列表解析式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../基础/Python list中append和extend函数区别.html">
+            
+                <a href="../基础/Python list中append和extend函数区别.html">
+            
+                    
+                    Python list中append和extend函数区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../基础/Python zip函数.html">
+            
+                <a href="../基础/Python zip函数.html">
+            
+                    
+                    Python zip()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../基础/Python enumerate函数.html">
+            
+                <a href="../基础/Python enumerate函数.html">
+            
+                    
+                    Python enumerate()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../基础/Python random函数.html">
+            
+                <a href="../基础/Python random函数.html">
+            
+                    
+                    Python random函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../基础/Python sort函数、sorted函数.html">
+            
+                <a href="../基础/Python sort函数、sorted函数.html">
+            
+                    
+                    Python 字符串 sort()函数、sorted()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../基础/Python 字符串的格式化.html">
+            
+                <a href="../基础/Python 字符串的格式化.html">
+            
+                    
+                    Python 字符串的格式化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../基础/Python 字符串 String 函数.html">
+            
+                <a href="../基础/Python 字符串 String 函数.html">
+            
+                    
+                    Python 字符串 String 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../基础/Python partition函数.html">
+            
+                <a href="../基础/Python partition函数.html">
+            
+                    
+                    Python partition函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="../基础/Python 位运算符、位运算高级运用.html">
+            
+                <a href="../基础/Python 位运算符、位运算高级运用.html">
+            
+                    
+                    Python 位运算符、位运算高级运用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="../基础/Python set集合之间的区别.html">
+            
+                <a href="../基础/Python set集合之间的区别.html">
+            
+                    
+                    Python set(集合) & 与 and 、 | 与 or之间的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="../基础/Python round函数，截取小数位数.html">
+            
+                <a href="../基础/Python round函数，截取小数位数.html">
+            
+                    
+                    Python round函数，截取小数位数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="../基础/Python 断言assert.html">
+            
+                <a href="../基础/Python 断言assert.html">
+            
+                    
+                    Python 断言assert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.19" >
+            
+                <span>
+            
+                    
+                    [Python 生成器和生成器函数]基础/Python 生成器和生成器函数.md)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.20" data-path="../基础/Python chr和ord函数.html">
+            
+                <a href="../基础/Python chr和ord函数.html">
+            
+                    
+                    Python chr()和ord()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.21" data-path="../基础/Python fnmatch模块.html">
+            
+                <a href="../基础/Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.22" data-path="../基础/Python copy模块.html">
+            
+                <a href="../基础/Python copy模块.html">
+            
+                    
+                    Python copy模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.23" data-path="../基础/Python collections模块.html">
+            
+                <a href="../基础/Python collections模块.html">
+            
+                    
+                    Python collections模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.24" data-path="../基础/Python itertools 模块.html">
+            
+                <a href="../基础/Python itertools 模块.html">
+            
+                    
+                    Python itertools 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.25" data-path="../基础/Python 时间模块.html">
+            
+                <a href="../基础/Python 时间模块.html">
+            
+                    
+                    Python 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.26" data-path="../基础/Python Arrow 时间模块.html">
+            
+                <a href="../基础/Python Arrow 时间模块.html">
+            
+                    
+                    Python Arrow 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../文件处理/">
+            
+                <a href="../文件处理/">
+            
+                    
+                    python 文件处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../文件处理/Python open函数.html">
+            
+                <a href="../文件处理/Python open函数.html">
+            
+                    
+                    Python open() 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../文件处理/Python pandas读写csv文件.html">
+            
+                <a href="../文件处理/Python pandas读写csv文件.html">
+            
+                    
+                    Python pandas读写csv文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../文件处理/Python pandas读写excel文件.html">
+            
+                <a href="../文件处理/Python pandas读写excel文件.html">
+            
+                    
+                    Python pandas读写excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../文件处理/Python 读写Excel文件.html">
+            
+                <a href="../文件处理/Python 读写Excel文件.html">
+            
+                    
+                    Python 读/写Excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../文件处理/Python openpyxl模块.html">
+            
+                <a href="../文件处理/Python openpyxl模块.html">
+            
+                    
+                    Python openpyxl模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../文件处理/Python csv模块.html">
+            
+                <a href="../文件处理/Python csv模块.html">
+            
+                    
+                    Python csv模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../文件处理/Python os模块.html">
+            
+                <a href="../文件处理/Python os模块.html">
+            
+                    
+                    Python os模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../文件处理/Python glob模块.html">
+            
+                <a href="../文件处理/Python glob模块.html">
+            
+                    
+                    Python glob模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../文件处理/Python fnmatch模块.html">
+            
+                <a href="../文件处理/Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../文件处理/Python pathlib模块.html">
+            
+                <a href="../文件处理/Python pathlib模块.html">
+            
+                    
+                    Python pathlib模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../文件处理/Python os.walk遍历目录树.html">
+            
+                <a href="../文件处理/Python os.walk遍历目录树.html">
+            
+                    
+                    Python os.walk遍历目录树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../文件处理/Python os.scandir文件操作.html">
+            
+                <a href="../文件处理/Python os.scandir文件操作.html">
+            
+                    
+                    Python os.scandir文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../文件处理/Python 文件过滤.html">
+            
+                <a href="../文件处理/Python 文件过滤.html">
+            
+                    
+                    Python 文件过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../文件处理/Python JSON模块.html">
+            
+                <a href="../文件处理/Python JSON模块.html">
+            
+                    
+                    Python JSON模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../文件处理/Python JsonPath模块.html">
+            
+                <a href="../文件处理/Python JsonPath模块.html">
+            
+                    
+                    Python JsonPath模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="../文件处理/Python shutil模块.html">
+            
+                <a href="../文件处理/Python shutil模块.html">
+            
+                    
+                    Python shutil模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="../文件处理/Python ZIP文件读取，解压.html">
+            
+                <a href="../文件处理/Python ZIP文件读取，解压.html">
+            
+                    
+                    Python ZIP文件读取，解压
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="../文件处理/Python with...as的用法.html">
+            
+                <a href="../文件处理/Python with...as的用法.html">
+            
+                    
+                    Python with...as的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    python 正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="正则表达式基础语法.html">
+            
+                <a href="正则表达式基础语法.html">
+            
+                    
+                    python 正则表达式基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="正则表达式 常用函数.html">
+            
+                <a href="正则表达式 常用函数.html">
+            
+                    
+                    python 正则表达式 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="正则表达式 re.sub.html">
+            
+                <a href="正则表达式 re.sub.html">
+            
+                    
+                    python 正则表达式 re.sub()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="正则表达式 re.match与re.search.html">
+            
+                <a href="正则表达式 re.match与re.search.html">
+            
+                    
+                    python 正则表达式 match()与search()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="正则表达式 re.findall与re.finditer.html">
+            
+                <a href="正则表达式 re.findall与re.finditer.html">
+            
+                    
+                    python 正则表达式 re.findall()与re.finditer()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="正则表达式 re.compile.html">
+            
+                <a href="正则表达式 re.compile.html">
+            
+                    
+                    python 正则表达式 re.compile()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="正则表达式 flags 参数.html">
+            
+                <a href="正则表达式 flags 参数.html">
+            
+                    
+                    python 正则表达式 flags 参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="正则表达式 去优先级，选择.html">
+            
+                <a href="正则表达式 去优先级，选择.html">
+            
+                    
+                    python 正则表达式 去优先级，选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="正则表达式 模式匹配与正则表达式一.html">
+            
+                <a href="正则表达式 模式匹配与正则表达式一.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.1.10" data-path="正则表达式 模式匹配与正则表达式二.html">
+            
+                <a href="正则表达式 模式匹配与正则表达式二.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 二
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../多进程-多线程/">
+            
+                <a href="../多进程-多线程/">
+            
+                    
+                    python 多进程-多线程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../多进程-多线程/Python 多进程multiprocessing模块.html">
+            
+                <a href="../多进程-多线程/Python 多进程multiprocessing模块.html">
+            
+                    
+                    Python 多进程multiprocessing模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../多进程-多线程/Python 异步并发concurrent.futures模块.html">
+            
+                <a href="../多进程-多线程/Python 异步并发concurrent.futures模块.html">
+            
+                    
+                    Python 异步并发concurrent.futures模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../面向对象/">
+            
+                <a href="../面向对象/">
+            
+                    
+                    python 面向对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../面向对象/类.html">
+            
+                <a href="../面向对象/类.html">
+            
+                    
+                    python 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../面向对象/面向对象编程.html">
+            
+                <a href="../面向对象/面向对象编程.html">
+            
+                    
+                    python 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../面向对象/绑定方法与非绑定方法.html">
+            
+                <a href="../面向对象/绑定方法与非绑定方法.html">
+            
+                    
+                    python 绑定方法与非绑定方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../面向对象/实例方法、类方法和静态方法.html">
+            
+                <a href="../面向对象/实例方法、类方法和静态方法.html">
+            
+                    
+                    python 实例方法、类方法和静态方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../面向对象/面向对象编程--组合.html">
+            
+                <a href="../面向对象/面向对象编程--组合.html">
+            
+                    
+                    python 面向对象编程--组合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                <a href="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                    
+                    python 子类继承父类构造函数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.7" data-path="../面向对象/面向对象描述符.html">
+            
+                <a href="../面向对象/面向对象描述符.html">
+            
+                    
+                    python 面向对象描述符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.8" data-path="../面向对象/反射机制.html">
+            
+                <a href="../面向对象/反射机制.html">
+            
+                    
+                    python 反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.9" data-path="../面向对象/slots.html">
+            
+                <a href="../面向对象/slots.html">
+            
+                    
+                    python slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.10" data-path="../面向对象/属性property.html">
+            
+                <a href="../面向对象/属性property.html">
+            
+                    
+                    python 属性property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.11" data-path="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                <a href="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                    
+                    python attrs 和 cattrs 实现面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.12" data-path="../面向对象/Dataclasses.html">
+            
+                <a href="../面向对象/Dataclasses.html">
+            
+                    
+                    python Dataclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    python MongoDB数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../Chapter5/MongoDB基础.html">
+            
+                <a href="../Chapter5/MongoDB基础.html">
+            
+                    
+                    python MongoDB基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../Chapter5/Python操作MongoDB.html">
+            
+                <a href="../Chapter5/Python操作MongoDB.html">
+            
+                    
+                    python Python操作MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >python 正则表达式 模式匹配与正则表达式 二</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#python-&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;-&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x4E0E;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;-&#x4E8C;">python &#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F; &#x6A21;&#x5F0F;&#x5339;&#x914D;&#x4E0E;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F; &#x4E8C;</a></li><ul><li><a href="#&#x5EFA;&#x7ACB;&#x81EA;&#x5DF1;&#x7684;&#x5B57;&#x7B26;&#x5206;&#x7C7B;">&#x5EFA;&#x7ACB;&#x81EA;&#x5DF1;&#x7684;&#x5B57;&#x7B26;&#x5206;&#x7C7B;</a></li><li><a href="#&#x63D2;&#x5165;&#x5B57;&#x7B26;&#x548C;&#x7F8E;&#x5143;&#x5B57;&#x7B26;">&#x63D2;&#x5165;&#x5B57;&#x7B26;&#x548C;&#x7F8E;&#x5143;&#x5B57;&#x7B26;</a></li><li><a href="#&#x901A;&#x914D;&#x5B57;&#x7B26;">&#x901A;&#x914D;&#x5B57;&#x7B26;</a></li><li><a href="#&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;&#x548C;&#x975E;&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;">&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;&#x548C;&#x975E;&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;</a></li><li><a href="#&#x7528;&#x53E5;&#x70B9;&#x5B57;&#x7B26;&#x5339;&#x914D;&#x6362;&#x884C;">&#x7528;&#x53E5;&#x70B9;&#x5B57;&#x7B26;&#x5339;&#x914D;&#x6362;&#x884C;</a></li><li><a href="#&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7B26;&#x53F7;&#x590D;&#x4E60;">&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7B26;&#x53F7;&#x590D;&#x4E60;</a></li><li><a href="#&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x5339;&#x914D;">&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x5339;&#x914D;</a></li><li><a href="#&#x7528;-sub&#x65B9;&#x6CD5;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x4E32;">&#x7528; sub()&#x65B9;&#x6CD5;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x4E32;</a></li><li><a href="#&#x7BA1;&#x7406;&#x590D;&#x6742;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;">&#x7BA1;&#x7406;&#x590D;&#x6742;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</a></li><li><a href="#&#x7EC4;&#x5408;&#x4F7F;&#x7528;-reignorecase&#x3001;-redotall-&#x548C;-reverbose">&#x7EC4;&#x5408;&#x4F7F;&#x7528; re.IGNORECASE&#x3001; re.DOTALL &#x548C; re.VERBOSE</a></li></ul></ul></div><a href="#python-&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;-&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x4E0E;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;-&#x4E8C;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="python-&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;-&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x4E0E;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;-&#x4E8C;"><a name="python-&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;-&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x4E0E;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;-&#x4E8C;" class="anchor-navigation-ex-anchor" href="#python-&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;-&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x4E0E;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;-&#x4E8C;"><i class="fa fa-link" aria-hidden="true"></i></a>python &#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F; &#x6A21;&#x5F0F;&#x5339;&#x914D;&#x4E0E;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F; &#x4E8C;</h1>
+<h2 id="&#x5EFA;&#x7ACB;&#x81EA;&#x5DF1;&#x7684;&#x5B57;&#x7B26;&#x5206;&#x7C7B;"><a name="&#x5EFA;&#x7ACB;&#x81EA;&#x5DF1;&#x7684;&#x5B57;&#x7B26;&#x5206;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x5EFA;&#x7ACB;&#x81EA;&#x5DF1;&#x7684;&#x5B57;&#x7B26;&#x5206;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5EFA;&#x7ACB;&#x81EA;&#x5DF1;&#x7684;&#x5B57;&#x7B26;&#x5206;&#x7C7B;</h2>
+<p>&#x6709;&#x65F6;&#x5019;&#x4F60;&#x60F3;&#x5339;&#x914D;&#x4E00;&#x7EC4;&#x5B57;&#x7B26;&#xFF0C; &#x4F46;&#x7F29;&#x5199;&#x7684;&#x5B57;&#x7B26;&#x5206;&#x7C7B;&#xFF08;\d&#x3001; \w&#x3001; \s &#x7B49;&#xFF09; &#x592A;&#x5BBD;&#x6CDB;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x65B9;&#x62EC;&#x53F7;&#x5B9A;&#x4E49;&#x81EA;&#x5DF1;&#x7684;&#x5B57;&#x7B26;&#x5206;&#x7C7B;&#x3002;&#x4F8B;&#x5982;&#xFF0C; &#x5B57;&#x7B26;&#x5206;&#x7C7B;[aeiouAEIOU]&#x5C06;&#x5339;&#x914D;&#x6240;&#x6709;&#x5143;&#x97F3;&#x5B57;&#x7B26;&#xFF0C; &#x4E0D;&#x8BBA;&#x5927;&#x5C0F;&#x5199;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> vowelRegex <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r&apos;[aeiouAEIOU]&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> vowelRegex<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">&apos;RoboCop eats baby food. BABY FOOD.&apos;</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token string">&apos;o&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;o&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;o&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;e&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;a&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;a&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;o&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;o&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;A&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;O&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;O&apos;</span><span class="token punctuation">]</span>
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x77ED;&#x6A2A;&#x8868;&#x793A;&#x5B57;&#x6BCD;&#x6216;&#x6570;&#x5B57;&#x7684;&#x8303;&#x56F4;&#x3002;&#x4F8B;&#x5982;&#xFF0C; &#x5B57;&#x7B26;&#x5206;&#x7C7B;[a-zA-Z0-9]&#x5C06;&#x5339;&#x914D;&#x6240;&#x6709;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x3001; &#x5927;&#x5199;&#x5B57;&#x6BCD;&#x548C;&#x6570;&#x5B57;&#x3002;</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x5728;&#x65B9;&#x62EC;&#x53F7;&#x5185;&#xFF0C;&#x666E;&#x901A;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7B26;&#x53F7;&#x4E0D;&#x4F1A;&#x88AB;&#x89E3;&#x91CA;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x524D;&#x9762;&#x52A0;&#x4E0A;&#x5012;&#x659C;&#x6760;&#x8F6C;&#x4E49;.&#x3001; *&#x3001; ?&#x6216;()&#x5B57;&#x7B26;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5B57;&#x7B26;&#x5206;&#x7C7B;&#x5C06;&#x5339;&#x914D;&#x6570;&#x5B57; 0 &#x5230; 5 &#x548C;&#x4E00;&#x4E2A;&#x53E5;&#x70B9;&#x3002;&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x5C06;&#x5B83;&#x5199;&#x6210;[0-5.]&#x3002;</p>
+<p>==&#x8FC7;&#x5728;&#x5B57;&#x7B26;&#x5206;&#x7C7B;&#x7684;<code>&#x5DE6;&#x65B9;&#x62EC;</code>&#x53F7;&#x540E;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x63D2;&#x5165;&#x5B57;&#x7B26;&#xFF08;^&#xFF09;&#xFF0C; &#x5C31;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x201C;&#x975E;&#x5B57;&#x7B26;&#x7C7B;&#x201D;&#x3002;&#x975E;&#x5B57;&#x7B26;&#x7C7B;&#x5C06;&#x5339;&#x914D;&#x4E0D;&#x5728;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x7C7B;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x3002;==</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> consonantRegex <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r&apos;[^aeiouAEIOU]&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> consonantRegex<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">&apos;RoboCop eats baby food. BABY FOOD.&apos;</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token string">&apos;R&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;b&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;c&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;p&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos; &apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;t&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;s&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos; &apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;b&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;b&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;y&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos; &apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;f&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;d&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;.&apos;</span><span class="token punctuation">,</span> &apos;
+<span class="token string">&apos;, &apos;</span><span class="token string">B&apos;, &apos;</span><span class="token string">B&apos;, &apos;</span>Y<span class="token string">&apos;, &apos;</span> <span class="token string">&apos;, &apos;</span><span class="token string-interpolation"><span class="token string">F&apos;, &apos;</span></span>D<span class="token string">&apos;, &apos;</span><span class="token punctuation">.</span>&apos;<span class="token punctuation">]</span>
+</code></pre>
+<h2 id="&#x63D2;&#x5165;&#x5B57;&#x7B26;&#x548C;&#x7F8E;&#x5143;&#x5B57;&#x7B26;"><a name="&#x63D2;&#x5165;&#x5B57;&#x7B26;&#x548C;&#x7F8E;&#x5143;&#x5B57;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x63D2;&#x5165;&#x5B57;&#x7B26;&#x548C;&#x7F8E;&#x5143;&#x5B57;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63D2;&#x5165;&#x5B57;&#x7B26;&#x548C;&#x7F8E;&#x5143;&#x5B57;&#x7B26;</h2>
+<p>&#x53EF;&#x4EE5;&#x5728;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x5F00;&#x59CB;&#x5904;&#x4F7F;&#x7528;&#x63D2;&#x5165;&#x7B26;&#x53F7;&#xFF08;^&#xFF09;&#xFF0C;&#x8868;&#x660E;&#x5339;&#x914D;&#x5FC5;&#x987B;&#x53D1;&#x751F;&#x5728;&#x88AB;&#x67E5;&#x627E;&#x6587;&#x672C;&#x5F00;&#x59CB;&#x5904;&#x3002;&#x7C7B;&#x4F3C;&#x5730;&#xFF0C;&#x53EF;&#x4EE5;&#x518D;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x672B;&#x5C3E;&#x52A0;&#x4E0A;&#x7F8E;&#x5143;&#x7B26;&#x53F7;&#xFF08;$&#xFF09;&#xFF0C;&#x8868;&#x793A;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x5FC5;&#x987B;&#x4EE5;&#x8FD9;&#x4E2A;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6A21;&#x5F0F;&#x7ED3;&#x675F;&#x3002;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x4F7F;&#x7528;^&#x548C;$&#xFF0C;&#x8868;&#x660E;&#x6574;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5FC5;&#x987B;&#x5339;&#x914D;&#x8BE5;&#x6A21;&#x5F0F;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x53EA;&#x5339;&#x914D;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x67D0;&#x4E2A;&#x5B50;&#x96C6;&#x662F;&#x4E0D;&#x591F;&#x7684;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C; ==&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F; r&apos;^Hello&apos;&#x5339;&#x914D;&#x4EE5;&apos;Hello&apos;&#x5F00;&#x59CB;&#x7684;&#x5B57;&#x7B26;&#x4E32;==&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> beginsWithHello <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r&apos;^Hello&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> beginsWithHello<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">&apos;Hello world!&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span>_sre<span class="token punctuation">.</span>SRE_Match <span class="token builtin">object</span><span class="token punctuation">;</span> span<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span> match<span class="token operator">=</span><span class="token string">&apos;Hello&apos;</span><span class="token operator">&gt;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> beginsWithHello<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">&apos;He said hello.&apos;</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token boolean">None</span>
+<span class="token boolean">True</span>
+</code></pre>
+<p>==&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F; r&apos;\d$&apos;&#x5339;&#x914D;&#x4EE5;&#x6570;&#x5B57; 0 &#x5230; 9 &#x7ED3;&#x675F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;==</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> endsWithNumber <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r&apos;\d$&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> endsWithNumber<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">&apos;Your number is 42&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span>_sre<span class="token punctuation">.</span>SRE_Match <span class="token builtin">object</span><span class="token punctuation">;</span> span<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">)</span><span class="token punctuation">,</span> match<span class="token operator">=</span><span class="token string">&apos;2&apos;</span><span class="token operator">&gt;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> endsWithNumber<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">&apos;Your number is forty two.&apos;</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token boolean">None</span>
+<span class="token boolean">True</span>
+</code></pre>
+<p>==&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F; r&apos;^\d+$&apos;&#x5339;&#x914D;&#x4ECE;&#x5F00;&#x59CB;&#x5230;&#x7ED3;&#x675F;&#x90FD;&#x662F;&#x6570;&#x5B57;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002; ==</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> wholeStringIsNum <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r&apos;^\d+$&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> wholeStringIsNum<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">&apos;1234567890&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span>_sre<span class="token punctuation">.</span>SRE_Match <span class="token builtin">object</span><span class="token punctuation">;</span> span<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span> match<span class="token operator">=</span><span class="token string">&apos;1234567890&apos;</span><span class="token operator">&gt;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> wholeStringIsNum<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">&apos;12345xyz67890&apos;</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token boolean">None</span>
+<span class="token boolean">True</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> wholeStringIsNum<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">&apos;12 34567890&apos;</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token boolean">None</span>
+<span class="token boolean">True</span>
+</code></pre>
+<h2 id="&#x901A;&#x914D;&#x5B57;&#x7B26;"><a name="&#x901A;&#x914D;&#x5B57;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x914D;&#x5B57;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x914D;&#x5B57;&#x7B26;</h2>
+<p>&#x5728;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#xFF0C; <code>.&#xFF08;&#x53E5;&#x70B9;&#xFF09;</code>&#x5B57;&#x7B26;&#x79F0;&#x4E3A;&#x201C;&#x901A;&#x914D;&#x7B26;&#x201D;&#x3002;&#x5B83;&#x5339;&#x914D;&#x9664;&#x4E86;&#x6362;&#x884C;&#x4E4B;&#x5916;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> atRegex <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r&apos;.at&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> atRegex<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">&apos;The cat in the hat sat on the flat mat.&apos;</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token string">&apos;cat&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;hat&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;sat&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;lat&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;mat&apos;</span><span class="token punctuation">]</span>
+</code></pre>
+<p>&#x8981;&#x8BB0;&#x4F4F;&#xFF0C;&#x53E5;&#x70B9;&#x5B57;&#x7B26;&#x53EA;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C; &#x8FD9;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x5728;&#x524D;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C; &#x5BF9;&#x4E8E;&#x6587;&#x672C;flat&#xFF0C; &#x53EA;&#x5339;&#x914D; lat&#x3002;&#x8981;&#x5339;&#x914D;&#x771F;&#x6B63;&#x7684;&#x53E5;&#x70B9;&#xFF0C; &#x5C31;&#x662F;&#x7528;&#x5012;&#x659C;&#x6760;&#x8F6C;&#x4E49;&#xFF1A; .&#x3002;</p>
+<h2 id="&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;&#x548C;&#x975E;&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;"><a name="&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;&#x548C;&#x975E;&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;&#x548C;&#x975E;&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;&#x548C;&#x975E;&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;</h2>
+<p>&#x6709;&#x65F6;&#x5019;&#x60F3;&#x8981;&#x5339;&#x914D;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x5B9A;&#x60F3;&#x8981;&#x5339;&#x914D;&#x5B57;&#x7B26;&#x4E32;&apos;First Name:&apos;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x662F;&#x4EFB;&#x610F;&#x6587;&#x672C;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x662F;&apos;Last Name:&apos;&#xFF0C;&#x7136;&#x540E;&#x53C8;&#x662F;&#x4EFB;&#x610F;&#x6587;&#x672C;&#x3002;&#x53EF;&#x4EE5;&#x7528;<code>&#x70B9;-&#x661F;&#xFF08; .*&#xFF09;</code>&#x8868;&#x793A;&#x201C;&#x4EFB;&#x610F;&#x6587;&#x672C;&#x201D;&#x3002;&#x56DE;&#x5FC6;&#x4E00;&#x4E0B;&#xFF0C;&#x53E5;&#x70B9;&#x5B57;&#x7B26;&#x8868;&#x793A;&#x201C;&#x9664;&#x6362;&#x884C;&#x5916;&#x6240;&#x6709;&#x5355;&#x4E2A;&#x5B57;&#x7B26;&#x201D;&#xFF0C;&#x661F;&#x53F7;&#x5B57;&#x7B26;&#x8868;&#x793A;&#x201C;&#x524D;&#x9762;&#x5B57;&#x7B26;&#x51FA;&#x73B0;&#x96F6;&#x6B21;&#x6216;&#x591A;&#x6B21;&#x201D;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> nameRegex <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r&apos;First Name: (.*) Last Name: (.*)&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> mo <span class="token operator">=</span> nameRegex<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">&apos;First Name: Al Last Name: Sweigart&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> mo<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token string">&apos;Al&apos;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> mo<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token string">&apos;Sweigart&apos;</span>
+</code></pre>
+<p><strong><code>.*</code></strong>&#x70B9;-&#x661F;&#x4F7F;&#x7528;&#x201C;&#x8D2A;&#x5FC3;&#x201D; &#x6A21;&#x5F0F;&#xFF1A;&#x5B83;&#x603B;&#x662F;&#x5339;&#x914D;&#x5C3D;&#x53EF;&#x80FD;&#x591A;&#x7684;&#x6587;&#x672C;&#x3002;&#x8981;&#x7528;&#x201C;&#x975E;&#x8D2A;&#x5FC3;&#x201D; &#x6A21;&#x5F0F;&#x5339;&#x914D;&#x6240;&#x6709;&#x6587;&#x672C;&#xFF0C; &#x5C31;&#x4F7F;&#x7528;<code>.*?</code>&#x70B9;-&#x661F;&#x548C;&#x95EE;&#x53F7;&#x3002;&#x50CF;&#x548C;&#x5927;&#x62EC;&#x53F7;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x65F6;&#x90A3;&#x6837;&#xFF0C; &#x95EE;&#x53F7;&#x544A;&#x8BC9; Python &#x7528;&#x975E;&#x8D2A;&#x5FC3;&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> nongreedyRegex <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r&apos;&lt;.*?&gt;&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> mo <span class="token operator">=</span> nongreedyRegex<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">&apos;&lt;To serve man&gt; for dinner.&gt;&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> mo<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token string">&apos;&lt;To serve man&gt;&apos;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> greedyRegex <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r&apos;&lt;.*&gt;&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> mo <span class="token operator">=</span> greedyRegex<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">&apos;&lt;To serve man&gt; for dinner.&gt;&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> mo<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token string">&apos;&lt;To serve man&gt; for dinner.&gt;&apos;</span>
+</code></pre>
+<p>&#x4E24;&#x4E2A;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x53EF;&#x4EE5;&#x7FFB;&#x8BD1;&#x6210;&#x201C;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5DE6;&#x5C16;&#x62EC;&#x53F7;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x662F;&#x4EFB;&#x610F;&#x5B57;&#x7B26;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x662F;&#x4E00;&#x4E2A;&#x53F3;&#x5C16;&#x62EC;&#x53F7;&#x201D;&#x3002;&#x4F46;&#x662F;&#x5B57;&#x7B26;&#x4E32;&apos;<to serve="" man=""> for dinner.&gt;&apos;&#x5BF9;&#x53F3;&#x80A9;&#x62EC;&#x53F7;&#x6709;&#x4E24;&#x79CD;&#x53EF;&#x80FD;&#x7684;&#x5339;&#x914D;&#x3002;&#x5728;&#x975E;&#x8D2A;&#x5FC3;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#xFF0C; Python &#x5339;&#x914D;&#x6700;&#x77ED;&#x53EF;&#x80FD;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF1A; &apos;<to serve="" man="">&apos;&#x3002;&#x5728;&#x8D2A;&#x5FC3;&#x7248;&#x672C;&#x4E2D;&#xFF0C; Python &#x5339;&#x914D;&#x6700;&#x957F;&#x53EF;&#x80FD;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF1A; &apos;<to serve="" man=""> for dinner.&gt;&apos;&#x3002;</to></to></to></p>
+<h2 id="&#x7528;&#x53E5;&#x70B9;&#x5B57;&#x7B26;&#x5339;&#x914D;&#x6362;&#x884C;"><a name="&#x7528;&#x53E5;&#x70B9;&#x5B57;&#x7B26;&#x5339;&#x914D;&#x6362;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x53E5;&#x70B9;&#x5B57;&#x7B26;&#x5339;&#x914D;&#x6362;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528;&#x53E5;&#x70B9;&#x5B57;&#x7B26;&#x5339;&#x914D;&#x6362;&#x884C;</h2>
+<p>==&#x70B9;-&#x661F;&#x5C06;&#x5339;&#x914D;&#x9664;&#x6362;&#x884C;&#x5916;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;==&#x3002;&#x901A;&#x8FC7;&#x4F20;&#x5165;<code>re.DOTALL</code> &#x4F5C;&#x4E3A; re.compile()&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#xFF0C; &#x53EF;&#x4EE5;&#x8BA9;&#x53E5;&#x70B9;&#x5B57;&#x7B26;&#x5339;&#x914D;&#x6240;&#x6709;&#x5B57;&#x7B26;&#xFF0C; &#x5305;&#x62EC;&#x6362;&#x884C;&#x5B57;&#x7B26;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> noNewlineRegex <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">&apos;.*&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> noNewlineRegex<span class="token punctuation">.</span>search<span class="token punctuation">(</span>&apos;Serve the public trust<span class="token punctuation">.</span>\nProtect the innocent<span class="token punctuation">.</span>
+\nUphold the law<span class="token punctuation">.</span>&apos;<span class="token punctuation">)</span><span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token string">&apos;Serve the public trust.&apos;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> newlineRegex <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">&apos;.*&apos;</span><span class="token punctuation">,</span> re<span class="token punctuation">.</span>DOTALL<span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> newlineRegex<span class="token punctuation">.</span>search<span class="token punctuation">(</span>&apos;Serve the public trust<span class="token punctuation">.</span>\nProtect the innocent<span class="token punctuation">.</span>
+\nUphold the law<span class="token punctuation">.</span>&apos;<span class="token punctuation">)</span><span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token string">&apos;Serve the public trust.\nProtect the innocent.\nUphold the law.&apos;</span>
+</code></pre>
+<h2 id="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7B26;&#x53F7;&#x590D;&#x4E60;"><a name="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7B26;&#x53F7;&#x590D;&#x4E60;" class="anchor-navigation-ex-anchor" href="#&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7B26;&#x53F7;&#x590D;&#x4E60;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7B26;&#x53F7;&#x590D;&#x4E60;</h2>
+<ul>
+<li>?&#x5339;&#x914D;&#x96F6;&#x6B21;&#x6216;&#x4E00;&#x6B21;&#x524D;&#x9762;&#x7684;&#x5206;&#x7EC4;&#x3002;</li>
+<li>*&#x5339;&#x914D;&#x96F6;&#x6B21;&#x6216;&#x591A;&#x6B21;&#x524D;&#x9762;&#x7684;&#x5206;&#x7EC4;&#x3002;</li>
+<li>+&#x5339;&#x914D;&#x4E00;&#x6B21;&#x6216;&#x591A;&#x6B21;&#x524D;&#x9762;&#x7684;&#x5206;&#x7EC4;&#x3002;</li>
+<li>{n}&#x5339;&#x914D; n &#x6B21;&#x524D;&#x9762;&#x7684;&#x5206;&#x7EC4;&#x3002;</li>
+<li>{n,}&#x5339;&#x914D; n &#x6B21;&#x6216;&#x66F4;&#x591A;&#x524D;&#x9762;&#x7684;&#x5206;&#x7EC4;&#x3002;</li>
+<li>{,m}&#x5339;&#x914D;&#x96F6;&#x6B21;&#x5230; m &#x6B21;&#x524D;&#x9762;&#x7684;&#x5206;&#x7EC4;&#x3002;</li>
+<li>{n,m}&#x5339;&#x914D;&#x81F3;&#x5C11; n &#x6B21;&#x3001;&#x81F3;&#x591A; m &#x6B21;&#x524D;&#x9762;&#x7684;&#x5206;&#x7EC4;&#x3002;</li>
+<li>{n,m}?&#x6216;*?&#x6216;+?&#x5BF9;&#x524D;&#x9762;&#x7684;&#x5206;&#x7EC4;&#x8FDB;&#x884C;&#x975E;&#x8D2A;&#x5FC3;&#x5339;&#x914D;&#x3002;</li>
+<li>^spam &#x610F;&#x5473;&#x7740;&#x5B57;&#x7B26;&#x4E32;&#x5FC5;&#x987B;&#x4EE5; spam &#x5F00;&#x59CB;&#x3002;</li>
+<li>spam$&#x610F;&#x5473;&#x7740;&#x5B57;&#x7B26;&#x4E32;&#x5FC5;&#x987B;&#x4EE5; spam &#x7ED3;&#x675F;&#x3002;</li>
+<li>.&#x5339;&#x914D;&#x6240;&#x6709;&#x5B57;&#x7B26;&#xFF0C;&#x6362;&#x884C;&#x7B26;&#x9664;&#x5916;&#x3002;</li>
+<li>\   &#x5728;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x8868;&#x793A;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;</li>
+<li>\d&#x3001; \w &#x548C;\s &#x5206;&#x522B;&#x5339;&#x914D;&#x6570;&#x5B57;&#x3001;&#x5355;&#x8BCD;&#x548C;&#x7A7A;&#x683C;&#x3002;</li>
+<li>\D&#x3001; \W &#x548C;\S &#x5206;&#x522B;&#x5339;&#x914D;&#x51FA;&#x6570;&#x5B57;&#x3001;&#x5355;&#x8BCD;&#x548C;&#x7A7A;&#x683C;&#x5916;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x3002;</li>
+<li>[abc]&#x5339;&#x914D;&#x65B9;&#x62EC;&#x53F7;&#x5185;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF08;&#x8BF8;&#x5982; a&#x3001; b &#x6216; c&#xFF09;&#x3002;==&#x5B57;&#x7B26;&#x96C6;&#x4E2D;&#x6CA1;&#x6709;&#x7279;&#x6B8A;&#x7B26;&#x53F7;==</li>
+<li>[a-z]&#x5339;&#x914D;a&#x5230;z&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;</li>
+<li><sup><a href="#fn_abc" id="reffn_abc">abc</a></sup>&#x5339;&#x914D;&#x4E0D;&#x5728;&#x65B9;&#x62EC;&#x53F7;&#x5185;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26;&#x3002;</li>
+</ul>
+<h2 id="&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x5339;&#x914D;"><a name="&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x5339;&#x914D;" class="anchor-navigation-ex-anchor" href="#&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x5339;&#x914D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x5339;&#x914D;</h2>
+<p>&#x901A;&#x5E38;&#xFF0C; &#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7528;&#x4F60;&#x6307;&#x5B9A;&#x7684;&#x5927;&#x5C0F;&#x5199;&#x5339;&#x914D;&#x6587;&#x672C;&#x3002;&#x4F8B;&#x5982;&#xFF0C; &#x4E0B;&#x9762;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5339;&#x914D;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> regex1 <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">&apos;RoboCop&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> regex2 <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">&apos;ROBOCOP&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> regex3 <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">&apos;robOcop&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> regex4 <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">&apos;RobocOp&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x4F60;&#x53EA;&#x5173;&#x5FC3;&#x5339;&#x914D;&#x5B57;&#x6BCD;&#xFF0C;&#x4E0D;&#x5173;&#x5FC3;&#x5B83;&#x4EEC;&#x662F;&#x5927;&#x5199;&#x6216;&#x5C0F;&#x5199;&#x3002;&#x8981;&#x8BA9;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#xFF0C;&#x53EF;&#x4EE5;&#x5411; re.compile()&#x4F20;&#x5165;<code>re.IGNORECASE &#x6216; re.I&#xFF0C;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x3002;</code></p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> robocop <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r&apos;robocop&apos;</span><span class="token punctuation">,</span> re<span class="token punctuation">.</span>I<span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> robocop<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">&apos;RoboCop is part man, part machine, all cop.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token string">&apos;RoboCop&apos;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> robocop<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">&apos;ROBOCOP protects the innocent.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token string">&apos;ROBOCOP&apos;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> robocop<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">&apos;Al, why does your programming book talk about robocop so much?&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token string">&apos;robocop&apos;</span>
+</code></pre>
+<h2 id="&#x7528;-sub&#x65B9;&#x6CD5;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x4E32;"><a name="&#x7528;-sub&#x65B9;&#x6CD5;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x4E32;" class="anchor-navigation-ex-anchor" href="#&#x7528;-sub&#x65B9;&#x6CD5;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x4E32;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528; sub()&#x65B9;&#x6CD5;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x4E32;</h2>
+<p>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E0D;&#x4EC5;&#x80FD;&#x627E;&#x5230;&#x6587;&#x672C;&#x6A21;&#x5F0F;&#xFF0C; &#x800C;&#x4E14;&#x80FD;&#x591F;&#x7528;&#x65B0;&#x7684;&#x6587;&#x672C;&#x66FF;&#x6362;&#x6389;&#x8FD9;&#x4E9B;&#x6A21;&#x5F0F;&#x3002; Regex&#x5BF9;&#x8C61;&#x7684; sub()&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x4F20;&#x5165;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x3002;==&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C; &#x7528;&#x4E8E;&#x53D6;&#x4EE3;&#x53D1;&#x73B0;&#x7684;&#x5339;&#x914D;==&#x3002;==&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5373;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;==&#x3002; sub()&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x66FF;&#x6362;&#x5B8C;&#x6210;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> namesRegex <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r&apos;Agent \w+&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> namesRegex<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">&apos;CENSORED&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Agent Alice gave the secret documents to Agent Bob.&apos;</span><span class="token punctuation">)</span>
+<span class="token string">&apos;CENSORED gave the secret documents to CENSORED.&apos;</span>
+</code></pre>
+<p>&#x6709;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5339;&#x914D;&#x7684;&#x6587;&#x672C;&#x672C;&#x8EAB;&#xFF0C;&#x4F5C;&#x4E3A;&#x66FF;&#x6362;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x5728; sub()&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x8F93;&#x5165;\1&#x3001; \2&#x3001; \3&#x2026;&#x2026;&#x3002;&#x8868;&#x793A;&#x201C;&#x5728;&#x66FF;&#x6362;&#x4E2D;&#x8F93;&#x5165;&#x5206;&#x7EC4; 1&#x3001; 2&#x3001; 3&#x2026;&#x2026;&#x7684;&#x6587;&#x672C;&#x201D;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x5B9A;&#x60F3;&#x8981;&#x9690;&#x53BB;&#x5BC6;&#x63A2;&#x7684;&#x59D3;&#x540D;&#xFF0C;&#x53EA;&#x663E;&#x793A;&#x4ED6;&#x4EEC;&#x59D3;&#x540D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#x3002;&#x8981;&#x505A;&#x5230;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F; Agent (\w)\w<em>&#xFF0C;&#x4F20;&#x5165; r&apos;\1<em>*</em></em>&apos;&#x4F5C;&#x4E3A; sub()&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;\1 &#x5C06;&#x7531;&#x5206;&#x7EC4; 1 &#x5339;&#x914D;&#x7684;&#x6587;&#x672C;&#x6240;&#x66FF;&#x4EE3;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;(\w)&#x5206;&#x7EC4;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> agentNamesRegex <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r&apos;Agent (\w)\w*&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> agentNamesRegex<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">r&apos;\1****&apos;</span><span class="token punctuation">,</span> &apos;Agent Alice told Agent Carol that Agent
+Eve knew Agent Bob was a double agent<span class="token punctuation">.</span>&apos;<span class="token punctuation">)</span>
+A<span class="token operator">**</span><span class="token operator">**</span> told C<span class="token operator">**</span><span class="token operator">**</span> that E<span class="token operator">**</span><span class="token operator">**</span> knew B<span class="token operator">**</span><span class="token operator">**</span> was a double agent<span class="token punctuation">.</span>&apos;
+</code></pre>
+<h2 id="&#x7BA1;&#x7406;&#x590D;&#x6742;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;"><a name="&#x7BA1;&#x7406;&#x590D;&#x6742;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x7BA1;&#x7406;&#x590D;&#x6742;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7BA1;&#x7406;&#x590D;&#x6742;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</h2>
+<p>&#x5982;&#x679C;&#x8981;&#x5339;&#x914D;&#x7684;&#x6587;&#x672C;&#x6A21;&#x5F0F;&#x5F88;&#x7B80;&#x5355;&#xFF0C; &#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5C31;&#x5F88;&#x597D;&#x3002;&#x4F46;&#x5339;&#x914D;&#x590D;&#x6742;&#x7684;&#x6587;&#x672C;&#x6A21;&#x5F0F;&#xFF0C;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x957F;&#x7684;&#x3001;&#x8D39;&#x89E3;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x544A;&#x8BC9; re.compile()&#xFF0C; ==&#x5FFD;&#x7565;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x7A7A;&#x767D;&#x7B26;&#x548C;&#x6CE8;&#x91CA;==&#xFF0C; &#x4ECE;&#x800C;&#x7F13;&#x89E3;&#x8FD9;&#x4E00;&#x70B9;&#x3002; &#x8981;&#x5B9E;&#x73B0;&#x8FD9;&#x79CD;&#x8BE6;&#x7EC6;&#x6A21;&#x5F0F;&#xFF0C; &#x53EF;&#x4EE5;&#x5411; re.compile()&#x4F20;&#x5165;&#x53D8;&#x91CF;<code>re.VERBOSE</code>&#xFF0C; &#x4F5C;&#x4E3A;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-python">phoneRegex <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token triple-quoted-string string">r&apos;&apos;&apos;(
+    (\d{3}|\(\d{3}\))? # area code
+    (\s|-|\.)? # se
+    \d{3} # first 3 digits
+    (\s|-|\.) # separator
+    \d{4} # last 4 digits
+    (\s*(ext|x|ext.)\s*\d{2,5})? # extension
+    )&apos;&apos;&apos;</span><span class="token punctuation">,</span> re<span class="token punctuation">.</span>VERBOSE<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C; &#x524D;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4F7F;&#x7528;&#x4E86;==&#x4E09;&#x91CD;&#x5F15;&#x53F7;(&apos;&quot;)==&#xFF0C; ==&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x591A;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5C06;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5B9A;&#x4E49;&#x653E;&#x5728;&#x591A;&#x884C;&#x4E2D;&#xFF0C; &#x8BA9;&#x5B83;&#x66F4;&#x53EF;&#x8BFB;&#x3002;==&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x6CE8;&#x91CA;&#x89C4;&#x5219;&#xFF0C; &#x4E0E;&#x666E;&#x901A;&#x7684; Python &#x4EE3;&#x7801;&#x4E00;&#x6837;&#xFF1A; #&#x7B26;&#x53F7;&#x548C;&#x5B83;&#x540E;&#x9762;&#x76F4;&#x5230;&#x884C;&#x672B;&#x7684;&#x5185;&#x5BB9;&#xFF0C; &#x90FD;&#x88AB;&#x5FFD;&#x7565;&#x3002;&#x800C;&#x4E14;&#xFF0C; &#x8868;&#x793A;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x591A;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#xFF0C; &#x591A;&#x4F59;&#x7684;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x4E5F;&#x4E0D;&#x8BA4;&#x4E3A;&#x662F;&#x8981;&#x5339;&#x914D;&#x7684;&#x6587;&#x672C;&#x6A21;&#x5F0F;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x8FD9;&#x8BA9;&#x4F60;&#x80FD;&#x591F;&#x7EC4;&#x7EC7;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C; &#x8BA9;&#x5B83;&#x66F4;&#x53EF;&#x8BFB;</p>
+<h2 id="&#x7EC4;&#x5408;&#x4F7F;&#x7528;-reignorecase&#x3001;-redotall-&#x548C;-reverbose"><a name="&#x7EC4;&#x5408;&#x4F7F;&#x7528;-reignorecase&#x3001;-redotall-&#x548C;-reverbose" class="anchor-navigation-ex-anchor" href="#&#x7EC4;&#x5408;&#x4F7F;&#x7528;-reignorecase&#x3001;-redotall-&#x548C;-reverbose"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EC4;&#x5408;&#x4F7F;&#x7528; re.IGNORECASE&#x3001; re.DOTALL &#x548C; re.VERBOSE</h2>
+<p>&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x5728;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x4F7F;&#x7528; re.VERBOSE &#x6765;&#x7F16;&#x5199;&#x6CE8;&#x91CA;&#xFF0C;&#x8FD8;&#x5E0C;&#x671B;&#x4F7F;&#x7528;re.IGNORECASE &#x6765;&#x5FFD;&#x7565;&#x5927;&#x5C0F;&#x5199;&#xFF0C;&#x8BE5;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#x9057;&#x61BE;&#x7684;&#x662F;&#xFF0C; re.compile()&#x51FD;&#x6570;&#x53EA;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x503C;&#x4F5C;&#x4E3A;&#x5B83;&#x7684;&#x7B2C;&#x4E8C;&#x53C2;&#x6570;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7BA1;&#x9053;&#x5B57;&#x7B26;&#xFF08;|&#xFF09;&#x5C06;&#x53D8;&#x91CF;&#x7EC4;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x4ECE;&#x800C;&#x7ED5;&#x8FC7;&#x8FD9;&#x4E2A;&#x9650;&#x5236;&#x3002;&#x7BA1;&#x9053;&#x5B57;&#x7B26;&#x5728;&#x8FD9;&#x91CC;&#x79F0;&#x4E3A;&#x201C;&#x6309;&#x4F4D;&#x6216;&#x201D;&#x64CD;&#x4F5C;&#x7B26;&#x3002;
+&#x6240;&#x4EE5;&#xFF0C; &#x5982;&#x679C;&#x5E0C;&#x671B;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#xFF0C; &#x5E76;&#x4E14;&#x53E5;&#x70B9;&#x5B57;&#x7B26;&#x5339;&#x914D;&#x6362;&#x884C;&#xFF0C; &#x5C31;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x6784;&#x9020; re.compile()&#x8C03;&#x7528;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> someRegexValue <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">&apos;foo&apos;</span><span class="token punctuation">,</span> re<span class="token punctuation">.</span>IGNORECASE <span class="token operator">|</span> re<span class="token punctuation">.</span>DOTALL <span class="token operator">|</span> re<span class="token punctuation">.</span>VERBOSE<span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li><code>re.I(re.IGNORECASE):</code> &#x5FFD;&#x7565;&#x5927;&#x5C0F;&#x5199;&#xFF08;&#x62EC;&#x53F7;&#x5185;&#x662F;&#x5B8C;&#x6574;&#x5199;&#x6CD5;&#xFF0C;&#x4E0B;&#x540C;&#xFF09;</li>
+<li><code>M(MULTILINE)</code>: &#x591A;&#x884C;&#x6A21;&#x5F0F;&#xFF0C;&#x6539;&#x53D8;&apos;^&apos;&#x548C;&apos;$&apos;&#x7684;&#x884C;&#x4E3A;&#xFF08;&#x53C2;&#x89C1;&#x4E0A;&#x56FE;&#xFF09;</li>
+<li><code>S(DOTALL):</code> &#x70B9;&#x4EFB;&#x610F;&#x5339;&#x914D;&#x6A21;&#x5F0F;&#xFF0C;&#x6539;&#x53D8;&apos;.&apos;&#x7684;&#x884C;&#x4E3A;</li>
+<li><code>L(LOCALE)</code>: &#x4F7F;&#x9884;&#x5B9A;&#x5B57;&#x7B26;&#x7C7B; \w \W \b \B \s \S &#x53D6;&#x51B3;&#x4E8E;&#x5F53;&#x524D;&#x533A;&#x57DF;&#x8BBE;&#x5B9A;</li>
+<li><code>U(UNICODE)</code>: &#x4F7F;&#x9884;&#x5B9A;&#x5B57;&#x7B26;&#x7C7B; \w \W \b \B \s \S \d \D &#x53D6;&#x51B3;&#x4E8E;unicode&#x5B9A;&#x4E49;&#x7684;&#x5B57;&#x7B26;&#x5C5E;&#x6027;</li>
+<li><code>X(VERBOSE)</code>: &#x8BE6;&#x7EC6;&#x6A21;&#x5F0F;&#x3002;&#x8FD9;&#x4E2A;&#x6A21;&#x5F0F;&#x4E0B;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x662F;&#x591A;&#x884C;&#xFF0C;&#x5FFD;&#x7565;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x52A0;&#x5165;&#x6CE8;&#x91CA;&#x3002;&#x4EE5;&#x4E0B;&#x4E24;&#x4E2A;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x7B49;&#x4EF7;&#x7684;&#xFF1A;</li>
+</ul>
+<p>&#x53C2;&#x8003;</p>
+<ol>
+<li><a href="https://www.cnblogs.com/huxi/archive/2010/07/04/1771073.html" blank="" target="_blank">Python&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x6307;&#x5357;</a> </li>
+</ol>
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-25 
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="正则表达式 模式匹配与正则表达式一.html" class="navigation navigation-prev " aria-label="Previous page: python 正则表达式 模式匹配与正则表达式 一">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../多进程-多线程/" class="navigation navigation-next " aria-label="Next page: python 多进程-多线程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"python 正则表达式 模式匹配与正则表达式 二","level":"4.1.10","depth":2,"next":{"title":"python 多进程-多线程","level":"5.1","depth":1,"path":"多进程-多线程/README.md","ref":"多进程-多线程/README.md","articles":[{"title":"Python 多进程multiprocessing模块","level":"5.1.1","depth":2,"path":"多进程-多线程/Python 多进程multiprocessing模块.md","ref":"多进程-多线程/Python 多进程multiprocessing模块.md","articles":[]},{"title":"Python 异步并发concurrent.futures模块","level":"5.1.2","depth":2,"path":"多进程-多线程/Python 异步并发concurrent.futures模块.md","ref":"多进程-多线程/Python 异步并发concurrent.futures模块.md","articles":[]}]},"previous":{"title":"python 正则表达式 模式匹配与正则表达式 一","level":"4.1.9","depth":2,"path":"正则表达式/正则表达式 模式匹配与正则表达式一.md","ref":"正则表达式/正则表达式 模式匹配与正则表达式一.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"mathjax":{"forceSVG":true},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Office 三件套学习","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"正则表达式/正则表达式 模式匹配与正则表达式二.md","mtime":"2020-05-25T13:42:22.971Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-20T02:36:30.336Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1768 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Python pandas读写excel文件 · Office 三件套学习</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="HHG">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Python 读写Excel文件.html" />
+    
+    
+    <link rel="prev" href="Python pandas读写csv文件.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../基础/">
+            
+                <a href="../基础/">
+            
+                    
+                    python 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                <a href="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                    
+                    Python Python 中的 if name == 'main'
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../基础/Python 导入模块和package.html">
+            
+                <a href="../基础/Python 导入模块和package.html">
+            
+                    
+                    Python 导入模块和package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../基础/Python args和kwargs的用法.html">
+            
+                <a href="../基础/Python args和kwargs的用法.html">
+            
+                    
+                    Python args和kwargs的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../基础/Python 常用函数.html">
+            
+                <a href="../基础/Python 常用函数.html">
+            
+                    
+                    Python 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                <a href="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                    
+                    Python set集合的并集union, 交集intersection, 差集difference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../基础/Python 列表解析式.html">
+            
+                <a href="../基础/Python 列表解析式.html">
+            
+                    
+                    Python 列表解析式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../基础/Python list中append和extend函数区别.html">
+            
+                <a href="../基础/Python list中append和extend函数区别.html">
+            
+                    
+                    Python list中append和extend函数区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../基础/Python zip函数.html">
+            
+                <a href="../基础/Python zip函数.html">
+            
+                    
+                    Python zip()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../基础/Python enumerate函数.html">
+            
+                <a href="../基础/Python enumerate函数.html">
+            
+                    
+                    Python enumerate()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../基础/Python random函数.html">
+            
+                <a href="../基础/Python random函数.html">
+            
+                    
+                    Python random函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../基础/Python sort函数、sorted函数.html">
+            
+                <a href="../基础/Python sort函数、sorted函数.html">
+            
+                    
+                    Python 字符串 sort()函数、sorted()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../基础/Python 字符串的格式化.html">
+            
+                <a href="../基础/Python 字符串的格式化.html">
+            
+                    
+                    Python 字符串的格式化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../基础/Python 字符串 String 函数.html">
+            
+                <a href="../基础/Python 字符串 String 函数.html">
+            
+                    
+                    Python 字符串 String 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../基础/Python partition函数.html">
+            
+                <a href="../基础/Python partition函数.html">
+            
+                    
+                    Python partition函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="../基础/Python 位运算符、位运算高级运用.html">
+            
+                <a href="../基础/Python 位运算符、位运算高级运用.html">
+            
+                    
+                    Python 位运算符、位运算高级运用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="../基础/Python set集合之间的区别.html">
+            
+                <a href="../基础/Python set集合之间的区别.html">
+            
+                    
+                    Python set(集合) & 与 and 、 | 与 or之间的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="../基础/Python round函数，截取小数位数.html">
+            
+                <a href="../基础/Python round函数，截取小数位数.html">
+            
+                    
+                    Python round函数，截取小数位数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="../基础/Python 断言assert.html">
+            
+                <a href="../基础/Python 断言assert.html">
+            
+                    
+                    Python 断言assert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.19" >
+            
+                <span>
+            
+                    
+                    [Python 生成器和生成器函数]基础/Python 生成器和生成器函数.md)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.20" data-path="../基础/Python chr和ord函数.html">
+            
+                <a href="../基础/Python chr和ord函数.html">
+            
+                    
+                    Python chr()和ord()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.21" data-path="../基础/Python fnmatch模块.html">
+            
+                <a href="../基础/Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.22" data-path="../基础/Python copy模块.html">
+            
+                <a href="../基础/Python copy模块.html">
+            
+                    
+                    Python copy模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.23" data-path="../基础/Python collections模块.html">
+            
+                <a href="../基础/Python collections模块.html">
+            
+                    
+                    Python collections模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.24" data-path="../基础/Python itertools 模块.html">
+            
+                <a href="../基础/Python itertools 模块.html">
+            
+                    
+                    Python itertools 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.25" data-path="../基础/Python 时间模块.html">
+            
+                <a href="../基础/Python 时间模块.html">
+            
+                    
+                    Python 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.26" data-path="../基础/Python Arrow 时间模块.html">
+            
+                <a href="../基础/Python Arrow 时间模块.html">
+            
+                    
+                    Python Arrow 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    python 文件处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="Python open函数.html">
+            
+                <a href="Python open函数.html">
+            
+                    
+                    Python open() 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="Python pandas读写csv文件.html">
+            
+                <a href="Python pandas读写csv文件.html">
+            
+                    
+                    Python pandas读写csv文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.3" data-path="Python pandas读写excel文件.html">
+            
+                <a href="Python pandas读写excel文件.html">
+            
+                    
+                    Python pandas读写excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="Python 读写Excel文件.html">
+            
+                <a href="Python 读写Excel文件.html">
+            
+                    
+                    Python 读/写Excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="Python openpyxl模块.html">
+            
+                <a href="Python openpyxl模块.html">
+            
+                    
+                    Python openpyxl模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="Python csv模块.html">
+            
+                <a href="Python csv模块.html">
+            
+                    
+                    Python csv模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="Python os模块.html">
+            
+                <a href="Python os模块.html">
+            
+                    
+                    Python os模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="Python glob模块.html">
+            
+                <a href="Python glob模块.html">
+            
+                    
+                    Python glob模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="Python fnmatch模块.html">
+            
+                <a href="Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="Python pathlib模块.html">
+            
+                <a href="Python pathlib模块.html">
+            
+                    
+                    Python pathlib模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="Python os.walk遍历目录树.html">
+            
+                <a href="Python os.walk遍历目录树.html">
+            
+                    
+                    Python os.walk遍历目录树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="Python os.scandir文件操作.html">
+            
+                <a href="Python os.scandir文件操作.html">
+            
+                    
+                    Python os.scandir文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="Python 文件过滤.html">
+            
+                <a href="Python 文件过滤.html">
+            
+                    
+                    Python 文件过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="Python JSON模块.html">
+            
+                <a href="Python JSON模块.html">
+            
+                    
+                    Python JSON模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="Python JsonPath模块.html">
+            
+                <a href="Python JsonPath模块.html">
+            
+                    
+                    Python JsonPath模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="Python shutil模块.html">
+            
+                <a href="Python shutil模块.html">
+            
+                    
+                    Python shutil模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="Python ZIP文件读取，解压.html">
+            
+                <a href="Python ZIP文件读取，解压.html">
+            
+                    
+                    Python ZIP文件读取，解压
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="Python with...as的用法.html">
+            
+                <a href="Python with...as的用法.html">
+            
+                    
+                    Python with...as的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../正则表达式/">
+            
+                <a href="../正则表达式/">
+            
+                    
+                    python 正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../正则表达式/正则表达式基础语法.html">
+            
+                <a href="../正则表达式/正则表达式基础语法.html">
+            
+                    
+                    python 正则表达式基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../正则表达式/正则表达式 常用函数.html">
+            
+                <a href="../正则表达式/正则表达式 常用函数.html">
+            
+                    
+                    python 正则表达式 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../正则表达式/正则表达式 re.sub.html">
+            
+                <a href="../正则表达式/正则表达式 re.sub.html">
+            
+                    
+                    python 正则表达式 re.sub()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../正则表达式/正则表达式 re.match与re.search.html">
+            
+                <a href="../正则表达式/正则表达式 re.match与re.search.html">
+            
+                    
+                    python 正则表达式 match()与search()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../正则表达式/正则表达式 re.findall与re.finditer.html">
+            
+                <a href="../正则表达式/正则表达式 re.findall与re.finditer.html">
+            
+                    
+                    python 正则表达式 re.findall()与re.finditer()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../正则表达式/正则表达式 re.compile.html">
+            
+                <a href="../正则表达式/正则表达式 re.compile.html">
+            
+                    
+                    python 正则表达式 re.compile()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../正则表达式/正则表达式 flags 参数.html">
+            
+                <a href="../正则表达式/正则表达式 flags 参数.html">
+            
+                    
+                    python 正则表达式 flags 参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../正则表达式/正则表达式 去优先级，选择.html">
+            
+                <a href="../正则表达式/正则表达式 去优先级，选择.html">
+            
+                    
+                    python 正则表达式 去优先级，选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../正则表达式/正则表达式 模式匹配与正则表达式一.html">
+            
+                <a href="../正则表达式/正则表达式 模式匹配与正则表达式一.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../正则表达式/正则表达式 模式匹配与正则表达式二.html">
+            
+                <a href="../正则表达式/正则表达式 模式匹配与正则表达式二.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 二
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../多进程-多线程/">
+            
+                <a href="../多进程-多线程/">
+            
+                    
+                    python 多进程-多线程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../多进程-多线程/Python 多进程multiprocessing模块.html">
+            
+                <a href="../多进程-多线程/Python 多进程multiprocessing模块.html">
+            
+                    
+                    Python 多进程multiprocessing模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../多进程-多线程/Python 异步并发concurrent.futures模块.html">
+            
+                <a href="../多进程-多线程/Python 异步并发concurrent.futures模块.html">
+            
+                    
+                    Python 异步并发concurrent.futures模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../面向对象/">
+            
+                <a href="../面向对象/">
+            
+                    
+                    python 面向对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../面向对象/类.html">
+            
+                <a href="../面向对象/类.html">
+            
+                    
+                    python 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../面向对象/面向对象编程.html">
+            
+                <a href="../面向对象/面向对象编程.html">
+            
+                    
+                    python 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../面向对象/绑定方法与非绑定方法.html">
+            
+                <a href="../面向对象/绑定方法与非绑定方法.html">
+            
+                    
+                    python 绑定方法与非绑定方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../面向对象/实例方法、类方法和静态方法.html">
+            
+                <a href="../面向对象/实例方法、类方法和静态方法.html">
+            
+                    
+                    python 实例方法、类方法和静态方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../面向对象/面向对象编程--组合.html">
+            
+                <a href="../面向对象/面向对象编程--组合.html">
+            
+                    
+                    python 面向对象编程--组合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                <a href="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                    
+                    python 子类继承父类构造函数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.7" data-path="../面向对象/面向对象描述符.html">
+            
+                <a href="../面向对象/面向对象描述符.html">
+            
+                    
+                    python 面向对象描述符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.8" data-path="../面向对象/反射机制.html">
+            
+                <a href="../面向对象/反射机制.html">
+            
+                    
+                    python 反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.9" data-path="../面向对象/slots.html">
+            
+                <a href="../面向对象/slots.html">
+            
+                    
+                    python slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.10" data-path="../面向对象/属性property.html">
+            
+                <a href="../面向对象/属性property.html">
+            
+                    
+                    python 属性property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.11" data-path="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                <a href="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                    
+                    python attrs 和 cattrs 实现面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.12" data-path="../面向对象/Dataclasses.html">
+            
+                <a href="../面向对象/Dataclasses.html">
+            
+                    
+                    python Dataclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    python MongoDB数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../Chapter5/MongoDB基础.html">
+            
+                <a href="../Chapter5/MongoDB基础.html">
+            
+                    
+                    python MongoDB基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../Chapter5/Python操作MongoDB.html">
+            
+                <a href="../Chapter5/Python操作MongoDB.html">
+            
+                    
+                    python Python操作MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Python pandas读写excel文件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#python-pandas&#x8BFB;&#x5199;excel&#x6587;&#x4EF6;">Python pandas&#x8BFB;&#x5199;excel&#x6587;&#x4EF6;</a></li><ul><li><a href="#pandasexcelwriter">pandas.ExcelWriter</a></li><li><a href="#pandasreadexcel">pandas.read_excel</a></li><li><a href="#dataframetoexcel">DataFrame.to_excel</a></li><li><a href="#&#x6848;&#x4F8B;">&#x6848;&#x4F8B;</a></li><li><a href="#&#x5C06;&#x591A;&#x4E2A;sheet&#x5199;&#x5165;&#x5230;&#x672C;&#x5730;&#x540C;&#x4E00;excel&#x6587;&#x4EF6;&#x4E2D;">&#x5C06;&#x591A;&#x4E2A;Sheet&#x5199;&#x5165;&#x5230;&#x672C;&#x5730;&#x540C;&#x4E00;Excel&#x6587;&#x4EF6;&#x4E2D;</a></li></ul></ul></div><a href="#python-pandas&#x8BFB;&#x5199;excel&#x6587;&#x4EF6;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="python-pandas&#x8BFB;&#x5199;excel&#x6587;&#x4EF6;"><a name="python-pandas&#x8BFB;&#x5199;excel&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#python-pandas&#x8BFB;&#x5199;excel&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>Python pandas&#x8BFB;&#x5199;excel&#x6587;&#x4EF6;</h1>
+<h2 id="pandasexcelwriter"><a name="pandasexcelwriter" class="anchor-navigation-ex-anchor" href="#pandasexcelwriter"><i class="fa fa-link" aria-hidden="true"></i></a>pandas.ExcelWriter</h2>
+<p><code>pandas.ExcelWriter</code><strong>(</strong>path<strong>,</strong> <em>engine=None**</em>,<strong> *</strong>kwargs<em>*</em>)</p>
+<p>&#x4F7F;&#x7528; ExcelWriter() &#x53EF;&#x4EE5;&#x5411;&#x540C;&#x4E00;&#x4E2A; excel &#x7684;&#x4E0D;&#x540C; sheet &#x4E2D;&#x5199;&#x5165;&#x5BF9;&#x5E94;&#x7684;&#x8868;&#x683C;&#x6570;&#x636E;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;writer&#x5BF9;&#x8C61;&#xFF0C;&#x4F20;&#x5165;&#x7684;&#x4E3B;&#x8981;&#x53C2;&#x6570;&#x4E3A;&#x5DF2;&#x5B58;&#x5728;&#x5BB9;&#x5668;&#x8868;&#x683C;&#x7684;&#x8DEF;&#x5F84;&#x53CA;&#x6587;&#x4EF6;&#x540D;&#x79F0;:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li><strong>path</strong> &#xFF1A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
+<li><strong>engine</strong> &#xFF1A; <strong>str (optional)</strong> &#x7528;&#x4E8E;&#x7F16;&#x5199;&#x7684;&#x5F15;&#x64CE;&#x3002;&#x9ED8;&#x8BA4;&#x662F; io.excel&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F; <code>engine=&apos;openpyxl&apos;</code> </li>
+<li><strong>date_format</strong> : &#x683C;&#x5F0F;&#x5316;&#x5B57;&#x7B26;&#x4E32;&#x4EE5;&#x5199;&#x5165;Excel&#x6587;&#x4EF6;&#x7684;&#x65E5;&#x671F; ,(e.g. &#x2018;YYYY-MM-DD&#x2019;).</li>
+<li><strong>datetime_format</strong> : &#x5199;&#x5165;Excel&#x6587;&#x4EF6;&#x7684;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x5BF9;&#x8C61;&#x7684;&#x683C;&#x5F0F;&#x5B57;&#x7B26;&#x4E32; ,  (e.g. &#x2018;YYYY-MM-DD HH:MM:SS&#x2019;).</li>
+<li><strong>mode</strong> : <strong>{&#x2018;w&#x2019;, &#x2018;a&#x2019;}, default &#x2018;w&#x2019;</strong> &#x8981;&#x4F7F;&#x7528;&#x7684;&#x6587;&#x4EF6;&#x6A21;&#x5F0F;&#xFF08;&#x5199;&#x6216;&#x8FFD;&#x52A0;&#xFF09;</li>
+</ul>
+<p><strong>Examples</strong></p>
+<p>Default usage:</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">with</span> ExcelWriter<span class="token punctuation">(</span><span class="token string">&apos;path_to_file.xlsx&apos;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> writer<span class="token punctuation">:</span>
+    df<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span>writer<span class="token punctuation">)</span>
+</code></pre>
+<p>To write to separate sheets in a single file:</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">with</span> ExcelWriter<span class="token punctuation">(</span><span class="token string">&apos;path_to_file.xlsx&apos;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> writer<span class="token punctuation">:</span>
+    df1<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span>writer<span class="token punctuation">,</span> sheet_name<span class="token operator">=</span><span class="token string">&apos;Sheet1&apos;</span><span class="token punctuation">)</span>
+    df2<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span>writer<span class="token punctuation">,</span> sheet_name<span class="token operator">=</span><span class="token string">&apos;Sheet2&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<p>You can set the date format or datetime format:</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">with</span> ExcelWriter<span class="token punctuation">(</span><span class="token string">&apos;path_to_file.xlsx&apos;</span><span class="token punctuation">,</span>
+                  date_format<span class="token operator">=</span><span class="token string">&apos;YYYY-MM-DD&apos;</span><span class="token punctuation">,</span>
+                  datetime_format<span class="token operator">=</span><span class="token string">&apos;YYYY-MM-DD HH:MM:SS&apos;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> writer<span class="token punctuation">:</span>
+    df<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span>writer<span class="token punctuation">)</span>
+</code></pre>
+<p>You can also append to an existing Excel file:</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">with</span> ExcelWriter<span class="token punctuation">(</span><span class="token string">&apos;path_to_file.xlsx&apos;</span><span class="token punctuation">,</span> mode<span class="token operator">=</span><span class="token string">&apos;a&apos;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> writer<span class="token punctuation">:</span>
+    df<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span>writer<span class="token punctuation">,</span> sheet_name<span class="token operator">=</span><span class="token string">&apos;Sheet3&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="pandasreadexcel"><a name="pandasreadexcel" class="anchor-navigation-ex-anchor" href="#pandasreadexcel"><i class="fa fa-link" aria-hidden="true"></i></a>pandas.read_excel</h2>
+<pre class="language-"><code class="lang-python">read_excel<span class="token punctuation">(</span>io<span class="token punctuation">,</span> 
+            sheetname<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> 
+            header<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> 
+            skiprows<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+            skip_footer<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> 
+            index_col<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+            names<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+            parse_cols<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+            parse_dates<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span>
+            date_parser<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+            na_values<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+            thousands<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+            convert_float<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> 
+            has_index_names<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+            converters<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+            dtype<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+            true_values<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+            false_values<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+            engine<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+            squeeze<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> 
+            <span class="token operator">**</span>kwds
+    <span class="token punctuation">)</span>
+</code></pre>
+<p>&#x5E38;&#x7528;&#x53C2;&#x6570;&#x89E3;&#x6790;&#xFF1A;</p>
+<ul>
+<li><code>io</code>: string, path object ; excel &#x8DEF;&#x5F84;&#x3002;</li>
+<li><code>sheetname</code> : string, int, mixed list of strings/ints, or None, default 0 &#x8FD4;&#x56DE;&#x591A;&#x8868;&#x4F7F;&#x7528;sheetname=[0,1],&#x82E5;sheetname=None&#x662F;&#x8FD4;&#x56DE;&#x5168;&#x8868; &#x6CE8;&#x610F;&#xFF1A;int/string &#x8FD4;&#x56DE;&#x7684;&#x662F;dataframe&#xFF0C;&#x800C;none&#x548C;list&#x8FD4;&#x56DE;&#x7684;&#x662F;dict of dataframe</li>
+<li><code>header</code> : int, list of ints, default 0 &#x6307;&#x5B9A;&#x5217;&#x540D;&#x884C;&#xFF0C;&#x9ED8;&#x8BA4;0&#xFF0C;&#x5373;&#x53D6;&#x7B2C;&#x4E00;&#x884C;&#xFF0C;&#x6570;&#x636E;&#x4E3A;&#x5217;&#x540D;&#x884C;&#x4EE5;&#x4E0B;&#x7684;&#x6570;&#x636E; &#x82E5;&#x6570;&#x636E;&#x4E0D;&#x542B;&#x5217;&#x540D;&#xFF0C;&#x5219;&#x8BBE;&#x5B9A; header = None</li>
+<li><code>skiprows</code> : list-like,Rows to skip at the beginning&#xFF0C;&#x7701;&#x7565;&#x6307;&#x5B9A;&#x884C;&#x6570;&#x7684;&#x6570;&#x636E;</li>
+<li><code>skip_footer</code> : int,default 0, &#x7701;&#x7565;&#x4ECE;&#x5C3E;&#x90E8;&#x6570;&#x7684;int&#x884C;&#x6570;&#x636E;</li>
+<li><code>index_col</code> : int, list of ints, default None&#x6307;&#x5B9A;&#x5217;&#x4E3A;&#x7D22;&#x5F15;&#x5217;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;u&#x201D;strings&#x201D;&#xFF0C;&#x8BFB;&#x53D6;&#x7684;&#x65F6;&#x5019;&#x6307;&#x5B9A; &#x7D22;&#x5F15;</li>
+<li><code>names</code> : array-like, default None, &#x6307;&#x5B9A;&#x5217;&#x7684;&#x540D;&#x5B57;&#x3002;</li>
+<li><code>na_values</code>:&#x6307;&#x5B9A;&#x539F;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x54EA;&#x4E9B;&#x7279;&#x5F81;&#x7684;&#x503C;&#x4F5C;&#x4E3A;&#x7F3A;&#x5931;&#x503C;&#x3002;</li>
+<li><code>na_filter</code> : boolean, default True&#xFF1B;&#x662F;&#x5426;&#x68C0;&#x67E5;&#x4E22;&#x5931;&#x503C;&#xFF08;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x8005;&#x662F;&#x7A7A;&#x503C;&#xFF09;&#x3002;&#x5BF9;&#x4E8E;&#x5927;&#x6587;&#x4EF6;&#x6765;&#x8BF4;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x6CA1;&#x6709;&#x7A7A;&#x503C;&#xFF0C;&#x8BBE;&#x5B9A;na_filter=False&#x53EF;&#x4EE5;&#x63D0;&#x5347;&#x8BFB;&#x53D6;&#x901F;&#x5EA6;&#x3002;</li>
+<li><code>thousands</code>&#xFF1A;&#x6307;&#x5B9A;&#x539F;&#x59CB;&#x6570;&#x636E;&#x4E2D;&#x7684;&#x5343;&#x4F4D;&#x7B26;</li>
+<li><code>comment</code>&#xFF1A;&#x6307;&#x5B9A;&#x6CE8;&#x91CA;&#x7B26;&#xFF0C;&#x5728;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x78B0;&#x5230;&#x9996;&#x884C;&#x6307;&#x5B9A;&#x7684;&#x6CE8;&#x91CA;&#x7B26;&#xFF0C;&#x5219;&#x8DF3;&#x8FC7;&#x8BE5;&#x884C;&#x3002;</li>
+<li><code>parse_datas</code>&#xFF1A;&#x6307;&#x660E;&#x65E5;&#x671F;&#x5217;&#xFF0C;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x6784;&#x6210;&#x7684; list&#xFF1B;
+&#x6570;&#x636E;&#x6E90;&#xFF1A;</li>
+</ul>
+<p>&#x6570;&#x636E;&#x6E90;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">sheet1<span class="token punctuation">:</span>
+ID  NUM<span class="token operator">-</span><span class="token number">1</span>   NUM<span class="token operator">-</span><span class="token number">2</span>   NUM<span class="token operator">-</span><span class="token number">3</span>
+<span class="token number">36901</span>   <span class="token number">142</span> <span class="token number">168</span> <span class="token number">661</span>
+<span class="token number">36902</span>   <span class="token number">78</span>  <span class="token number">521</span> <span class="token number">602</span>
+<span class="token number">36903</span>   <span class="token number">144</span> <span class="token number">600</span> <span class="token number">521</span>
+<span class="token number">36904</span>   <span class="token number">95</span>  <span class="token number">457</span> <span class="token number">468</span>
+<span class="token number">36905</span>   <span class="token number">69</span>  <span class="token number">596</span> <span class="token number">695</span>
+
+sheet2&#xFF1A;
+ID  NUM<span class="token operator">-</span><span class="token number">1</span>   NUM<span class="token operator">-</span><span class="token number">2</span>   NUM<span class="token operator">-</span><span class="token number">3</span>
+<span class="token number">36906</span>   <span class="token number">190</span> <span class="token number">527</span> <span class="token number">691</span>
+<span class="token number">36907</span>   <span class="token number">101</span> <span class="token number">403</span> <span class="token number">470</span>
+</code></pre>
+<pre class="language-"><code class="lang-python">basestation <span class="token operator">=</span><span class="token string">&quot;F://pythonBook_PyPDAM/data/test.xls&quot;</span>
+data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>basestation<span class="token punctuation">)</span>
+<span class="token keyword">print</span> data
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;&#x662F;&#x4E00;&#x4E2A;dataframe</p>
+<pre class="language-"><code class="lang-python">      ID  NUM<span class="token operator">-</span><span class="token number">1</span>  NUM<span class="token operator">-</span><span class="token number">2</span>  NUM<span class="token operator">-</span><span class="token number">3</span>
+<span class="token number">0</span>  <span class="token number">36901</span>    <span class="token number">142</span>    <span class="token number">168</span>    <span class="token number">661</span>
+<span class="token number">1</span>  <span class="token number">36902</span>     <span class="token number">78</span>    <span class="token number">521</span>    <span class="token number">602</span>
+<span class="token number">2</span>  <span class="token number">36903</span>    <span class="token number">144</span>    <span class="token number">600</span>    <span class="token number">521</span>
+<span class="token number">3</span>  <span class="token number">36904</span>     <span class="token number">95</span>    <span class="token number">457</span>    <span class="token number">468</span>
+<span class="token number">4</span>  <span class="token number">36905</span>     <span class="token number">69</span>    <span class="token number">596</span>    <span class="token number">695</span>
+</code></pre>
+<ul>
+<li><code>sheet_name&#x53C2;&#x6570;</code></li>
+</ul>
+<p>&#xFF1A;&#x8FD4;&#x56DE;&#x591A;&#x8868;&#x4F7F;&#x7528;sheetname=[0,1],&#x82E5;sheetname=None&#x662F;&#x8FD4;&#x56DE;&#x5168;&#x8868; &#x6CE8;&#x610F;&#xFF1A;int/string &#x8FD4;&#x56DE;&#x7684;&#x662F;dataframe&#xFF0C;&#x800C;none&#x548C;list&#x8FD4;&#x56DE;&#x7684;&#x662F;dict of dataframe</p>
+<pre class="language-"><code class="lang-python">data_1 <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>basestation<span class="token punctuation">,</span>sheet_name<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data_1<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>data_1<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token string">&apos;&apos;</span>&apos;
+OrderedDict<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>       ID  NUN<span class="token operator">-</span><span class="token number">1</span>  NUM<span class="token operator">-</span><span class="token number">2</span>  NUM<span class="token operator">-</span><span class="token number">3</span>
+<span class="token number">0</span>  <span class="token number">36901</span>     <span class="token number">45</span>     <span class="token number">78</span>     <span class="token number">95</span>
+<span class="token number">1</span>  <span class="token number">36902</span>     <span class="token number">47</span>     <span class="token number">45</span>     <span class="token number">63</span>
+<span class="token number">2</span>  <span class="token number">39603</span>     <span class="token number">85</span>     <span class="token number">47</span>     <span class="token number">21</span>
+<span class="token number">3</span>  <span class="token number">39604</span>     <span class="token number">96</span>     <span class="token number">36</span>     <span class="token number">45</span>
+<span class="token number">4</span>  <span class="token number">39605</span>     <span class="token number">25</span>     <span class="token number">89</span>     <span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>       ID  NUN<span class="token operator">-</span><span class="token number">1</span>  NUM<span class="token operator">-</span><span class="token number">2</span>  NUM<span class="token operator">-</span><span class="token number">3</span>
+<span class="token number">0</span>  <span class="token number">36906</span>     <span class="token number">58</span>     <span class="token number">52</span>     <span class="token number">47</span>
+<span class="token number">1</span>  <span class="token number">36907</span>     <span class="token number">66</span>     <span class="token number">26</span>     <span class="token number">14</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token string">&apos;collections.OrderedDict&apos;</span><span class="token operator">&gt;</span>
+</code></pre>
+<ul>
+<li><code>header</code>&#x53C2;&#x6570;</li>
+</ul>
+<p>&#x6307;&#x5B9A;&#x5217;&#x540D;&#x884C;&#xFF0C;&#x9ED8;&#x8BA4;0&#xFF0C;&#x5373;&#x53D6;&#x7B2C;&#x4E00;&#x884C;&#xFF0C;&#x6570;&#x636E;&#x4E3A;&#x5217;&#x540D;&#x884C;&#x4EE5;&#x4E0B;&#x7684;&#x6570;&#x636E; &#x82E5;&#x6570;&#x636E;&#x4E0D;&#x542B;&#x5217;&#x540D;&#xFF0C;&#x5219;&#x8BBE;&#x5B9A; header = None &#xFF0C;&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x8FD8;&#x6709;&#x5217;&#x540D;&#x7684;&#x4E00;&#x884C;&#x3002;</p>
+<pre class="language-"><code class="lang-python">data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>basestation<span class="token punctuation">,</span>header<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+       0      1      2      3
+0     ID  NUN-1  NUM-2  NUM-3
+1  36901     45     78     95
+2  36902     47     45     63
+3  39603     85     47     21
+4  39604     96     36     45
+5  39605     25     89     15
+&apos;&apos;&apos;</span>
+data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>basestation<span class="token punctuation">,</span>header<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+   39603  85     47     21   
+0  39604     96     36     45
+1  39605     25     89     15
+&apos;&apos;&apos;</span>
+</code></pre>
+<ul>
+<li><code>skiprows</code>&#x53C2;&#x6570;</li>
+</ul>
+<p>&#x7701;&#x7565;&#x6307;&#x5B9A;&#x884C;&#x6570;&#x7684;&#x6570;&#x636E;</p>
+<pre class="language-"><code class="lang-python">data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>basestation<span class="token punctuation">,</span>skiprows <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+      ID  NUN-1  NUM-2  NUM-3
+0  36902     47     45     63
+1  39603     85     47     21
+2  39604     96     36     45
+3  39605     25     89     15
+&apos;&apos;&apos;</span>
+</code></pre>
+<ul>
+<li><code>skip_footer</code>&#x53C2;&#x6570;</li>
+</ul>
+<p>&#x7701;&#x7565;&#x4ECE;&#x5C3E;&#x90E8;&#x6570;&#x7684;int&#x884C;&#x7684;&#x6570;&#x636E;</p>
+<pre class="language-"><code class="lang-python">data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>basestation<span class="token punctuation">,</span> skip_footer<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+      ID  NUN-1  NUM-2  NUM-3
+0  36901     45     78     95
+1  36902     47     45     63
+&apos;&apos;&apos;</span>
+</code></pre>
+<ul>
+<li><code>index_col</code>&#x53C2;&#x6570;</li>
+</ul>
+<p>&#x6307;&#x5B9A;&#x5217;&#x4E3A;&#x7D22;&#x5F15;&#x5217;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;u&#x201D;strings&#x201D;</p>
+<pre class="language-"><code class="lang-python">data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>basestation<span class="token punctuation">,</span> index_col<span class="token operator">=</span><span class="token string">&quot;NUM-3&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+          ID  NUN-1  NUM-2
+NUM-3                     
+95     36901     45     78
+63     36902     47     45
+21     39603     85     47
+45     39604     96     36
+15     39605     25     89
+&apos;&apos;&apos;</span>
+</code></pre>
+<ul>
+<li><p><code>names</code>&#x53C2;&#x6570;</p>
+<p>&#x6307;&#x5B9A;&#x5217;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+</li>
+</ul>
+<pre class="language-"><code class="lang-python">data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>basestation<span class="token punctuation">,</span>names<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;e&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+       a   b   c   e
+0  36901  45  78  95
+1  36902  47  45  63
+2  39603  85  47  21
+3  39604  96  36  45
+4  39605  25  89  15
+&apos;&apos;&apos;</span>
+</code></pre>
+<ul>
+<li><code>nrows</code>&#x53C2;&#x6570;</li>
+</ul>
+<p>&#x8BFB;&#x53D6;&#x6307;&#x5B9A;&#x7684;&#x51E0;&#x884C;&#x6570;&#x636E;</p>
+<pre class="language-"><code class="lang-python">data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>basestation<span class="token punctuation">,</span> nrows<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+      ID  NUN-1  NUM-2  NUM-3
+0  36901     45     78     95
+1  36902     47     45     63
+2  39603     85     47     21
+&apos;&apos;&apos;</span>
+</code></pre>
+<p><code>usecols</code> &#x53C2;&#x6570;</p>
+<p>&#x8BFB;&#x53D6;&#x6307;&#x5B9A;&#x7684;&#x5217;, &#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x540D;&#x5B57;&#x6216;&#x7D22;&#x5F15;&#x503C;&#xFF08;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x539F;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x7684;&#x54EA;&#x4E9B;&#x53D8;&#x91CF;&#x540D;&#xFF0C;&#x4EE5;&#x5217;&#x8868;&#x4F20;&#x5165;&#x3002;&#xFF09;</p>
+<pre class="language-"><code class="lang-python">data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>basestation<span class="token punctuation">,</span> usecols<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+      ID  NUN-1  NUM-2
+0  36901     45     78
+1  36902     47     45
+2  39603     85     47
+3  39604     96     36
+4  39605     25     89
+&apos;&apos;&apos;</span>
+</code></pre>
+<h2 id="dataframetoexcel"><a name="dataframetoexcel" class="anchor-navigation-ex-anchor" href="#dataframetoexcel"><i class="fa fa-link" aria-hidden="true"></i></a>DataFrame.to_excel</h2>
+<p>&#x5B58;&#x50A8;&#x51FD;&#x6570;&#x4E3A;<code>pd.DataFrame.to_excel()</code>&#xFF0C;&#x6CE8;&#x610F;&#xFF0C;&#x5FC5;&#x987B;&#x662F;DataFrame&#x5199;&#x5165;excel, &#x5373;Write DataFrame to an excel sheet&#x3002;&#x5176;&#x5177;&#x4F53;&#x53C2;&#x6570;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">to_excel<span class="token punctuation">(</span>self<span class="token punctuation">,</span>
+         excel_writer<span class="token punctuation">,</span> 
+         sheet_name<span class="token operator">=</span><span class="token string">&apos;Sheet1&apos;</span><span class="token punctuation">,</span> 
+         na_rep<span class="token operator">=</span><span class="token string">&apos;&apos;</span><span class="token punctuation">,</span> 
+         float_format<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+         columns<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+         header<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> 
+         index<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> 
+         index_label<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+         startrow<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> 
+         startcol<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> 
+         engine<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+         merge_cells<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> 
+         encoding<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+         inf_rep<span class="token operator">=</span><span class="token string">&apos;inf&apos;</span><span class="token punctuation">,</span> 
+         verbose<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> 
+         freeze_panes<span class="token operator">=</span><span class="token boolean">None</span>
+        <span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6570;&#x636E;&#x6E90;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">    ID  NUM<span class="token operator">-</span><span class="token number">1</span>   NUM<span class="token operator">-</span><span class="token number">2</span>   NUM<span class="token operator">-</span><span class="token number">3</span>
+<span class="token number">0</span>   <span class="token number">36901</span>   <span class="token number">142</span> <span class="token number">168</span> <span class="token number">661</span>
+<span class="token number">1</span>   <span class="token number">36902</span>   <span class="token number">78</span>  <span class="token number">521</span> <span class="token number">602</span>
+<span class="token number">2</span>   <span class="token number">36903</span>   <span class="token number">144</span> <span class="token number">600</span> <span class="token number">521</span>
+<span class="token number">3</span>   <span class="token number">36904</span>   <span class="token number">95</span>  <span class="token number">457</span> <span class="token number">468</span>
+<span class="token number">4</span>   <span class="token number">36905</span>   <span class="token number">69</span>  <span class="token number">596</span> <span class="token number">695</span>
+<span class="token number">5</span>   <span class="token number">36906</span>   <span class="token number">165</span> <span class="token number">453</span> 
+
+&#x52A0;&#x8F7D;&#x6570;&#x636E;&#xFF1A;
+basestation <span class="token operator">=</span><span class="token string">&quot;./ex.xls&quot;</span>
+basestation_end <span class="token operator">=</span><span class="token string">&quot;./test_end.xls&quot;</span>
+data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>basestation<span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li>&#x53C2;&#x6570;<code>excel_writer</code></li>
+</ul>
+<p>str or ExcelWriter object</p>
+<p>File path or existing ExcelWriter.</p>
+<pre class="language-"><code class="lang-python">data<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span>basestation_end<span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li><code>sheet_name</code></li>
+</ul>
+<p>&#x5C06;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5728;excel&#x7684;&#x90A3;&#x4E2A;sheet&#x9875;&#x9762;</p>
+<pre class="language-"><code class="lang-python">data<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span>basestation_end<span class="token punctuation">,</span>sheet_name<span class="token operator">=</span><span class="token string">&quot;sheet2&quot;</span><span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li><code>na_rep</code></li>
+</ul>
+<p>&#x7F3A;&#x5931;&#x503C;&#x586B;&#x5145;</p>
+<pre class="language-"><code class="lang-python">data<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span>basestation_end<span class="token punctuation">,</span>na_rep<span class="token operator">=</span><span class="token string">&quot;NULL&quot;</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200504102236.png" data-lightbox="b23b7c17-10c0-4cce-8bd8-3bf8f0533e27" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200504102236.png" alt="undefined"></a></p>
+<ul>
+<li><p>colums</p>
+<p>sequence, optional&#xFF0C;Columns to write &#x9009;&#x62E9;&#x8F93;&#x51FA;&#x7684;&#x7684;&#x5217;&#x3002;</p>
+</li>
+</ul>
+<pre class="language-"><code class="lang-python">data<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span>basestation_end<span class="token punctuation">,</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&quot;ID&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200504102527.png" data-lightbox="5a4aa2e9-3d2c-4c73-96ff-8c8e82312875" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200504102527.png" alt="undefined"></a></p>
+<ul>
+<li>header </li>
+</ul>
+<p>boolean or list of string&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;True,&#x53EF;&#x4EE5;&#x7528;list&#x547D;&#x540D;&#x5217;&#x7684;&#x540D;&#x5B57;&#x3002;header = False &#x5219;&#x4E0D;&#x8F93;&#x51FA;&#x9898;&#x5934;&#x3002;</p>
+<pre class="language-"><code class="lang-python">data<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span>basestation_end<span class="token punctuation">,</span>header<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;d&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200504102546.png" data-lightbox="1044a5bf-af13-404e-895f-787e707c42f9" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200504102546.png" alt="undefined"></a></p>
+<p><code>header = False</code> &#x5219;&#x4E0D;&#x8F93;&#x51FA;&#x9898;&#x5934;</p>
+<pre class="language-"><code>data.to_excel(basestation_end,header=False,columns=[&quot;ID&quot;])
+</code></pre><p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200504102458.png" data-lightbox="6a09f3af-8b82-4c0a-89a9-35500f20856d" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200504102458.png" alt="undefined"></a></p>
+<ul>
+<li><code>index</code></li>
+</ul>
+<p>boolean, default True Write row names (index)
+&#x9ED8;&#x8BA4;&#x4E3A;True&#xFF0C;&#x663E;&#x793A;index&#xFF0C;&#x5F53;index=False &#x5219;&#x4E0D;&#x663E;&#x793A;&#x884C;&#x7D22;&#x5F15;&#xFF08;&#x540D;&#x5B57;&#xFF09;&#x3002;
+index_label : string or sequence, default None
+&#x8BBE;&#x7F6E;&#x7D22;&#x5F15;&#x5217;&#x7684;&#x5217;&#x540D;&#x3002;</p>
+<pre class="language-"><code>data.to_excel(basestation_end,index=False)
+</code></pre><p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200504102635.png" data-lightbox="0b399686-918c-4dce-ad93-53d2dd4fe134" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200504102635.png" alt="undefined"></a></p>
+<ul>
+<li><code>index_label</code></li>
+</ul>
+<p>&#x8BBE;&#x7F6E;&#x7D22;&#x5F15;&#x5217;&#x7684;&#x5217;&#x540D;</p>
+<pre class="language-"><code class="lang-python">data<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span>basestation_end<span class="token punctuation">,</span>index_label<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&quot;f&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200504102734.png" data-lightbox="f2293932-1217-4900-9b23-5ce195e0f5e7" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200504102734.png" alt="undefined"></a></p>
+<h2 id="&#x6848;&#x4F8B;"><a name="&#x6848;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x6848;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6848;&#x4F8B;</h2>
+<p>&#x5199;&#x5165;excel&#xFF0C;&#x81EA;&#x5B9A;&#x4E49;&#x7D22;&#x5F15;</p>
+<pre class="language-"><code class="lang-python">data<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">&apos;ID&apos;</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">&apos;year&apos;</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token number">2000</span><span class="token punctuation">,</span><span class="token number">2001</span><span class="token punctuation">,</span><span class="token number">2002</span><span class="token punctuation">,</span><span class="token number">2003</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">&apos;pop&apos;</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token number">3.7</span><span class="token punctuation">,</span><span class="token number">3.6</span><span class="token punctuation">,</span><span class="token number">2.4</span><span class="token punctuation">,</span><span class="token number">0.9</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+df<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>df<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+   ID  year  pop
+0   1  2000  3.7
+1   2  2001  3.6
+2   3  2002  2.4
+3   4  2003  0.9
+&apos;&apos;&apos;</span>
+df<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span><span class="token string">&apos;text.xls&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://img-blog.csdnimg.cn/2019101820013942.png" data-lightbox="6740d337-3487-4a68-9be3-3cd8025ce31d" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;" target="_blank"><img src="https://img-blog.csdnimg.cn/2019101820013942.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
+<pre class="language-"><code>data={&apos;ID&apos;:[1,2,3,4],
+      &apos;year&apos;:[2000,2001,2002,2003],
+      &apos;pop&apos;:[3.7,3.6,2.4,0.9]}
+df=pd.DataFrame(data)
+df=df.set_index(&apos;ID&apos;)
+df.to_excel(&apos;text.xls&apos;)
+</code></pre><p><a href="https://img-blog.csdnimg.cn/20191018200314154.png" data-lightbox="17a942ec-c5ab-4cb7-bfab-f3ccf8ffd1b8" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;" target="_blank"><img src="https://img-blog.csdnimg.cn/20191018200314154.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
+<p>&#x8BFB;&#x53D6;&#x7684;&#x6570;&#x636E;&#x65E0;&#x8868;&#x5934;&#xFF0C;&#x4E3A;&#x5176;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x8868;&#x5934;&#x5E76;&#x4FDD;&#x5B58;</p>
+<p><a href="https://img-blog.csdnimg.cn/20191018203230426.png" data-lightbox="018c6f1e-b1fe-44f7-80ae-c3a37949e6ad" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;" target="_blank"><img src="https://img-blog.csdnimg.cn/20191018203230426.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
+<pre class="language-"><code>people=pd.read_excel(&apos;People.xlsx&apos;,header=None)
+people.columns=[&apos;id&apos;, &apos;type&apos;, &apos;title&apos;, &apos;First&apos;, &apos;Middle&apos;, &apos;Last&apos;]
+print(people.columns)
+#Index([&apos;id&apos;, &apos;type&apos;, &apos;title&apos;, &apos;First&apos;, &apos;Middle&apos;, &apos;Last&apos;], dtype=&apos;object&apos;)
+#&#x9ED8;&#x8BA4;&#x6DFB;&#x52A0;&#x884C;&#x7D22;&#x5F15;  &#xFF0C;&#x53EF;&#x4EE5;&#x91CD;&#x65B0;&#x6307;&#x5B9A;
+people=people.set_index(&apos;id&apos;)
+people.to_excel(&apos;people2.xls&apos;)
+</code></pre><p><a href="https://img-blog.csdnimg.cn/20191018203245292.png" data-lightbox="fa784793-25a7-4e1a-99f6-1dccb3a8e243" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;" target="_blank"><img src="https://img-blog.csdnimg.cn/20191018203245292.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
+<p>&#x6307;&#x5B9A;&#x5217;&#x4E3A;&#x7D22;&#x5F15;&#xFF0C;&#x907F;&#x514D;&#x81EA;&#x52A8;pands&#x518D;&#x751F;&#x6210;&#x65B0;&#x7684;&#x7D22;&#x5F15;</p>
+<pre class="language-"><code class="lang-python"><span class="token comment">#&#x6307;&#x5B9A;&#x67D0;&#x5217;&#x4E3A;&#x7D22;&#x5F15;  &#xFF0C;pands&#x5C31;&#x4E0D;&#x4F1A;&#x518D;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7D22;&#x5F15;</span>
+people<span class="token operator">=</span>pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span><span class="token string">&apos;people2.xls&apos;</span><span class="token punctuation">,</span>index_col<span class="token operator">=</span><span class="token string">&apos;id&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="&#x5C06;&#x591A;&#x4E2A;sheet&#x5199;&#x5165;&#x5230;&#x672C;&#x5730;&#x540C;&#x4E00;excel&#x6587;&#x4EF6;&#x4E2D;"><a name="&#x5C06;&#x591A;&#x4E2A;sheet&#x5199;&#x5165;&#x5230;&#x672C;&#x5730;&#x540C;&#x4E00;excel&#x6587;&#x4EF6;&#x4E2D;" class="anchor-navigation-ex-anchor" href="#&#x5C06;&#x591A;&#x4E2A;sheet&#x5199;&#x5165;&#x5230;&#x672C;&#x5730;&#x540C;&#x4E00;excel&#x6587;&#x4EF6;&#x4E2D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C06;&#x591A;&#x4E2A;Sheet&#x5199;&#x5165;&#x5230;&#x672C;&#x5730;&#x540C;&#x4E00;Excel&#x6587;&#x4EF6;&#x4E2D;</h2>
+<pre class="language-"><code>import pandas as pd
+
+#&#x8BFB;&#x53D6;&#x4E24;&#x4E2A;&#x8868;&#x683C;
+data1=pd.read_excel(&apos;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&apos;)
+data2=pd.read_excel(&apos;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&apos;)
+
+#&#x5C06;&#x4E24;&#x4E2A;&#x8868;&#x683C;&#x8F93;&#x51FA;&#x5230;&#x4E00;&#x4E2A;excel&#x6587;&#x4EF6;&#x91CC;&#x9762;
+writer=pd.ExcelWriter(&apos;D:&#x65B0;&#x8868;.xlsx&apos;)
+
+data1.to_excel(writer,sheet_name=&apos;sheet1&apos;)
+data2.to_excel(writer,sheet_name=&apos;sheet2&apos;)
+
+#&#x5FC5;&#x987B;&#x8FD0;&#x884C;writer.save()&#xFF0C;&#x4E0D;&#x7136;&#x4E0D;&#x80FD;&#x8F93;&#x51FA;&#x5230;&#x672C;&#x5730;
+writer.save()
+</code></pre><p><a href="https://img-blog.csdnimg.cn/20191029201556441.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" data-lightbox="0d686d21-0258-42a9-9306-ebc9d666c34f" data-title="img" target="_blank"><img src="https://img-blog.csdnimg.cn/20191029201556441.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" alt="img"></a></p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">with</span> pd<span class="token punctuation">.</span>ExcelWriter<span class="token punctuation">(</span><span class="token string">r&apos;C:\Users\&#x6570;&#x636E;\Desktop\data\test2.xls&apos;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> writer<span class="token punctuation">:</span>
+    df1<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span>writer<span class="token punctuation">,</span> sheet_name<span class="token operator">=</span><span class="token string">&apos;df1&apos;</span><span class="token punctuation">)</span>
+    df2<span class="token punctuation">.</span>to_excel<span class="token punctuation">(</span>writer<span class="token punctuation">,</span> sheet_name<span class="token operator">=</span><span class="token string">&apos;df2&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>&#x5C06;&#x591A;&#x4E2A; sheet &#x5199;&#x5165;&#x5230;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5207;&#x8BB0; close &#x6587;&#x4EF6;</strong></p>
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-08-13 
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Python pandas读写csv文件.html" class="navigation navigation-prev " aria-label="Previous page: Python pandas读写csv文件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Python 读写Excel文件.html" class="navigation navigation-next " aria-label="Next page: Python 读/写Excel文件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python pandas读写excel文件","level":"3.1.3","depth":2,"next":{"title":"Python 读/写Excel文件","level":"3.1.4","depth":2,"path":"文件处理/Python 读写Excel文件.md","ref":"文件处理/Python 读写Excel文件.md","articles":[]},"previous":{"title":"Python pandas读写csv文件","level":"3.1.2","depth":2,"path":"文件处理/Python pandas读写csv文件.md","ref":"文件处理/Python pandas读写csv文件.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"mathjax":{"forceSVG":true},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Office 三件套学习","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"文件处理/Python pandas读写excel文件.md","mtime":"2020-08-13T13:07:08.409Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-20T02:36:30.336Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

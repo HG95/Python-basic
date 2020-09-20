@@ -1,0 +1,1447 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Python shutil模块 · Office 三件套学习</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="HHG">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Python ZIP文件读取，解压.html" />
+    
+    
+    <link rel="prev" href="Python JsonPath模块.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../基础/">
+            
+                <a href="../基础/">
+            
+                    
+                    python 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                <a href="../基础/Python Python 中的 if __name__ == '__main__'.html">
+            
+                    
+                    Python Python 中的 if name == 'main'
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../基础/Python 导入模块和package.html">
+            
+                <a href="../基础/Python 导入模块和package.html">
+            
+                    
+                    Python 导入模块和package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../基础/Python args和kwargs的用法.html">
+            
+                <a href="../基础/Python args和kwargs的用法.html">
+            
+                    
+                    Python args和kwargs的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../基础/Python 常用函数.html">
+            
+                <a href="../基础/Python 常用函数.html">
+            
+                    
+                    Python 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                <a href="../基础/Python set集合的并集union, 交集intersection, 差集difference.html">
+            
+                    
+                    Python set集合的并集union, 交集intersection, 差集difference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../基础/Python 列表解析式.html">
+            
+                <a href="../基础/Python 列表解析式.html">
+            
+                    
+                    Python 列表解析式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../基础/Python list中append和extend函数区别.html">
+            
+                <a href="../基础/Python list中append和extend函数区别.html">
+            
+                    
+                    Python list中append和extend函数区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../基础/Python zip函数.html">
+            
+                <a href="../基础/Python zip函数.html">
+            
+                    
+                    Python zip()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../基础/Python enumerate函数.html">
+            
+                <a href="../基础/Python enumerate函数.html">
+            
+                    
+                    Python enumerate()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../基础/Python random函数.html">
+            
+                <a href="../基础/Python random函数.html">
+            
+                    
+                    Python random函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../基础/Python sort函数、sorted函数.html">
+            
+                <a href="../基础/Python sort函数、sorted函数.html">
+            
+                    
+                    Python 字符串 sort()函数、sorted()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../基础/Python 字符串的格式化.html">
+            
+                <a href="../基础/Python 字符串的格式化.html">
+            
+                    
+                    Python 字符串的格式化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../基础/Python 字符串 String 函数.html">
+            
+                <a href="../基础/Python 字符串 String 函数.html">
+            
+                    
+                    Python 字符串 String 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../基础/Python partition函数.html">
+            
+                <a href="../基础/Python partition函数.html">
+            
+                    
+                    Python partition函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="../基础/Python 位运算符、位运算高级运用.html">
+            
+                <a href="../基础/Python 位运算符、位运算高级运用.html">
+            
+                    
+                    Python 位运算符、位运算高级运用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="../基础/Python set集合之间的区别.html">
+            
+                <a href="../基础/Python set集合之间的区别.html">
+            
+                    
+                    Python set(集合) & 与 and 、 | 与 or之间的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="../基础/Python round函数，截取小数位数.html">
+            
+                <a href="../基础/Python round函数，截取小数位数.html">
+            
+                    
+                    Python round函数，截取小数位数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="../基础/Python 断言assert.html">
+            
+                <a href="../基础/Python 断言assert.html">
+            
+                    
+                    Python 断言assert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.19" >
+            
+                <span>
+            
+                    
+                    [Python 生成器和生成器函数]基础/Python 生成器和生成器函数.md)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.20" data-path="../基础/Python chr和ord函数.html">
+            
+                <a href="../基础/Python chr和ord函数.html">
+            
+                    
+                    Python chr()和ord()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.21" data-path="../基础/Python fnmatch模块.html">
+            
+                <a href="../基础/Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.22" data-path="../基础/Python copy模块.html">
+            
+                <a href="../基础/Python copy模块.html">
+            
+                    
+                    Python copy模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.23" data-path="../基础/Python collections模块.html">
+            
+                <a href="../基础/Python collections模块.html">
+            
+                    
+                    Python collections模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.24" data-path="../基础/Python itertools 模块.html">
+            
+                <a href="../基础/Python itertools 模块.html">
+            
+                    
+                    Python itertools 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.25" data-path="../基础/Python 时间模块.html">
+            
+                <a href="../基础/Python 时间模块.html">
+            
+                    
+                    Python 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.26" data-path="../基础/Python Arrow 时间模块.html">
+            
+                <a href="../基础/Python Arrow 时间模块.html">
+            
+                    
+                    Python Arrow 时间模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    python 文件处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="Python open函数.html">
+            
+                <a href="Python open函数.html">
+            
+                    
+                    Python open() 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="Python pandas读写csv文件.html">
+            
+                <a href="Python pandas读写csv文件.html">
+            
+                    
+                    Python pandas读写csv文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="Python pandas读写excel文件.html">
+            
+                <a href="Python pandas读写excel文件.html">
+            
+                    
+                    Python pandas读写excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="Python 读写Excel文件.html">
+            
+                <a href="Python 读写Excel文件.html">
+            
+                    
+                    Python 读/写Excel文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="Python openpyxl模块.html">
+            
+                <a href="Python openpyxl模块.html">
+            
+                    
+                    Python openpyxl模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="Python csv模块.html">
+            
+                <a href="Python csv模块.html">
+            
+                    
+                    Python csv模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="Python os模块.html">
+            
+                <a href="Python os模块.html">
+            
+                    
+                    Python os模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="Python glob模块.html">
+            
+                <a href="Python glob模块.html">
+            
+                    
+                    Python glob模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="Python fnmatch模块.html">
+            
+                <a href="Python fnmatch模块.html">
+            
+                    
+                    Python fnmatch模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="Python pathlib模块.html">
+            
+                <a href="Python pathlib模块.html">
+            
+                    
+                    Python pathlib模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="Python os.walk遍历目录树.html">
+            
+                <a href="Python os.walk遍历目录树.html">
+            
+                    
+                    Python os.walk遍历目录树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="Python os.scandir文件操作.html">
+            
+                <a href="Python os.scandir文件操作.html">
+            
+                    
+                    Python os.scandir文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="Python 文件过滤.html">
+            
+                <a href="Python 文件过滤.html">
+            
+                    
+                    Python 文件过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="Python JSON模块.html">
+            
+                <a href="Python JSON模块.html">
+            
+                    
+                    Python JSON模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="Python JsonPath模块.html">
+            
+                <a href="Python JsonPath模块.html">
+            
+                    
+                    Python JsonPath模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.16" data-path="Python shutil模块.html">
+            
+                <a href="Python shutil模块.html">
+            
+                    
+                    Python shutil模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="Python ZIP文件读取，解压.html">
+            
+                <a href="Python ZIP文件读取，解压.html">
+            
+                    
+                    Python ZIP文件读取，解压
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="Python with...as的用法.html">
+            
+                <a href="Python with...as的用法.html">
+            
+                    
+                    Python with...as的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../正则表达式/">
+            
+                <a href="../正则表达式/">
+            
+                    
+                    python 正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../正则表达式/正则表达式基础语法.html">
+            
+                <a href="../正则表达式/正则表达式基础语法.html">
+            
+                    
+                    python 正则表达式基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../正则表达式/正则表达式 常用函数.html">
+            
+                <a href="../正则表达式/正则表达式 常用函数.html">
+            
+                    
+                    python 正则表达式 常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../正则表达式/正则表达式 re.sub.html">
+            
+                <a href="../正则表达式/正则表达式 re.sub.html">
+            
+                    
+                    python 正则表达式 re.sub()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../正则表达式/正则表达式 re.match与re.search.html">
+            
+                <a href="../正则表达式/正则表达式 re.match与re.search.html">
+            
+                    
+                    python 正则表达式 match()与search()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../正则表达式/正则表达式 re.findall与re.finditer.html">
+            
+                <a href="../正则表达式/正则表达式 re.findall与re.finditer.html">
+            
+                    
+                    python 正则表达式 re.findall()与re.finditer()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../正则表达式/正则表达式 re.compile.html">
+            
+                <a href="../正则表达式/正则表达式 re.compile.html">
+            
+                    
+                    python 正则表达式 re.compile()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../正则表达式/正则表达式 flags 参数.html">
+            
+                <a href="../正则表达式/正则表达式 flags 参数.html">
+            
+                    
+                    python 正则表达式 flags 参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../正则表达式/正则表达式 去优先级，选择.html">
+            
+                <a href="../正则表达式/正则表达式 去优先级，选择.html">
+            
+                    
+                    python 正则表达式 去优先级，选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../正则表达式/正则表达式 模式匹配与正则表达式一.html">
+            
+                <a href="../正则表达式/正则表达式 模式匹配与正则表达式一.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../正则表达式/正则表达式 模式匹配与正则表达式二.html">
+            
+                <a href="../正则表达式/正则表达式 模式匹配与正则表达式二.html">
+            
+                    
+                    python 正则表达式 模式匹配与正则表达式 二
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../多进程-多线程/">
+            
+                <a href="../多进程-多线程/">
+            
+                    
+                    python 多进程-多线程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../多进程-多线程/Python 多进程multiprocessing模块.html">
+            
+                <a href="../多进程-多线程/Python 多进程multiprocessing模块.html">
+            
+                    
+                    Python 多进程multiprocessing模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../多进程-多线程/Python 异步并发concurrent.futures模块.html">
+            
+                <a href="../多进程-多线程/Python 异步并发concurrent.futures模块.html">
+            
+                    
+                    Python 异步并发concurrent.futures模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../面向对象/">
+            
+                <a href="../面向对象/">
+            
+                    
+                    python 面向对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../面向对象/类.html">
+            
+                <a href="../面向对象/类.html">
+            
+                    
+                    python 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../面向对象/面向对象编程.html">
+            
+                <a href="../面向对象/面向对象编程.html">
+            
+                    
+                    python 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../面向对象/绑定方法与非绑定方法.html">
+            
+                <a href="../面向对象/绑定方法与非绑定方法.html">
+            
+                    
+                    python 绑定方法与非绑定方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../面向对象/实例方法、类方法和静态方法.html">
+            
+                <a href="../面向对象/实例方法、类方法和静态方法.html">
+            
+                    
+                    python 实例方法、类方法和静态方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../面向对象/面向对象编程--组合.html">
+            
+                <a href="../面向对象/面向对象编程--组合.html">
+            
+                    
+                    python 面向对象编程--组合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                <a href="../面向对象/ 子类继承父类构造函数说明.html">
+            
+                    
+                    python 子类继承父类构造函数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.7" data-path="../面向对象/面向对象描述符.html">
+            
+                <a href="../面向对象/面向对象描述符.html">
+            
+                    
+                    python 面向对象描述符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.8" data-path="../面向对象/反射机制.html">
+            
+                <a href="../面向对象/反射机制.html">
+            
+                    
+                    python 反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.9" data-path="../面向对象/slots.html">
+            
+                <a href="../面向对象/slots.html">
+            
+                    
+                    python slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.10" data-path="../面向对象/属性property.html">
+            
+                <a href="../面向对象/属性property.html">
+            
+                    
+                    python 属性property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.11" data-path="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                <a href="../面向对象/attrs 和 cattrs 实现面向对象编程.html">
+            
+                    
+                    python attrs 和 cattrs 实现面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.12" data-path="../面向对象/Dataclasses.html">
+            
+                <a href="../面向对象/Dataclasses.html">
+            
+                    
+                    python Dataclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    python MongoDB数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../Chapter5/MongoDB基础.html">
+            
+                <a href="../Chapter5/MongoDB基础.html">
+            
+                    
+                    python MongoDB基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../Chapter5/Python操作MongoDB.html">
+            
+                <a href="../Chapter5/Python操作MongoDB.html">
+            
+                    
+                    python Python操作MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Python shutil模块</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#python-shutil&#x6A21;&#x5757;">Python shutil&#x6A21;&#x5757;</a></li><ul><li><a href="#&#x590D;&#x5236;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;">&#x590D;&#x5236;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;</a></li><ul><li><a href="#shutilcopy">shutil.copy()</a></li><li><a href="#shutilcopytree">shutil.copytree()</a></li></ul><li><a href="#&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x79FB;&#x52A8;&#x4E0E;&#x6539;&#x540D;">&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x79FB;&#x52A8;&#x4E0E;&#x6539;&#x540D;</a></li><ul><li><a href="#shutilmove">shutil.move()</a></li></ul><li><a href="#&#x6C38;&#x4E45;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;">&#x6C38;&#x4E45;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;</a></li></ul></ul></div><a href="#python-shutil&#x6A21;&#x5757;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="python-shutil&#x6A21;&#x5757;"><a name="python-shutil&#x6A21;&#x5757;" class="anchor-navigation-ex-anchor" href="#python-shutil&#x6A21;&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>Python shutil&#x6A21;&#x5757;</h1>
+<p>  <code>shutil</code>&#xFF08;&#x6216;&#x79F0;&#x4E3A; shell &#x5DE5;&#x5177;&#xFF09;&#x6A21;&#x5757;&#x4E2D;&#x5305;&#x542B;&#x4E00;&#x4E9B;&#x51FD;&#x6570;&#xFF0C;&#x8BA9;&#x4F60;&#x5728; Python &#x7A0B;&#x5E8F;&#x4E2D;&#x590D;&#x5236;&#x3001;&#x79FB;&#x52A8;&#x3001;&#x6539;&#x540D;&#x548C;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x3002;&#x8981;&#x4F7F;&#x7528; shutil &#x7684;&#x51FD;&#x6570;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981; import shutil&#x3002;</p>
+<h2 id="&#x590D;&#x5236;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;"><a name="&#x590D;&#x5236;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x5236;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x590D;&#x5236;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;</h2>
+<p><code>shutil &#x6A21;&#x5757;</code>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x548C;&#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x3002;</p>
+<h3 id="shutilcopy"><a name="shutilcopy" class="anchor-navigation-ex-anchor" href="#shutilcopy"><i class="fa fa-link" aria-hidden="true"></i></a>shutil.copy()</h3>
+<p>&#x8C03;&#x7528; shutil.copy(source, destination)&#xFF0C;<strong>&#x5C06;&#x8DEF;&#x5F84; source &#x5904;&#x7684;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x5230;&#x8DEF;&#x5F84; destination&#x5904;&#x7684;&#x6587;&#x4EF6;&#x5939;</strong>&#xFF08;source &#x548C; destination &#x90FD;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF09;&#x3002;&#x5982;&#x679C; destination &#x662F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x5B83;&#x5C06;&#x4F5C;&#x4E3A;&#x88AB;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x7684;&#x65B0;&#x540D;&#x5B57;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8868;&#x793A;&#x88AB;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">import</span> shutil<span class="token punctuation">,</span> os
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span><span class="token string">&apos;C:\\&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> shutil<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token string">&apos;C:\\spam.txt&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;C:\\delicious&apos;</span><span class="token punctuation">)</span>
+<span class="token string">&apos;C:\\delicious\\spam.txt&apos;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> shutil<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token string">&apos;eggs.txt&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;C:\\delicious\\eggs2.txt&apos;</span><span class="token punctuation">)</span>
+<span class="token string">&apos;C:\\delicious\\eggs2.txt&apos;</span>
+</code></pre>
+<p>&#x7B2C;&#x4E00;&#x4E2A; <code>shutil.copy()</code>&#x8C03;&#x7528;&#x5C06;&#x6587;&#x4EF6; C:\spam.txt &#x590D;&#x5236;&#x5230;&#x6587;&#x4EF6;&#x5939; C:\delicious&#x3002;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x521A;&#x521A;&#x88AB;&#x590D;&#x5236;&#x7684;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x56E0;&#x4E3A;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4F5C;&#x4E3A;&#x76EE;&#x7684;&#x5730;&#xFF0C;&#x539F;&#x6765;&#x7684;&#x6587;&#x4EF6;&#x540D; spam.txt &#x5C31;&#x88AB;&#x7528;&#x4F5C;&#x65B0;&#x590D;&#x5236;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A; shutil.copy()&#x8C03;&#x7528;&#x4E5F;&#x5C06;&#x6587;&#x4EF6;C:\eggs.txt &#x590D;&#x5236;&#x5230;&#x6587;&#x4EF6;&#x5939; C:\delicious&#xFF0C;&#x4F46;&#x4E3A;&#x65B0;&#x6587;&#x4EF6;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x5B57; eggs2.txt.</p>
+<h3 id="shutilcopytree"><a name="shutilcopytree" class="anchor-navigation-ex-anchor" href="#shutilcopytree"><i class="fa fa-link" aria-hidden="true"></i></a>shutil.copytree()</h3>
+<p>shutil.copy()&#x5C06;&#x590D;&#x5236;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C; <code>shutil.copytree()</code>&#x5C06;&#x590D;&#x5236;&#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x5305;&#x542B;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x548C;&#x6587;&#x4EF6;&#x3002;&#x8C03;&#x7528; shutil.copytree(source, destination)&#xFF0C;&#x5C06;&#x8DEF;&#x5F84; source &#x5904;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5305;&#x62EC;&#x5B83;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x548C;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x590D;&#x5236;&#x5230;&#x8DEF;&#x5F84; destination &#x5904;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x3002; source &#x548C;destination &#x53C2;&#x6570;&#x90FD;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x662F;&#x65B0;&#x590D;&#x5236;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x8DEF;&#x5F84;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">import</span> shutil<span class="token punctuation">,</span> os
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span><span class="token string">&apos;C:\\&apos;</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> shutil<span class="token punctuation">.</span>copytree<span class="token punctuation">(</span><span class="token string">&apos;C:\\bacon&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;C:\\bacon_backup&apos;</span><span class="token punctuation">)</span>
+<span class="token string">&apos;C:\\bacon_backup&apos;</span>
+</code></pre>
+<p><code>shutil.copytree()</code> &#x8C03;&#x7528;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x6587;&#x4EF6;&#x5939;&#xFF0C; &#x540D;&#x4E3A; bacon_backup&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x4E0E;&#x539F;&#x6765;&#x7684; bacon &#x6587;&#x4EF6;&#x5939;&#x4E00;&#x6837;&#x3002;&#x73B0;&#x5728;&#x4F60;&#x5DF2;&#x7ECF;&#x5907;&#x4EFD;&#x4E86;&#x975E;&#x5E38;&#x975E;&#x5E38;&#x5B9D;&#x8D35;&#x7684;&#x201C;bacon&#x201D;</p>
+<h2 id="&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x79FB;&#x52A8;&#x4E0E;&#x6539;&#x540D;"><a name="&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x79FB;&#x52A8;&#x4E0E;&#x6539;&#x540D;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x79FB;&#x52A8;&#x4E0E;&#x6539;&#x540D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x79FB;&#x52A8;&#x4E0E;&#x6539;&#x540D;</h2>
+<h3 id="shutilmove"><a name="shutilmove" class="anchor-navigation-ex-anchor" href="#shutilmove"><i class="fa fa-link" aria-hidden="true"></i></a>shutil.move()</h3>
+<p>&#x8C03;&#x7528; <code>shutil.move(source, destination)</code>&#xFF0C; &#x5C06;&#x8DEF;&#x5F84; source &#x5904;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x79FB;&#x52A8;&#x5230;&#x8DEF;&#x5F84;destination&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x65B0;&#x4F4D;&#x7F6E;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;
+&#x5982;&#x679C; destination &#x6307;&#x5411;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#xFF0C; source &#x6587;&#x4EF6;&#x5C06;&#x79FB;&#x52A8;&#x5230; destination &#x4E2D;&#xFF0C; &#x5E76;&#x4FDD;&#x6301;&#x539F;&#x6765;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">import</span> shutil
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> shutil<span class="token punctuation">.</span>move<span class="token punctuation">(</span><span class="token string">&apos;C:\\bacon.txt&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;C:\\eggs&apos;</span><span class="token punctuation">)</span>
+<span class="token string">&apos;C:\\eggs\\bacon.txt&apos;</span>
+</code></pre>
+<p>&#x5047;&#x5B9A;&#x5728; C:\&#x76EE;&#x5F55;&#x4E2D;&#x5DF2;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; eggs &#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C; &#x8FD9;&#x4E2A; shutil.move()&#x8C03;&#x7528;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x201C;&#x5C06; C:\bacon.txt &#x79FB;&#x52A8;&#x5230;&#x6587;&#x4EF6;&#x5939; C:\eggs &#x4E2D;&#x3002;
+&#x5982;&#x679C;&#x5728; C:\eggs &#x4E2D;&#x539F;&#x6765;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x6587;&#x4EF6; bacon.txt&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x88AB;&#x8986;&#x5199;&#x3002;&#x56E0;&#x4E3A;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x5F88;&#x5BB9;&#x6613;&#x4E0D;&#x5C0F;&#x5FC3;&#x8986;&#x5199;&#x6587;&#x4EF6;&#xFF0C; &#x6240;&#x4EE5;&#x5728;&#x4F7F;&#x7528; move()&#x65F6;&#x5E94;&#x8BE5;&#x6CE8;&#x610F;&#x3002;</p>
+<p>destination &#x8DEF;&#x5F84;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x3002;&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C; source &#x6587;&#x4EF6;&#x88AB;&#x79FB;&#x52A8;&#x5E76;&#x6539;&#x540D;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> shutil<span class="token punctuation">.</span>move<span class="token punctuation">(</span><span class="token string">&apos;C:\\bacon.txt&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;C:\\eggs\\new_bacon.txt&apos;</span><span class="token punctuation">)</span>
+<span class="token string">&apos;C:\\eggs\\new_bacon.txt&apos;</span>
+</code></pre>
+<p>&#x8FD9;&#x4E00;&#x884C;&#x662F;&#x8BF4;&#xFF0C;&#x201C;&#x5C06; C:\bacon.txt &#x79FB;&#x52A8;&#x5230;&#x6587;&#x4EF6;&#x5939; C:\eggs&#xFF0C;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x5C06; bacon.txt&#x6587;&#x4EF6;&#x6539;&#x540D;&#x4E3A; new_bacon.txt&#x3002;&#x201D;</p>
+<h2 id="&#x6C38;&#x4E45;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;"><a name="&#x6C38;&#x4E45;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;" class="anchor-navigation-ex-anchor" href="#&#x6C38;&#x4E45;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6C38;&#x4E45;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;</h2>
+<p><code>shutil.rmtree(path)</code></p>
+<p>&#x5229;&#x7528; os &#x6A21;&#x5757;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6216;&#x4E00;&#x4E2A;&#x7A7A;&#x6587;&#x4EF6;&#x5939;&#x3002;&#x4F46;&#x5229;&#x7528; <code>shutil &#x6A21;&#x5757;</code>&#xFF0C;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x53CA;&#x5176;&#x6240;&#x6709;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<ul>
+<li>&#x7528; <code>os.unlink(path)</code>&#x5C06;&#x5220;&#x9664; path &#x5904;&#x7684;&#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x8C03;&#x7528; <code>os.rmdir(path)</code>&#x5C06;&#x5220;&#x9664; path &#x5904;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x3002;&#x8BE5;&#x6587;&#x4EF6;&#x5939;&#x5FC5;&#x987B;&#x4E3A;&#x7A7A;&#xFF0C;&#x5176;&#x4E2D;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x3002;</li>
+<li>&#x8C03;&#x7528;<code>shutil.rmtree(path)</code>&#x5C06;&#x5220;&#x9664; path &#x5904;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;&#x90FD;&#x4F1A;&#x88AB;&#x5220;&#x9664;&#x3002;</li>
+</ul>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> os
+<span class="token keyword">for</span> filename <span class="token keyword">in</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> filename<span class="token punctuation">.</span>endswith<span class="token punctuation">(</span><span class="token string">&apos;.rxt&apos;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        os<span class="token punctuation">.</span>unlink<span class="token punctuation">(</span>filename<span class="token punctuation">)</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-25 
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Python JsonPath模块.html" class="navigation navigation-prev " aria-label="Previous page: Python JsonPath模块">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Python ZIP文件读取，解压.html" class="navigation navigation-next " aria-label="Next page: Python ZIP文件读取，解压">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python shutil模块","level":"3.1.16","depth":2,"next":{"title":"Python ZIP文件读取，解压","level":"3.1.17","depth":2,"path":"文件处理/Python ZIP文件读取，解压.md","ref":"文件处理/Python ZIP文件读取，解压.md","articles":[]},"previous":{"title":"Python JsonPath模块","level":"3.1.15","depth":2,"path":"文件处理/Python JsonPath模块.md","ref":"文件处理/Python JsonPath模块.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"mathjax":{"forceSVG":true},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Office 三件套学习","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"文件处理/Python shutil模块.md","mtime":"2020-05-25T13:42:22.956Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-20T02:36:30.336Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
